@@ -1,4 +1,4 @@
-#Sat Sep 04 00:16:48 EAT 2021
+#Sat Sep 04 22:41:42 EAT 2021
 base.0=E\:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

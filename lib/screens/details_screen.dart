@@ -44,7 +44,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       child: Hero(
                         tag: '${widget.suitable.id}',
                         child: Image(
-                          image: AssetImage('${widget.suitable.imgUrl}'),
+                          image: NetworkImage('${widget.suitable.imgUrl}'),
                           fit: BoxFit.cover,
                         ),
                       ),

@@ -1267,8 +1267,8 @@ kotlin.UInt$Companion
 kotlin.jvm.functions.Function3
 androidx.fragment.app.FragmentContainer
 androidx.fragment.app.FragmentTransitionImpl$2
-android.support.v4.os.ResultReceiver
 androidx.core.app.JobIntentService$JobWorkEnqueuer
+android.support.v4.os.ResultReceiver
 androidx.arch.core.R
 kotlin.coroutines.experimental.jvm.internal.CoroutineIntrinsics
 androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
@@ -2648,8 +2648,8 @@ io.flutter.plugin.common.BinaryCodec
 kotlin.reflect.KTypeParameter
 androidx.core.text.PrecomputedTextCompat
 kotlin.jvm.functions.Function5
-kotlin.text.Regex$findAll$1
 kotlin.text.StringsKt__StringsKt
+kotlin.text.Regex$findAll$1
 com.example.studio_bookings.R$styleable
 kotlin.contracts.Returns
 io.flutter.Log:

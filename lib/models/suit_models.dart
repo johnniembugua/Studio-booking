@@ -26,7 +26,7 @@ class Suitable {
 List<Suitable> listSuitable = [
   Suitable(
     id: "1",
-    imgUrl: "assest/images/drone.jpg",
+    imgUrl: "https://picsum.photos/250?image=9",
     price: 1000,
     description: 'Drone services are the best services we offer in our market',
     categorie: "Drone services",
@@ -36,7 +36,7 @@ List<Suitable> listSuitable = [
   ),
   Suitable(
     id: "2",
-    imgUrl: "assest/images/drone2.jpg",
+    imgUrl: "https://picsum.photos/250?image=9",
     price: 1500,
     categorie: "Video Shooting",
     description: 'Video shooting are the best services we offer in our market',
@@ -46,7 +46,7 @@ List<Suitable> listSuitable = [
   ),
   Suitable(
     id: "3",
-    imgUrl: "assest/images/videorecording2.jpg",
+    imgUrl: "https://picsum.photos/250?image=9",
     price: 1020,
     categorie: "Audio Recording",
     rating: 3.5,
@@ -56,7 +56,7 @@ List<Suitable> listSuitable = [
   ),
   Suitable(
     id: "4",
-    imgUrl: "assest/images/videorecording.jpg",
+    imgUrl: "https://picsum.photos/250?image=9",
     price: 985,
     categorie: "Video Editing",
     description: 'Video editing are the best services we offer in our market',
