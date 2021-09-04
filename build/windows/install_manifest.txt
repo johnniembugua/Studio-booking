@@ -1,0 +1,17 @@
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/icudtl.dat
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/flutter_windows.dll
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assest/images/bp_loading.gif
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assest/images/drone.jpg
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assest/images/drone2.jpg
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assest/images/videorecording.jpg
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assest/images/videorecording2.jpg
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assest/images/woman.jpeg
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/NOTICES
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf
