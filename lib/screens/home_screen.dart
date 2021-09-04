@@ -139,10 +139,12 @@ class _HomePageState extends State<HomePage> {
                   child: FadeInImage.assetNetwork(
                     placeholder: 'assest/images/bp_loading.gif',
                     image: 'https://picsum.photos/250?image=9',
+                    //'${suit.imgUrl}',
+                    
                     // AssetImage(
                     //   '${suit.imgUrl}',
                     // ),
-                    //fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               ),
