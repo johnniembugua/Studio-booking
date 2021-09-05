@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:studio_bookings/models/suit_models.dart';
+import 'package:studio_bookings/models/booking_models.dart';
+import 'package:studio_bookings/provider/bookings.dart';
 import 'package:studio_bookings/provider/theme_provider.dart';
 import 'package:studio_bookings/widgets/StartRating.dart';
+import 'package:studio_bookings/widgets/drawer.dart';
 
 import 'details_screen.dart';
 
@@ -19,7 +21,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
+    final themeProvider = Provider.of<DarkThemeProvider>(context);
     bool isDark = false;
     return Scaffold(
       drawer: _buildDrawer(),
@@ -96,9 +98,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Switch(
-                  value: themeProvider.isLightTheme,
+                  value: themeProvider.darkTheme,
                   onChanged: (val) {
-                    themeProvider.setThemeData = val;
+                    setState(() {
+                      themeProvider.darkTheme = val;
+                    });
                   },
                 )
               ],
@@ -113,7 +117,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  _buildImageListView(Suitable suit) {
+  _buildImageListView(Booking suit) {
     return Positioned(
       right: 30.0,
       child: Container(
@@ -206,7 +210,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  _buildBoxInfo(Suitable suit) {
+  _buildBoxInfo(Booking suit) {
     return Positioned(
       right: 170.0,
       left: 20.0,
@@ -337,10 +341,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   _buildListView() {
+    //final bookingAttr = Provider.of<Book>(context);
+    final bookingProvider = Provider.of<Bookings>(context);
+    List<Booking> listBooking = bookingProvider.bookings;
     return ListView.builder(
-      itemCount: listSuitable.length,
+      itemCount: listBooking.length,
       itemBuilder: (BuildContext context, int index) {
-        Suitable suit = listSuitable[index];
+        Booking suit = listBooking[index];
         return GestureDetector(
           onTap: () {
             Navigator.of(context).push(

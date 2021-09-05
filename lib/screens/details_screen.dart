@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:studio_bookings/models/suit_models.dart';
+import 'package:studio_bookings/models/booking_models.dart';
 import 'package:studio_bookings/screens/booking.dart';
 
 class DetailScreen extends StatefulWidget {
-  final Suitable suitable;
+  final Booking suitable;
 
   DetailScreen(this.suitable);
 
@@ -80,10 +80,11 @@ class _DetailScreenState extends State<DetailScreen> {
                   SizedBox(
                     height: 30.0,
                   ),
-                  _buildMenuBar(),
-                  SizedBox(
-                    height: 20.0,
-                  ),
+                  //_buildMenuBar(),
+                  // _buidDescriptionTitle(),
+                  // SizedBox(
+                  //   height: 20.0,
+                  // ),
                   _buldDescription(),
                   Spacer(),
                   //_buildServiceBar(),
@@ -141,61 +142,76 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   _buldDescription() {
-    return Text(
-      '${widget.suitable.description}',
-      style: TextStyle(
-        fontSize: 19.0,
-        fontWeight: FontWeight.w500,
+    return Align(
+      alignment: Alignment.topLeft,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Description',
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          ),
+          SizedBox(
+            height: 8,
+          ),
+          Text(
+            '${widget.suitable.description}',
+            style: TextStyle(
+              fontSize: 19.0,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
       ),
     );
   }
 
-  _buildMenuBar() {
-    return Container(
-      height: 45.0,
-      child: ListView.builder(
-        itemCount: listString.length,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (BuildContext context, int index) {
-          String menu = listString[index];
-          return GestureDetector(
-            onTap: () {
-              setState(() {
-                _selectedIndex = index;
-              });
-            },
-            child: Container(
-              margin: EdgeInsets.only(right: 40.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    menu,
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: _selectedIndex == index
-                            ? Theme.of(context).accentColor
-                            : Colors.grey),
-                  ),
-                  SizedBox(
-                    height: 5.0,
-                  ),
-                  _selectedIndex == index
-                      ? Container(
-                          color: Theme.of(context).accentColor,
-                          height: 4.0,
-                          width: 30.0,
-                        )
-                      : SizedBox.shrink()
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
+  // _buildMenuBar() {
+  //   return Container(
+  //     height: 45.0,
+  //     child: ListView.builder(
+  //       itemCount: listString.length,
+  //       scrollDirection: Axis.horizontal,
+  //       itemBuilder: (BuildContext context, int index) {
+  //         String menu = listString[index];
+  //         return GestureDetector(
+  //           onTap: () {
+  //             setState(() {
+  //               _selectedIndex = index;
+  //             });
+  //           },
+  //           child: Container(
+  //             margin: EdgeInsets.only(right: 40.0),
+  //             child: Column(
+  //               mainAxisSize: MainAxisSize.min,
+  //               crossAxisAlignment: CrossAxisAlignment.start,
+  //               children: <Widget>[
+  //                 Text(
+  //                   menu,
+  //                   style: TextStyle(
+  //                       fontSize: 20.0,
+  //                       color: _selectedIndex == index
+  //                           ? Theme.of(context).accentColor
+  //                           : Colors.grey),
+  //                 ),
+  //                 SizedBox(
+  //                   height: 5.0,
+  //                 ),
+  //                 _selectedIndex == index
+  //                     ? Container(
+  //                         color: Theme.of(context).accentColor,
+  //                         height: 4.0,
+  //                         width: 30.0,
+  //                       )
+  //                     : SizedBox.shrink()
+  //               ],
+  //             ),
+  //           ),
+  //         );
+  //       },
+  //     ),
+  //   );
+  // }
 
   // _buildServiceBar() {
   //   return Row(
@@ -288,8 +304,8 @@ class _DetailScreenState extends State<DetailScreen> {
       borderRadius: BorderRadius.circular(45.0),
       child: ElevatedButton(
         onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Booking()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => BookingScreen()));
         },
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.blue[800]),
