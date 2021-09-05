@@ -1,27 +1,35 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:studio_bookings/models/booking_models.dart';
-import 'package:studio_bookings/screens/booking.dart';
+import 'package:provider/provider.dart';
 
-class DetailScreen extends StatefulWidget {
-  final Booking suitable;
+import 'package:studio_bookings/provider/booking_services.dart';
+import 'package:studio_bookings/screens/booking_page.dart';
 
-  DetailScreen(this.suitable);
+class DetailScreens extends StatefulWidget {
+  static const routeName = '/DetailScreens';
+  // final Booking suitable;
+
+  // DetailScreens(this.suitable);
 
   @override
-  _DetailScreenState createState() => _DetailScreenState();
+  _DetailScreensState createState() => _DetailScreensState();
 }
 
-class _DetailScreenState extends State<DetailScreen> {
+class _DetailScreensState extends State<DetailScreens> {
   bool isLike = false;
 
   Icon icon = Icon(FontAwesomeIcons.solidHeart);
 
-  int _selectedIndex = 0;
+  //int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
+    final bookingData = Provider.of<Bookings>(context);
+    final bookingId = ModalRoute.of(context)!.settings.arguments as String;
+
+    final bookingAttr = bookingData.findById(bookingId);
+    //final bookingList = bookingData.bookings;
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
@@ -42,9 +50,9 @@ class _DetailScreenState extends State<DetailScreen> {
                       right: 0,
                       left: 0,
                       child: Hero(
-                        tag: '${widget.suitable.id}',
+                        tag: '${bookingAttr.id}',
                         child: Image(
-                          image: NetworkImage('${widget.suitable.imgUrl}'),
+                          image: NetworkImage('${bookingAttr.imgUrl}'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -76,7 +84,43 @@ class _DetailScreenState extends State<DetailScreen> {
               padding: EdgeInsets.all(20.0),
               child: Column(
                 children: <Widget>[
-                  _buildTitleInfo(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            '${bookingAttr.title}',
+                            style: TextStyle(
+                                fontSize: 22.0,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 1.2),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Text('${bookingAttr.categorie}'),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            'Ksh ${bookingAttr.price}',
+                            style: TextStyle(
+                                fontSize: 19.0,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: 1.2),
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Text("Per hour"),
+                        ],
+                      ),
+                    ],
+                  ),
                   SizedBox(
                     height: 30.0,
                   ),
@@ -85,7 +129,29 @@ class _DetailScreenState extends State<DetailScreen> {
                   // SizedBox(
                   //   height: 20.0,
                   // ),
-                  _buldDescription(),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Description',
+                          style: TextStyle(
+                              fontSize: 22, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          '${bookingAttr.description}',
+                          style: TextStyle(
+                            fontSize: 19.0,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   Spacer(),
                   //_buildServiceBar(),
                   // SizedBox(
@@ -96,71 +162,6 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
             ),
           )
-        ],
-      ),
-    );
-  }
-
-  _buildTitleInfo() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: <Widget>[
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              '${widget.suitable.title}',
-              style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.2),
-            ),
-            SizedBox(
-              height: 10.0,
-            ),
-            Text('${widget.suitable.categorie}'),
-          ],
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              'Ksh ${widget.suitable.price}',
-              style: TextStyle(
-                  fontSize: 19.0,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 1.2),
-            ),
-            SizedBox(
-              height: 10.0,
-            ),
-            Text("Per hour"),
-          ],
-        ),
-      ],
-    );
-  }
-
-  _buldDescription() {
-    return Align(
-      alignment: Alignment.topLeft,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Description',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(
-            height: 8,
-          ),
-          Text(
-            '${widget.suitable.description}',
-            style: TextStyle(
-              fontSize: 19.0,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
         ],
       ),
     );
@@ -304,8 +305,8 @@ class _DetailScreenState extends State<DetailScreen> {
       borderRadius: BorderRadius.circular(45.0),
       child: ElevatedButton(
         onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => BookingScreen()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => BookingPage()));
         },
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.blue[800]),

@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:studio_bookings/provider/bookings.dart';
+
+import 'package:studio_bookings/provider/booking_services.dart';
+import 'package:studio_bookings/screens/booking_page.dart';
+import 'package:studio_bookings/screens/details_screen.dart';
+import 'package:studio_bookings/screens/mybookings/booking.dart';
 
 import 'Screens/home_screen.dart';
 import 'consts/theme_data.dart';
 import 'provider/theme_provider.dart';
 
-void main() => runApp(
-      MyApp(),
-    );
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    MyApp(),
+  );
+}
 
 class MyApp extends StatefulWidget {
   // This widget is the root of your application.
@@ -50,6 +57,11 @@ class _MyAppState extends State<MyApp> {
           theme: Styles.themeData(themeChangeProvider.darkTheme, context),
 
           home: HomePage(),
+          routes: {
+            DetailScreens.routeName: (context) => DetailScreens(),
+            // BookingScreens.routeName:(context)=>BookingScreens(),
+            BookingPage.routeName: (context) => BookingPage(),
+          },
         );
       }),
     );

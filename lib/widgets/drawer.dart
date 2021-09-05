@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -43,6 +44,33 @@ class MyDrawer extends StatelessWidget {
                 ),
 
                 SizedBox(height: 15),
+                Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    splashColor: Theme.of(context).splashColor,
+                    child: ListTile(
+                      onTap: () {},
+                      // => Navigator.of(context)
+                      //     .pushNamed(BookingScreens.routeName),
+                      title: Text('My Bookings'),
+                      trailing: Icon(Icons.chevron_right_rounded),
+                      leading: Icon(FontAwesomeIcons.bookOpen),
+                    ),
+                  ),
+                ),
+                // Material(
+                //   color: Colors.transparent,
+                //   child: InkWell(
+                //     splashColor: Theme.of(context).splashColor,
+                //     child: ListTile(
+                //       onTap: () => Navigator.of(context)
+                //           .pushNamed(CartScreen.routeName),
+                //       title: Text('Cart'),
+                //       trailing: Icon(Icons.chevron_right_rounded),
+                //       leading: Icon(MyAppIcons.cart),
+                //     ),
+                //   ),
+                // ),
 
                 _listTileContent(
                     'Name', 'Nanjala', Icons.email_outlined, context),
