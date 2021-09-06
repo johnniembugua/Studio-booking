@@ -12,6 +12,7 @@ import 'package:studio_bookings/widgets/drawer.dart';
 import 'package:studio_bookings/widgets/service_widgets.dart';
 
 class HomePage extends StatefulWidget {
+  static const routeName = '/HomePage';
   @override
   _HomePageState createState() => _HomePageState();
 }

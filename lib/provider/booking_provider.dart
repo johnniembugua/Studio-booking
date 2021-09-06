@@ -1,44 +1,52 @@
-// import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:firebase_auth/firebase_auth.dart';
-// import 'package:flutter/cupertino.dart';
-// import 'package:studio_bookings/models/booking_attr.dart';
+import 'package:flutter/material.dart';
+import 'package:studio_bookings/models/booking_attr.dart';
 
-// class OrdersProvider with ChangeNotifier {
-//   List<BookingAttr> _bookings = [];
-//   List<BookingAttr> get getBookings {
-//     return [..._bookings];
-//   }
+class BookingProvider with ChangeNotifier {
+  Map<String, BookingAttr> _bookedItems = {};
 
-//   Future<void> fetchOrders() async {
-//     FirebaseAuth _auth = FirebaseAuth.instance;
-//     User? _user = _auth.currentUser;
-//     var _uid = _user!.uid;
-//     print('the user Id is equal to $_uid');
-//     try {
-//       await FirebaseFirestore.instance
-//           .collection('bookings')
-//           .where('userId', isEqualTo: _uid)
-//           .get()
-//           .then((QuerySnapshot ordersSnapShot) {
-//         _bookings.clear();
-//         ordersSnapShot.docs.forEach((element) {
-//           _bookings.insert(
-//               0,
-//               BookingAttr(
-//                 orderId: element.get('orderId'),
-//                 userId: element.get('userId'),
-//                 productId: element.get('productId'),
-//                 title: element.get('title'),
-//                 imageUrl: element.get('imageUrl'),
-//                 price: element.get('price'.toString()),
-//                 quantity: element.get('quantity'.toString()),
-//                 // orderDate: element.get('orderDate'),
-//               ));
-//         });
-//       });
-//     } catch (error) {
-//       print('Error when fetching orders$error');
-//     }
-//     notifyListeners();
-//   }
-// }
+  Map<String, BookingAttr> get getBookedItems {
+    return _bookedItems;
+  }
+
+  double get totalAmount {
+    var total = 0.0;
+    _bookedItems.forEach((key, value) {
+      total += value.price;
+    });
+    return total;
+  }
+
+  void addBookingtoCart(
+      String bookingId, int price, String title, String imageUrl) {
+    if (_bookedItems.containsKey(bookingId)) {
+      _bookedItems.update(
+          bookingId,
+          (existingBookedItem) => BookingAttr(
+                id: existingBookedItem.id,
+                price: existingBookedItem.price,
+                title: existingBookedItem.title,
+                imageUrl: existingBookedItem.imageUrl,
+              ));
+    } else {
+      _bookedItems.putIfAbsent(
+          bookingId,
+          () => BookingAttr(
+                id: DateTime.now().toString(),
+                price: price,
+                title: title,
+                imageUrl: imageUrl,
+              ));
+    }
+    notifyListeners();
+  }
+
+  void removeBooking(String bookingId) {
+    _bookedItems.remove(bookingId);
+    notifyListeners();
+  }
+
+  void clearBookings() {
+    _bookedItems.clear();
+    notifyListeners();
+  }
+}

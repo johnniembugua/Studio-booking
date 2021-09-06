@@ -1,23 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
-class BookingAttr with ChangeNotifier {
-  final String? orderId;
-  final String? userId;
-  final String? productId;
+class BookingAttr extends ChangeNotifier {
+  final String? id;
   final String? title;
+  final int price;
   final String? imageUrl;
-  final double? price;
-  final int? quantity;
-  //final Timestamp orderDate;
 
-  BookingAttr({
-    //this.orderDate,
-    this.quantity,
-    this.orderId,
-    this.userId,
-    this.productId,
-    this.title,
-    this.imageUrl,
-    this.price,
-  });
+  BookingAttr({this.id, this.title, required this.price, this.imageUrl});
 }

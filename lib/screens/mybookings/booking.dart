@@ -1,40 +1,53 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
+import 'package:studio_bookings/provider/booking_provider.dart';
+import 'package:studio_bookings/screens/mybookings/booking_full.dart';
+import 'package:studio_bookings/services/global_method.dart';
 
-// class BookingScreens extends StatelessWidget {
-//   static const routeName = '/BookingScreens';
-//   const BookingScreens({Key? key}) : super(key: key);
+import 'booking_empty.dart';
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return favsProvider.getFavsItems.isEmpty
-//         ? Scaffold(
-//             body: WishListEmpty(),
-//           )
-//         : Scaffold(
-//             appBar: AppBar(
-//               title: Text('WishList (${favsProvider.getFavsItems.length})'),
-//               actions: [
-//                 IconButton(
-//                     icon: Icon(MyAppIcons.trash),
-//                     onPressed: () {
-//                       globalMethod.showDialogg(
-//                           'Clear wishlist!',
-//                           'Your Wishlist Will be cleared',
-//                           () => favsProvider.clearFavs(),
-//                           context);
-//                     })
-//               ],
-//             ),
-//             body: ListView.builder(
-//                 itemCount: favsProvider.getFavsItems.length,
-//                 itemBuilder: (BuildContext ctx, int index) {
-//                   return ChangeNotifierProvider.value(
-//                       value: favsProvider.getFavsItems.values.toList()[index],
-//                       child: WishlistFull(
-//                         productId:
-//                             favsProvider.getFavsItems.keys.toList()[index],
-//                       ));
-//                 }),
-//           );
-//   }
-// }
+class BookingScreens extends StatelessWidget {
+  static const routeName = '/BookingScreens';
+  const BookingScreens({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final bookingProvider = Provider.of<BookingProvider>(context);
+    GlobalMethod globalMethod = GlobalMethod();
+
+    return bookingProvider.getBookedItems.isEmpty
+        ? Scaffold(
+            body: BookingEmpty(),
+          )
+        : Scaffold(
+            appBar: AppBar(
+              backgroundColor: Theme.of(context).primaryColor,
+              title:
+                  Text('(${bookingProvider.getBookedItems.length}) Bookings '),
+              actions: [
+                IconButton(
+                    icon: Icon(FontAwesomeIcons.trash),
+                    onPressed: () {
+                      globalMethod.showDialogg(
+                          'Clear Bookings!',
+                          'Your Bookings Will be cleared',
+                          () => bookingProvider.clearBookings(),
+                          context);
+                    })
+              ],
+            ),
+            body: ListView.builder(
+                itemCount: bookingProvider.getBookedItems.length,
+                itemBuilder: (BuildContext ctx, int index) {
+                  return ChangeNotifierProvider.value(
+                      value:
+                          bookingProvider.getBookedItems.values.toList()[index],
+                      child: BookingFull(
+                        productId:
+                            bookingProvider.getBookedItems.keys.toList()[index],
+                      ));
+                }),
+          );
+  }
+}

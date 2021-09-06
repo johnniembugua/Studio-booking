@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:studio_bookings/provider/booking_provider.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
 import 'package:studio_bookings/screens/booking_page.dart';
@@ -48,6 +49,9 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider(
           create: (_) => Bookings(),
         ),
+        ChangeNotifierProvider(
+          create: (_) => BookingProvider(),
+        ),
       ],
       child: Consumer<DarkThemeProvider>(builder: (context, themeData, child) {
         return MaterialApp(
@@ -58,8 +62,9 @@ class _MyAppState extends State<MyApp> {
 
           home: HomePage(),
           routes: {
+            HomePage.routeName: (context) => HomePage(),
             DetailScreens.routeName: (context) => DetailScreens(),
-            // BookingScreens.routeName:(context)=>BookingScreens(),
+            BookingScreens.routeName: (context) => BookingScreens(),
             BookingPage.routeName: (context) => BookingPage(),
           },
         );
