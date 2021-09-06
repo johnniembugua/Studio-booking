@@ -64,6 +64,7 @@ Referenced Strings:
   FlutterJNI
   FlutterLoader
   FlutterRenderer
+  FlutterSharedPreferences
   FlutterSplashView
   FlutterSurfaceView
   FlutterTextureView
@@ -170,6 +171,7 @@ Referenced Strings:
   STANDARD
   STARTED
   SettingsChannel
+  StorageError
   SystemChannel
   SystemChrome.restoreSystemUIOverlays
   SystemChrome.setApplicationSwitcherDe...
@@ -231,6 +233,9 @@ Referenced Strings:
   URL
   UTF8
   V:
+  VGhpcyBpcyB0aGUgcHJlZml4IGZvciBCaWdJb...
+  VGhpcyBpcyB0aGUgcHJlZml4IGZvciBEb3VibGUu
+  VGhpcyBpcyB0aGUgcHJlZml4IGZvciBhIGxpc3Qu
   VISIBLE_PASSWORD
   WORDS
   accessibility
@@ -280,11 +285,13 @@ Referenced Strings:
   cached_engine_id
   cell
   character
+  clear
   clearFocus
   cleartextTrafficPermitted
   click
   clipboard
   codePoint
+  commit
   componentName
   composingBase
   composingExtent
@@ -321,6 +328,7 @@ Referenced Strings:
   fields
   flags
   flutter
+  flutter.
   flutter/accessibility
   flutter/deferredcomponent
   flutter/isolate
@@ -342,6 +350,7 @@ Referenced Strings:
   fullStreetAddress
   gender
   get
+  getAll
   getChildId
   getDeferredComponentInstallState
   getParentNodeId
@@ -439,6 +448,7 @@ Referenced Strings:
   plainCodePoint
   platformBrightness
   plugins
+  plugins.flutter.io/shared_preferences
   popRoute
   postalAddress
   postalAddressExtended
@@ -452,6 +462,7 @@ Referenced Strings:
   put
   read
   registerWith
+  remove
   removeView
   removeViewImmediate
   repeatCount
@@ -473,9 +484,14 @@ Referenced Strings:
   scanCode
   selectionBase
   selectionExtent
+  setBool
   setDirection
+  setDouble
   setInitialRoute
+  setInt
   setLocale
+  setString
+  setStringList
   signed
   smsOTPCode
   source

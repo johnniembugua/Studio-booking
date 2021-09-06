@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:studio_bookings/screens/mybookings/booking.dart';
-import 'package:studio_bookings/screens/mybookings/booking_full.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -54,9 +53,18 @@ class MyDrawer extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, BookingScreens.routeName);
                       },
-                      title: Text('My Bookings'),
+                      title: Text(
+                        'My Bookings',
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.black),
+                      ),
                       trailing: Icon(Icons.chevron_right_rounded),
-                      leading: Icon(FontAwesomeIcons.bookOpen),
+                      leading: Icon(
+                        FontAwesomeIcons.bookOpen,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ),

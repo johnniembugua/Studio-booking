@@ -53,6 +53,7 @@ kotlin.collections.ArraysKt___ArraysJvmKt
 androidx.core.text.util.LinkifyCompat$LinkifyMask
 kotlin.reflect.KType$DefaultImpls
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$4
+io.flutter.plugins.sharedpreferences.R$style
 kotlin.text.CharsKt
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenDescending$1
 com.example.studio_bookings.BuildConfig
@@ -194,7 +195,13 @@ kotlin.sequences.SequenceBuilderIterator
 io.flutter.embedding.android.FlutterFragment
 androidx.fragment.app.FragmentTransition$3
 com.example.studio_bookings.R$layout
-io.flutter.embedding.engine.plugins.PluginRegistry
+io.flutter.embedding.engine.plugins.PluginRegistry:
+    public abstract void add(java.util.Set)
+    public abstract boolean has(java.lang.Class)
+    public abstract io.flutter.embedding.engine.plugins.FlutterPlugin get(java.lang.Class)
+    public abstract void remove(java.lang.Class)
+    public abstract void remove(java.util.Set)
+    public abstract void removeAll()
 androidx.savedstate.SavedStateRegistry$SavedStateProvider
 kotlin.text.CharCategory$Companion
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineFromSuspendFunction$1
@@ -346,9 +353,7 @@ kotlin.io.FilesKt__FileReadWriteKt
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$4
 androidx.annotation.RequiresPermission
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
-    public android.content.Context getApplicationContext()
     public io.flutter.embedding.engine.FlutterEngine getFlutterEngine()
-    public io.flutter.plugin.common.BinaryMessenger getBinaryMessenger()
     public io.flutter.view.TextureRegistry getTextureRegistry()
     public io.flutter.plugin.platform.PlatformViewRegistry getPlatformViewRegistry()
     public io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets getFlutterAssets()
@@ -760,7 +765,8 @@ kotlin.text.StringsKt__StringNumberConversionsKt
 androidx.customview.widget.ViewDragHelper
 androidx.core.view.accessibility.AccessibilityClickableSpanCompat
 kotlin.jvm.internal.Intrinsics
-io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding
+io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding:
+    public abstract android.content.ContentProvider getContentProvider()
 kotlin.random.AbstractPlatformRandom
 kotlin.coroutines.ContinuationInterceptor$Key
 kotlin.contracts.ContractBuilder
@@ -779,8 +785,6 @@ io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutator:
 io.flutter.embedding.android.FlutterImageView:
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,android.util.AttributeSet)
-io.flutter.embedding.engine.plugins.contentprovider.ContentProviderAware:
-    public abstract void onAttachedToContentProvider(io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding)
 androidx.annotation.RequiresPermission$Read
 androidx.versionedparcelable.CustomVersionedParcelable:
     public void onPreParceling(boolean)
@@ -827,6 +831,9 @@ kotlin.collections.UByteIterator
 kotlin.sequences.ConstrainedOnceSequence
 kotlin.DeprecationLevel
 androidx.viewpager.widget.PagerTabStrip
+io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    private static final java.lang.String CHANNEL_NAME
 io.flutter.embedding.android.FlutterView$TransparencyMode
 androidx.core.view.ScaleGestureDetectorCompat
 androidx.core.view.ViewGroupCompat
@@ -867,7 +874,11 @@ androidx.core.graphics.BitmapCompat
 androidx.collection.CircularArray
 androidx.core.provider.SelfDestructiveThread
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager
-io.flutter.embedding.engine.plugins.service.ServicePluginBinding
+io.flutter.embedding.engine.plugins.service.ServicePluginBinding:
+    public abstract android.app.Service getService()
+    public abstract java.lang.Object getLifecycle()
+    public abstract void addOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
+    public abstract void removeOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
 androidx.loader.R$color
 androidx.fragment.R$string
 kotlin.sequences.SequencesKt___SequencesKt$onEach$1
@@ -903,6 +914,7 @@ androidx.arch.core.executor.ArchTaskExecutor$2
 io.flutter.embedding.engine.loader.FlutterLoader$Settings:
     public void setLogTag(java.lang.String)
 kotlin.collections.ArraysKt___ArraysKt$withIndex$3
+io.flutter.plugins.sharedpreferences.BuildConfig
 androidx.core.util.Pools$SynchronizedPool
 androidx.arch.core.executor.ArchTaskExecutor
 androidx.activity.ComponentActivity$NonConfigurationInstances
@@ -919,8 +931,6 @@ androidx.lifecycle.MethodCallsLogger:
     public boolean approveCall(java.lang.String,int)
 androidx.core.app.ActivityRecreator$LifecycleCheckCallbacks
 androidx.fragment.app.FragmentManagerImpl$6
-io.flutter.embedding.engine.plugins.service.ServiceAware:
-    public abstract void onAttachedToService(io.flutter.embedding.engine.plugins.service.ServicePluginBinding)
 io.flutter.embedding.engine.systemchannels.DeferredComponentChannel:
     public void completeInstallSuccess(java.lang.String)
     public void completeInstallError(java.lang.String,java.lang.String)
@@ -1019,8 +1029,6 @@ androidx.core.view.DisplayCutoutCompat
 androidx.core.app.NotificationCompat$NotificationVisibility
 kotlin.collections.CollectionsKt___CollectionsKt
 android.support.v4.os.ResultReceiver$MyResultReceiver
-io.flutter.embedding.engine.plugins.FlutterPlugin:
-    public abstract void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
 kotlin.jvm.internal.MutablePropertyReference0Impl
 kotlin.coroutines.experimental.migration.ContextMigration
 androidx.core.view.VelocityTrackerCompat
@@ -1267,8 +1275,8 @@ kotlin.UInt$Companion
 kotlin.jvm.functions.Function3
 androidx.fragment.app.FragmentContainer
 androidx.fragment.app.FragmentTransitionImpl$2
-androidx.core.app.JobIntentService$JobWorkEnqueuer
 android.support.v4.os.ResultReceiver
+androidx.core.app.JobIntentService$JobWorkEnqueuer
 androidx.arch.core.R
 kotlin.coroutines.experimental.jvm.internal.CoroutineIntrinsics
 androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
@@ -1282,6 +1290,7 @@ androidx.lifecycle.LifecycleRegistry:
 io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent:
     public void <init>(android.view.KeyEvent)
 androidx.fragment.app.FragmentManagerImpl$OpGenerator
+io.flutter.plugins.sharedpreferences.R$id
 kotlin.reflect.KMutableProperty1$Setter
 androidx.core.widget.ScrollerCompat
 kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction0Migration
@@ -1320,6 +1329,11 @@ kotlin.jvm.functions.Function10
 androidx.customview.widget.FocusStrategy$SequentialComparator
 io.flutter.view.FlutterView$3
 androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi19
+io.flutter.plugins.sharedpreferences.MethodCallHandlerImpl:
+    private static final java.lang.String SHARED_PREFERENCES_NAME
+    private static final java.lang.String LIST_IDENTIFIER
+    private static final java.lang.String BIG_INTEGER_PREFIX
+    private static final java.lang.String DOUBLE_PREFIX
 kotlin.time.MeasureTimeKt
 kotlin.collections.CollectionsKt___CollectionsKt$elementAt$1
 androidx.viewpager.widget.PagerAdapter
@@ -1344,6 +1358,7 @@ io.flutter.embedding.engine.loader.FlutterApplicationInfo:
 kotlin.coroutines.intrinsics.IntrinsicsKt
 androidx.core.content.res.FontResourcesParserCompat$FontFamilyFilesResourceEntry
 androidx.versionedparcelable.VersionedParcelStream$1
+io.flutter.plugins.sharedpreferences.R$styleable
 androidx.loader.content.AsyncTaskLoader$LoadTask
 kotlin.collections.TypeAliasesKt
 androidx.core.os.LocaleListCompatWrapper
@@ -1417,7 +1432,6 @@ androidx.annotation.IntRange
 kotlin.reflect.KClass
 androidx.core.text.BidiFormatter$DirectionalityEstimator
 io.flutter.plugin.common.MethodChannel:
-    public void <init>(io.flutter.plugin.common.BinaryMessenger,java.lang.String)
     public void resizeChannelBuffer(int)
     private static final java.lang.String TAG
 kotlin.collections.LongIterator
@@ -1504,9 +1518,7 @@ androidx.customview.R$styleable
 kotlin.js.JsName
 kotlin.reflect.TypeOfKt
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
-    public void add(io.flutter.embedding.engine.plugins.FlutterPlugin)
     public void add(java.util.Set)
-    public boolean has(java.lang.Class)
     public io.flutter.embedding.engine.plugins.FlutterPlugin get(java.lang.Class)
     public void attachToActivity(android.app.Activity,androidx.lifecycle.Lifecycle)
     public void attachToService(android.app.Service,androidx.lifecycle.Lifecycle,boolean)
@@ -1514,8 +1526,6 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
     public void onMoveToBackground()
     public void attachToBroadcastReceiver(android.content.BroadcastReceiver,androidx.lifecycle.Lifecycle)
     public void attachToContentProvider(android.content.ContentProvider,androidx.lifecycle.Lifecycle)
-    private io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding broadcastReceiverPluginBinding
-    private io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding contentProviderPluginBinding
     private static final java.lang.String TAG
 org.intellij.lang.annotations.JdkConstants
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$7
@@ -1527,6 +1537,7 @@ kotlin.sequences.USequencesKt
 androidx.core.app.NotificationCompatSideChannelService$NotificationSideChannelStub
 androidx.activity.R$integer
 org.intellij.lang.annotations.PrintFormatPattern
+io.flutter.plugins.sharedpreferences.R$string
 kotlin.ranges.URangesKt___URangesKt
 kotlin.coroutines.experimental.SafeContinuation$Fail
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4
@@ -1586,6 +1597,7 @@ io.flutter.plugin.common.JSONUtil:
     private void <init>()
     public static java.lang.Object unwrap(java.lang.Object)
 androidx.core.widget.NestedScrollView$AccessibilityDelegate
+io.flutter.plugins.sharedpreferences.R$layout
 kotlin.jvm.internal.TypeReference$WhenMappings
 androidx.core.content.ContextCompat
 androidx.annotation.Dimension
@@ -1653,7 +1665,8 @@ androidx.core.app.ShareCompat$IntentBuilder
 androidx.fragment.app.FragmentManagerNonConfig
 androidx.viewpager.widget.ViewPager$OnPageChangeListener
 kotlin.coroutines.experimental.CoroutineContext$DefaultImpls
-io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBinding
+io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBinding:
+    public abstract android.content.BroadcastReceiver getBroadcastReceiver()
 kotlin.sequences.IndexingSequence$iterator$1
 androidx.core.app.SharedElementCallback$OnSharedElementsReadyListener
 androidx.core.view.MenuCompat
@@ -1676,6 +1689,7 @@ androidx.fragment.app.FragmentTransitionCompat21$2
 androidx.core.app.TaskStackBuilder
 androidx.versionedparcelable.VersionedParcelStream
 androidx.core.view.inputmethod.EditorInfoCompat
+io.flutter.plugins.sharedpreferences.R$attr
 kotlin.text.Regex$fromInt$$inlined$apply$lambda$1
 kotlin.jvm.internal.PropertyReference0Impl
 androidx.lifecycle.LiveData$LifecycleBoundObserver:
@@ -1802,7 +1816,10 @@ io.flutter.plugin.platform.PlatformViewFactory:
 kotlin.internal.HidesMembers
 androidx.core.R$style
 androidx.core.text.TextUtilsCompat
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding:
+    void <init>(android.content.BroadcastReceiver)
+    public android.content.BroadcastReceiver getBroadcastReceiver()
+    private final android.content.BroadcastReceiver broadcastReceiver
 androidx.core.app.NotificationCompat$Action$WearableExtender
 androidx.viewpager.R$styleable
 io.flutter.embedding.engine.loader.FlutterLoader:
@@ -1833,6 +1850,7 @@ io.flutter.FlutterInjector:
     public static void setInstance(io.flutter.FlutterInjector)
     public static void reset()
 kotlin.jvm.internal.ArrayIteratorsKt
+io.flutter.plugins.sharedpreferences.R$drawable
 kotlin.ExperimentalUnsignedTypes
 androidx.core.view.ViewCompat$FocusDirection
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$2
@@ -1947,7 +1965,6 @@ androidx.core.graphics.TypefaceCompatBaseImpl$1
 io.flutter.embedding.android.FlutterEngineConfigurator
 kotlin.coroutines.experimental.CoroutineContext$Element
 io.flutter.plugin.common.MethodCall:
-    public java.lang.Object argument(java.lang.String)
     public boolean hasArgument(java.lang.String)
 kotlin.internal.PlatformImplementations$ReflectAddSuppressedMethod
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
@@ -1976,9 +1993,13 @@ androidx.core.view.ViewCompat$FocusRelativeDirection
 kotlin.collections.RingBuffer$iterator$1
 androidx.core.app.FrameMetricsAggregator
 kotlin.collections.ArraysKt___ArraysKt$withIndex$1
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding:
+    void <init>(android.content.ContentProvider)
+    public android.content.ContentProvider getContentProvider()
+    private final android.content.ContentProvider contentProvider
 kotlin.coroutines.experimental.CoroutinesKt
 androidx.fragment.R$drawable
+io.flutter.plugins.sharedpreferences.R$color
 androidx.core.graphics.PaintCompat
 kotlin.jvm.functions.Function13
 kotlin.jvm.internal.CharCompanionObject
@@ -1986,8 +2007,6 @@ kotlin.text.DelimitedRangesSequence
 io.flutter.embedding.engine.systemchannels.RestorationChannel:
     private static final java.lang.String TAG
 androidx.viewpager.R$layout
-io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverAware:
-    public abstract void onAttachedToBroadcastReceiver(io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBinding)
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$7
 kotlin.sequences.SequencesKt___SequencesKt$distinct$1
 kotlin.Result$Companion
@@ -2102,7 +2121,6 @@ io.flutter.embedding.engine.FlutterEngine:
     public void removeEngineLifecycleListener(io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener)
     public io.flutter.embedding.engine.systemchannels.LocalizationChannel getLocalizationChannel()
     public io.flutter.embedding.engine.systemchannels.DeferredComponentChannel getDeferredComponentChannel()
-    public io.flutter.embedding.engine.plugins.PluginRegistry getPlugins()
     public io.flutter.embedding.engine.plugins.service.ServiceControlSurface getServiceControlSurface()
     public io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverControlSurface getBroadcastReceiverControlSurface()
     public io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface getContentProviderControlSurface()
@@ -2245,6 +2263,7 @@ io.flutter.plugin.platform.PlatformViewsController:
 kotlin.sequences.TransformingSequence$iterator$1
 kotlin.text.StringsKt__IndentKt$prependIndent$1
 kotlin.NumbersKt__BigIntegersKt
+io.flutter.plugins.sharedpreferences.R$dimen
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$1
 kotlin.time.DurationUnitKt$WhenMappings
 androidx.core.R$drawable
@@ -2265,6 +2284,7 @@ androidx.core.graphics.TypefaceCompatApi28Impl
 kotlin.coroutines.Continuation
 androidx.activity.R$string
 kotlin.system.TimingKt
+io.flutter.plugins.sharedpreferences.R
 androidx.lifecycle.SingleGeneratedAdapterObserver:
     void <init>(androidx.lifecycle.GeneratedAdapter)
 kotlin.math.MathKt
@@ -2434,6 +2454,7 @@ androidx.core.app.BundleCompat
 kotlin.text.StringsKt__StringBuilderKt
 com.example.studio_bookings.R$drawable
 kotlin.coroutines.RestrictsSuspension
+io.flutter.plugins.sharedpreferences.R$integer
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnchecked$$inlined$buildContinuationByInvokeCall$IntrinsicsKt__IntrinsicsJvmKt$2
 androidx.loader.content.CursorLoader
 androidx.core.app.NavUtils
@@ -2689,9 +2710,7 @@ androidx.lifecycle.Lifecycle:
 io.flutter.embedding.android.AndroidKeyProcessor:
     private final io.flutter.plugin.editing.TextInputPlugin textInputPlugin
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
-    private final android.content.Context applicationContext
     private final io.flutter.embedding.engine.FlutterEngine flutterEngine
-    private final io.flutter.plugin.common.BinaryMessenger binaryMessenger
     private final io.flutter.view.TextureRegistry textureRegistry
     private final io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry
     private final io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets flutterAssets
@@ -2722,8 +2741,6 @@ io.flutter.embedding.engine.loader.FlutterApplicationInfo:
     public final boolean clearTextPermitted
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets:
     final io.flutter.embedding.engine.loader.FlutterLoader flutterLoader
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
-    private io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineServicePluginBinding servicePluginBinding
 io.flutter.plugin.platform.VirtualDisplayController$1:
     final synthetic io.flutter.plugin.platform.VirtualDisplayController this$0
 io.flutter.FlutterInjector:
@@ -2734,7 +2751,6 @@ io.flutter.view.AccessibilityBridge$SemanticsNode:
     private float previousScrollExtentMin
 io.flutter.embedding.engine.loader.FlutterLoader$InitResult:
     final java.lang.String dataDirPath
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineServicePluginBinding
 io.flutter.Log:
     private static int logLevel
     public static int ASSERT

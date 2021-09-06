@@ -70,8 +70,8 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                           color: Theme.of(context).indicatorColor,
                           fontWeight: FontWeight.bold,
-                          letterSpacing: 1.2,
-                          fontSize: 30.0),
+                          //letterSpacing: 1.2,
+                          fontSize: 25.0),
                     ),
                     SizedBox(
                       height: 10.0,
@@ -81,8 +81,8 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                           color: Theme.of(context).indicatorColor,
                           fontWeight: FontWeight.w600,
-                          letterSpacing: 1.2,
-                          fontSize: 30.0),
+                          //letterSpacing: 1.2,
+                          fontSize: 22.0),
                     ),
                   ],
                 ),
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                     onPressed: () {
                       isDark = !isDark;
                     },
-                  ),
+                  ), 
                 ),
                 Switch(
                   value: themeProvider.darkTheme,

@@ -51,16 +51,20 @@ class ServicesWidget extends StatelessWidget {
                         height: 260.0,
                         child: Hero(
                           tag: '${bookingAttr.id}',
-                          child: FadeInImage.assetNetwork(
-                            placeholder: 'assest/images/bp_loading.gif',
-                            image: '${bookingAttr.imgUrl}',
-                            //'https://picsum.photos/250?image=9',
-                            //'${suit.imgUrl}',
-                            // AssetImage(
-                            //   '${suit.imgUrl}',
-                            // ),
+                          child: Image(
+                            image: NetworkImage('${bookingAttr.imgUrl}'),
                             fit: BoxFit.cover,
                           ),
+
+                          // FadeInImage.assetNetwork(
+                          //   placeholder: 'assest/images/bp_loading.gif',
+                          //   image: '${bookingAttr.imgUrl}',
+                          //'https://picsum.photos/250?image=9',
+                          //'${suit.imgUrl}',
+                          // AssetImage(
+                          //   '${suit.imgUrl}',
+                          // ),
+                          //fit: BoxFit.cover,
                         ),
                       ),
                       Positioned(

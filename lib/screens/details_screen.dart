@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:studio_bookings/provider/booking_provider.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
-import 'package:studio_bookings/screens/booking_page.dart';
 
 import 'mybookings/booking.dart';
 

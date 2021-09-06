@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+
 import 'package:studio_bookings/Screens/home_screen.dart';
-import 'package:studio_bookings/provider/theme_provider.dart';
 
 class BookingEmpty extends StatelessWidget {
   const BookingEmpty({Key? key}) : super(key: key);
