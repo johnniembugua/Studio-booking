@@ -29,13 +29,13 @@ class GlobalMethod {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text('Cancel')),
+                  child: Text('Cancel',style: TextStyle(color:Colors.red,),),),
               TextButton(
                   onPressed: () {
                     fct();
                     Navigator.pop(context);
                   },
-                  child: Text('Ok')),
+                  child: Text('Ok',style: TextStyle(color:Colors.red,),),),
             ],
           );
         });

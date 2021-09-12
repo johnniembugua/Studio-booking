@@ -38,7 +38,7 @@ class _BookingFullState extends State<BookingFull> {
                     Container(
                       height: 80,
                       child: Image(
-                        image: NetworkImage('${bookingsAttr.imageUrl}'),
+                        image: AssetImage('${bookingsAttr.imageUrl}'),
                       ),
                     ),
                     SizedBox(

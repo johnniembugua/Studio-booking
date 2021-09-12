@@ -694,8 +694,8 @@ kotlin.text.StringsKt___StringsKt$chunkedSequence$1
 androidx.activity.R
 kotlin.jvm.functions.Function20
 kotlin.LazyThreadSafetyMode
-androidx.annotation.RequiresApi
 androidx.lifecycle.ViewModel
+androidx.annotation.RequiresApi
 androidx.core.app.NotificationCompat$BigTextStyle
 kotlin.jvm.internal.CharSpreadBuilder
 androidx.core.app.ActivityCompat$PermissionCompatDelegate
@@ -1194,9 +1194,9 @@ androidx.annotation.AnimatorRes
 kotlin.LazyKt
 androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
 androidx.versionedparcelable.ParcelField
+androidx.core.content.res.ColorStateListInflaterCompat
 androidx.fragment.app.Fragment$OnStartEnterTransitionListener
 kotlin.time.Duration$Companion
-androidx.core.content.res.ColorStateListInflaterCompat
 kotlin.time.AbstractDoubleClock$DoubleClockMark
 kotlin.collections.ShortIterator
 androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
@@ -2669,8 +2669,8 @@ io.flutter.plugin.common.BinaryCodec
 kotlin.reflect.KTypeParameter
 androidx.core.text.PrecomputedTextCompat
 kotlin.jvm.functions.Function5
-kotlin.text.Regex$findAll$1
 kotlin.text.StringsKt__StringsKt
+kotlin.text.Regex$findAll$1
 com.example.studio_bookings.R$styleable
 kotlin.contracts.Returns
 io.flutter.Log:

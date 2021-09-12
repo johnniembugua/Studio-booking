@@ -204,7 +204,7 @@ class ServicesWidget extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10.0),
                             child: Image(
-                              image: AssetImage("assest/images/woman.jpeg"),
+                              image: AssetImage("assets/images/woman.jpeg"),
                               width: 30.0,
                               height: 30.0,
                               fit: BoxFit.cover,
@@ -224,7 +224,7 @@ class ServicesWidget extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10.0),
                             child: Image(
-                              image: AssetImage("assest/images/woman.jpeg"),
+                              image: AssetImage("assets/images/woman.jpeg"),
                               width: 40.0,
                               height: 40.0,
                               fit: BoxFit.cover,
