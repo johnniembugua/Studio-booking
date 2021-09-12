@@ -5,8 +5,7 @@ class Bookings with ChangeNotifier {
   List<Booking> _bookings = [
     Booking(
       id: "1",
-      imgUrl:
-          "https://images-na.ssl-images-amazon.com/images/I/81%2Bh9mpyQmL._AC_SL1500_.jpg",
+      imgUrl: "assets/images/welcome_image.png",
       price: 1000,
       description:
           'Drone services are the best services we offer in our market',
@@ -17,7 +16,7 @@ class Bookings with ChangeNotifier {
     ),
     Booking(
       id: "2",
-      imgUrl: "https://picsum.photos/250?image=9",
+      imgUrl: "assets/images/welcome_image.png",
       price: 1500,
       categorie: "Video Shooting",
       description:
@@ -28,8 +27,7 @@ class Bookings with ChangeNotifier {
     ),
     Booking(
       id: "3",
-      imgUrl:
-          "https://images-na.ssl-images-amazon.com/images/I/61HFJwSDQ4L._AC_SL1000_.jpg",
+      imgUrl: "assets/images/welcome_image.png",
       price: 1020,
       categorie: "Audio Recording",
       rating: 3.5,
@@ -40,7 +38,7 @@ class Bookings with ChangeNotifier {
     ),
     Booking(
       id: "4",
-      imgUrl: "https://picsum.photos/250?image=9",
+      imgUrl: "assets/images/welcome_image.png",
       price: 985,
       categorie: "Video Editing",
       description: 'Video editing are the best services we offer in our market',

@@ -52,7 +52,7 @@ class ServicesWidget extends StatelessWidget {
                         child: Hero(
                           tag: '${bookingAttr.id}',
                           child: Image(
-                            image: NetworkImage('${bookingAttr.imgUrl}'),
+                            image: AssetImage('${bookingAttr.imgUrl}'),
                             fit: BoxFit.cover,
                           ),
 

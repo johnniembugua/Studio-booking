@@ -18,7 +18,7 @@ class BookingEmpty extends StatelessWidget {
           decoration: BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.fill,
-              image: AssetImage('assest/images/woman.jpeg'),
+              image: AssetImage('assets/images/welcome_image.png'),
             ),
           ),
         ),
@@ -75,3 +75,23 @@ class BookingEmpty extends StatelessWidget {
     );
   }
 }
+
+// TextButton(
+//                         onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
+//                         ),
+//                         child: const Text('Book Now'.toUpperCase(),
+//               textAlign: TextAlign.center,
+//               style: TextStyle(
+//                 fontSize: 26,
+//                 fontWeight: FontWeight.w600,
+//               ),),
+//                         style: TextButton.styleFrom(
+//                           backgroundColor: Colors.blue,
+//                           primary: Colors.white,
+//                           padding: const EdgeInsets.symmetric(
+//                             horizontal: 40.0,
+//                             vertical: 18.0,
+//                           ),
+//                           shape: const StadiumBorder(),
+//                         ),
+//                       ),

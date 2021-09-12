@@ -6,6 +6,7 @@ import 'package:studio_bookings/provider/booking_services.dart';
 import 'package:studio_bookings/screens/booking_page.dart';
 import 'package:studio_bookings/screens/details_screen.dart';
 import 'package:studio_bookings/screens/mybookings/booking.dart';
+import 'package:studio_bookings/screens/welcome_screen.dart';
 
 import 'Screens/home_screen.dart';
 import 'consts/theme_data.dart';
@@ -60,12 +61,13 @@ class _MyAppState extends State<MyApp> {
           //themeMode: themeMode, // Change it
           theme: Styles.themeData(themeChangeProvider.darkTheme, context),
 
-          home: HomePage(),
+          home: WelcomeScreen(),
           routes: {
             HomePage.routeName: (context) => HomePage(),
             DetailScreens.routeName: (context) => DetailScreens(),
             BookingScreens.routeName: (context) => BookingScreens(),
             BookingPage.routeName: (context) => BookingPage(),
+            WelcomeScreen.routeName: (context) => WelcomeScreen(),
           },
         );
       }),

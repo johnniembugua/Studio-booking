@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:studio_bookings/screens/mybookings/booking.dart';
+import 'package:studio_bookings/screens/welcome_screen.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -19,7 +20,8 @@ class MyDrawer extends StatelessWidget {
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage('assest/images/woman.jpeg'),
+                      backgroundImage:
+                          AssetImage('assets/images/welcome_image.png'),
                       radius: 50,
                     ),
                     SizedBox(width: 5),
@@ -104,21 +106,33 @@ class MyDrawer extends StatelessWidget {
                 SizedBox(
                   height: 8,
                 ),
-                _listTileContent('Logout', "", Icons.logout_outlined, context),
+                // _listTileContent('Logout', "", Icons.logout_outlined, context),
 
-                // ListTile(
-                //   leading: Icon(
-                //     Icons.logout,
-                //     color: Colors.black,
-                //   ),
-                //   title: Text(
-                //     'Logout',
-                //     style: TextStyle(
-                //         fontSize: 15,
-                //         fontWeight: FontWeight.w200,
-                //         color: Colors.black),
-                //   ),
-                // ),
+                Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    splashColor: Theme.of(context).splashColor,
+                    onTap: () {
+                      Navigator.canPop(context)
+                          ? Navigator.pushNamed(
+                              context, WelcomeScreen.routeName)
+                          : null;
+                    },
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.logout,
+                        color: Colors.black,
+                      ),
+                      title: Text(
+                        'Logout',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w200,
+                            color: Colors.black),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
