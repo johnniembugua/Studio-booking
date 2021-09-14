@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'auth/login_screen.dart';
+import 'auth/signup_screen.dart';
 import 'auth/social_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -65,17 +66,24 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 8.0),
-                    OutlinedButton(
-                      onPressed: () {},
-                      child: const Text('Sign Up'),
-                      style: TextButton.styleFrom(
-                        primary: Colors.black,
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 40.0,
-                          vertical: 18.0,
+                    Hero(
+                      tag: 'signup_button',
+                      child: OutlinedButton(
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            _buildPageRouteBuilderForSignUp(),
+                          );
+                        },
+                        child: const Text('Sign Up'),
+                        style: TextButton.styleFrom(
+                          primary: Colors.black,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 40.0,
+                            vertical: 18.0,
+                          ),
+                          shape: const StadiumBorder(),
+                          side: const BorderSide(width: 2.0),
                         ),
-                        shape: const StadiumBorder(),
-                        side: const BorderSide(width: 2.0),
                       ),
                     ),
                   ],
@@ -117,6 +125,25 @@ class WelcomeScreen extends StatelessWidget {
     return PageRouteBuilder(
       pageBuilder: (context, animation, secondaryAnimation) {
         return LoginScreen();
+      },
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return SlideTransition(
+          position: Tween<Offset>(
+            begin: const Offset(1.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ).animate(animation),
+          child: child,
+        );
+      },
+      // transitionDuration: const Duration(seconds: 1),
+      // reverseTransitionDuration: const Duration(seconds: 1),
+    );
+  }
+
+  PageRouteBuilder _buildPageRouteBuilderForSignUp() {
+    return PageRouteBuilder(
+      pageBuilder: (context, animation, secondaryAnimation) {
+        return SignUpScreen();
       },
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return SlideTransition(

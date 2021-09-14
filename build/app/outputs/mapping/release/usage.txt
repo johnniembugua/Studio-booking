@@ -2669,8 +2669,8 @@ io.flutter.plugin.common.BinaryCodec
 kotlin.reflect.KTypeParameter
 androidx.core.text.PrecomputedTextCompat
 kotlin.jvm.functions.Function5
-kotlin.text.StringsKt__StringsKt
 kotlin.text.Regex$findAll$1
+kotlin.text.StringsKt__StringsKt
 com.example.studio_bookings.R$styleable
 kotlin.contracts.Returns
 io.flutter.Log:

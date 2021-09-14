@@ -5,7 +5,7 @@ class Bookings with ChangeNotifier {
   List<Booking> _bookings = [
     Booking(
       id: "1",
-      imgUrl: "assets/images/welcome_image.png",
+      imgUrl: "assets/images/drone.jpg",
       price: 1000,
       description:
           'Drone services are the best services we offer in our market',
@@ -16,7 +16,7 @@ class Bookings with ChangeNotifier {
     ),
     Booking(
       id: "2",
-      imgUrl: "assets/images/welcome_image.png",
+      imgUrl: "assets/images/drone2.jpg",
       price: 1500,
       categorie: "Video Shooting",
       description:
@@ -27,7 +27,7 @@ class Bookings with ChangeNotifier {
     ),
     Booking(
       id: "3",
-      imgUrl: "assets/images/welcome_image.png",
+      imgUrl: "assets/images/videorecording.jpg",
       price: 1020,
       categorie: "Audio Recording",
       rating: 3.5,
@@ -38,7 +38,7 @@ class Bookings with ChangeNotifier {
     ),
     Booking(
       id: "4",
-      imgUrl: "assets/images/welcome_image.png",
+      imgUrl: "assets/images/videorecording2.jpg",
       price: 985,
       categorie: "Video Editing",
       description: 'Video editing are the best services we offer in our market',
