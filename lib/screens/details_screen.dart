@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:studio_bookings/provider/booking_provider.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
+import 'package:studio_bookings/screens/contract_form.dart';
 
 import 'mybookings/booking.dart';
 
@@ -92,6 +93,7 @@ class _DetailScreensState extends State<DetailScreens> {
                     children: <Widget>[
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
                           Text(
                             '${bookingAttr.title}',
@@ -100,26 +102,47 @@ class _DetailScreensState extends State<DetailScreens> {
                                 fontWeight: FontWeight.bold,
                                 letterSpacing: 1.2),
                           ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          Text('${bookingAttr.categorie}'),
+                          // SizedBox(
+                          //   height: 10.0,
+                          // ),
+                          // Text('${bookingAttr.categorie}'),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
+                          Row(
+                            children: [
+                              Text(
+                                'Standard Price',
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text(
+                                ' Ksh ${bookingAttr.price}',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+
                           Text(
-                            'Ksh ${bookingAttr.price}',
+                            'Extra days Ksh 1000/day',
                             style: TextStyle(
-                                fontSize: 19.0,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 1.2),
+                              fontSize: 19.0,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
-                          Text("Per hour"),
+                          //Text("Per hour"),
                         ],
                       ),
                     ],
@@ -170,25 +193,22 @@ class _DetailScreensState extends State<DetailScreens> {
                             bookingAttr.title,
                             bookingAttr.imgUrl);
 
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => BookingScreens()));
+                        Navigator.pushNamed(context, ContractScreen.routeName);
                       },
                       style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all(Colors.blue[800]),
                       ),
                       child: Container(
-                        width: 180.0,
-                        height: 80.0,
+                        width: MediaQuery.of(context).size.width * 0.4,
+                        height: 60.0,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Container(
                               width: 120.0,
                               child: Text(
-                                "Book now",
+                                "Booking Now",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18.0,
@@ -198,7 +218,7 @@ class _DetailScreensState extends State<DetailScreens> {
                             ),
                             Container(
                               width: 60.0,
-                              height: 60.0,
+                              height: 50.0,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(45.0),

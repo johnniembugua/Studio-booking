@@ -127,7 +127,7 @@ class MyDrawer extends StatelessWidget {
                         'Logout',
                         style: TextStyle(
                             fontSize: 15,
-                            fontWeight: FontWeight.w200,
+                            fontWeight: FontWeight.w600,
                             color: Colors.black),
                       ),
                     ),

@@ -43,9 +43,9 @@ class _HomePageState extends State<HomePage> {
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
                 child: Image(
-                  image: AssetImage("assets/images/welcome_image.png"),
-                  height: 40.0,
-                  width: 40.0,
+                  image: AssetImage("assets/images/Musique.jpg"),
+                  height: 80.0,
+                  width: 60.0,
                   fit: BoxFit.cover,
                 )),
           ),
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "Welcome to your",
+                      "Welcome to ",
                       style: TextStyle(
                           color: Theme.of(context).indicatorColor,
                           fontWeight: FontWeight.bold,
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                       height: 10.0,
                     ),
                     Text(
-                      "Dream Studio",
+                      "Musique Fountain Studios",
                       style: TextStyle(
                           color: Theme.of(context).indicatorColor,
                           fontWeight: FontWeight.w600,
