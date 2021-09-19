@@ -175,8 +175,6 @@ androidx.customview.widget.ViewDragHelper$2
 androidx.core.widget.PopupMenuCompat
 kotlin.reflect.KTypeProjection$Companion
 androidx.lifecycle.R
-io.flutter.embedding.android.AndroidKeyProcessor:
-    private static final java.lang.String TAG
 androidx.core.app.RemoteInput$Builder
 androidx.fragment.app.DialogFragment$1
 kotlin.collections.AbstractMap$toString$1
@@ -220,6 +218,8 @@ androidx.annotation.InspectableProperty$FlagEntry
 io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder
 kotlin.jvm.internal.unsafe.MonitorKt
 kotlin.collections.AbstractMutableMap
+io.flutter.embedding.android.KeyboardManager:
+    private static final java.lang.String TAG
 kotlin.ranges.ClosedFloatingPointRange$DefaultImpls
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7
 kotlin.reflect.KClassifier
@@ -238,6 +238,8 @@ kotlin.ULongArray$Iterator
 androidx.core.app.NotificationCompat$Style
 androidx.fragment.app.BackStackState$1
 androidx.viewpager.widget.ViewPager$LayoutParams
+io.flutter.embedding.android.KeyChannelResponder:
+    private static final java.lang.String TAG
 androidx.core.content.pm.ShortcutInfoCompatSaver
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$1
 kotlin.sequences.SequencesKt___SequencesKt$minus$3$iterator$1
@@ -271,6 +273,8 @@ io.flutter.embedding.android.FlutterView:
     public void <init>(android.content.Context,android.util.AttributeSet)
     public void <init>(android.content.Context,io.flutter.embedding.android.FlutterView$RenderMode,io.flutter.embedding.android.FlutterView$TransparencyMode)
     private void <init>(android.content.Context,android.util.AttributeSet,io.flutter.embedding.android.FlutterImageView)
+    private android.view.View findViewByAccessibilityIdRootedAtCurrentView(int,android.view.View)
+    public android.view.View findViewByAccessibilityIdTraversal(int)
     private static final java.lang.String TAG
 kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$1
 androidx.core.widget.TintableCompoundDrawablesView
@@ -949,8 +953,8 @@ kotlin.sequences.Sequence
 androidx.core.app.ComponentActivity$ExtraData
 androidx.annotation.BinderThread
 kotlin.text.StringsKt___StringsKt$groupingBy$1
-io.flutter.app.FlutterActivityDelegate$ViewFactory
 io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface
+io.flutter.app.FlutterActivityDelegate$ViewFactory
 kotlin.sequences.SequencesKt___SequencesKt$minus$3
 androidx.fragment.app.FragmentTabHost$SavedState
 io.flutter.embedding.android.FlutterFragment$1
@@ -1211,7 +1215,7 @@ kotlin.UByteArray
 io.flutter.plugin.editing.TextInputPlugin:
     android.text.Editable getEditable()
     io.flutter.plugin.editing.ImeSyncDeferringInsetsCallback getImeSyncCallback()
-    public io.flutter.embedding.android.AndroidKeyProcessor getKeyEventProcessor()
+    public android.view.inputmethod.InputConnection getLastInputConnection()
     private static final java.lang.String TAG
 androidx.core.app.NotificationManagerCompat$SideChannelManager$ListenerRecord
 kotlin.coroutines.CombinedContext
@@ -1510,6 +1514,8 @@ androidx.core.app.ServiceCompat$StopForegroundFlags
 androidx.loader.R$style
 kotlin.UIntArray$Iterator
 kotlin.collections.ArraysKt
+io.flutter.util.ViewUtils:
+    public void <init>()
 androidx.core.net.ConnectivityManagerCompat
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$1
 kotlin.text.MatcherMatchResult$groupValues$1
@@ -1988,6 +1994,8 @@ kotlin.internal.jdk7.JDK7PlatformImplementations
 androidx.core.app.NotificationCompat$CarExtender$UnreadConversation
 kotlin.ranges.ULongProgression
 androidx.customview.R$id
+io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
+    public static final int unsetValue
 kotlin.reflect.KProperty$DefaultImpls
 androidx.core.view.ViewCompat$FocusRelativeDirection
 kotlin.collections.RingBuffer$iterator$1
@@ -2071,6 +2079,7 @@ io.flutter.plugin.common.StandardMessageCodec:
     private static final byte DOUBLE_ARRAY
     private static final byte LIST
     private static final byte MAP
+    private static final byte FLOAT_ARRAY
 kotlin.jvm.internal.ClassBasedDeclarationContainer
 kotlin.experimental.ExperimentalTypeInference
 kotlin.ranges.ComparableRange
@@ -2181,8 +2190,6 @@ kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$1
 androidx.core.app.AppOpsManagerCompat
 androidx.activity.R$layout
 androidx.core.app.Person$Builder
-io.flutter.embedding.android.AndroidKeyProcessor$EventResponder:
-    private static final long MAX_PENDING_EVENTS
 androidx.viewpager.R$style
 androidx.core.os.ParcelableCompat$ParcelableCompatCreatorHoneycombMR2
 androidx.core.widget.AutoScrollHelper
@@ -2203,6 +2210,7 @@ io.flutter.embedding.android.FlutterActivityAndFragmentDelegate:
     private static final java.lang.String TAG
     private static final java.lang.String FRAMEWORK_RESTORATION_BUNDLE_KEY
     private static final java.lang.String PLUGINS_RESTORATION_BUNDLE_KEY
+    private static final int FLUTTER_SPLASH_VIEW_FALLBACK_ID
 androidx.core.app.ActivityRecreator$3
 kotlin.internal.UProgressionUtilKt
 io.flutter.util.PathUtils:
@@ -2255,6 +2263,7 @@ androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionAlgorithm
 io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setFlutterLoader(io.flutter.embedding.engine.loader.FlutterLoader)
     public io.flutter.FlutterInjector$Builder setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
+    public io.flutter.FlutterInjector$Builder setFlutterJNIFactory(io.flutter.embedding.engine.FlutterJNI$Factory)
 androidx.fragment.app.Fragment$InstantiationException
 kotlin.sequences.FlatteningSequence$iterator$1
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$3
@@ -2462,7 +2471,18 @@ androidx.core.graphics.ColorUtils
 androidx.fragment.app.FragmentManager$BackStackEntry
 androidx.core.view.DragStartHelper
 io.flutter.view.FlutterView$1
-androidx.core.content.res.ResourcesCompat
+androidx.core.content.res.ResourcesCompat:
+    public static android.graphics.drawable.Drawable getDrawableForDensity(android.content.res.Resources,int,int,android.content.res.Resources$Theme)
+    public static int getColor(android.content.res.Resources,int,android.content.res.Resources$Theme)
+    public static android.content.res.ColorStateList getColorStateList(android.content.res.Resources,int,android.content.res.Resources$Theme)
+    public static float getFloat(android.content.res.Resources,int)
+    public static android.graphics.Typeface getFont(android.content.Context,int)
+    public static void getFont(android.content.Context,int,androidx.core.content.res.ResourcesCompat$FontCallback,android.os.Handler)
+    public static android.graphics.Typeface getFont(android.content.Context,int,android.util.TypedValue,int,androidx.core.content.res.ResourcesCompat$FontCallback)
+    private static android.graphics.Typeface loadFont(android.content.Context,int,android.util.TypedValue,int,androidx.core.content.res.ResourcesCompat$FontCallback,android.os.Handler,boolean)
+    private static android.graphics.Typeface loadFont(android.content.Context,android.content.res.Resources,android.util.TypedValue,int,int,androidx.core.content.res.ResourcesCompat$FontCallback,android.os.Handler,boolean)
+    private void <init>()
+    private static final java.lang.String TAG
 io.flutter.embedding.engine.FlutterShellArgs:
     public void <init>(java.lang.String[])
     public void <init>(java.util.Set)
@@ -2486,6 +2506,8 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_SKIA_DETERMINISTIC_RENDERING
     public static final java.lang.String ARG_KEY_TRACE_SKIA
     public static final java.lang.String ARG_TRACE_SKIA
+    public static final java.lang.String ARG_KEY_TRACE_SKIA_ALLOWLIST
+    public static final java.lang.String ARG_TRACE_SKIA_ALLOWLIST
     public static final java.lang.String ARG_KEY_TRACE_SYSTRACE
     public static final java.lang.String ARG_TRACE_SYSTRACE
     public static final java.lang.String ARG_KEY_DUMP_SHADER_SKP_ON_SHADER_COMPILATION
@@ -2669,8 +2691,8 @@ io.flutter.plugin.common.BinaryCodec
 kotlin.reflect.KTypeParameter
 androidx.core.text.PrecomputedTextCompat
 kotlin.jvm.functions.Function5
-kotlin.text.Regex$findAll$1
 kotlin.text.StringsKt__StringsKt
+kotlin.text.Regex$findAll$1
 com.example.studio_bookings.R$styleable
 kotlin.contracts.Returns
 io.flutter.Log:
@@ -2707,8 +2729,6 @@ androidx.savedstate.Recreator:
     private void reflectiveNew(java.lang.String)
 androidx.lifecycle.Lifecycle:
     java.util.concurrent.atomic.AtomicReference mInternalScopeRef
-io.flutter.embedding.android.AndroidKeyProcessor:
-    private final io.flutter.plugin.editing.TextInputPlugin textInputPlugin
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
     private final io.flutter.embedding.engine.FlutterEngine flutterEngine
     private final io.flutter.view.TextureRegistry textureRegistry
@@ -2738,9 +2758,10 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivit
 io.flutter.embedding.engine.loader.FlutterApplicationInfo:
     public final java.lang.String vmSnapshotData
     public final java.lang.String isolateSnapshotData
-    public final boolean clearTextPermitted
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets:
     final io.flutter.embedding.engine.loader.FlutterLoader flutterLoader
+io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView$1:
+    final synthetic io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView this$0
 io.flutter.plugin.platform.VirtualDisplayController$1:
     final synthetic io.flutter.plugin.platform.VirtualDisplayController this$0
 io.flutter.FlutterInjector:

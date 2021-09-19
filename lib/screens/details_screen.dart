@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -62,23 +63,51 @@ class _DetailScreensState extends State<DetailScreens> {
                         ),
                       ),
                     ),
-                    Positioned(
+                    Consumer<BookingProvider>(
+                      builder: (_, cart, ch) => Positioned(
                         bottom: 10,
                         right: 10,
-                        child: FloatingActionButton(
-                          child: icon,
-                          onPressed: () {
-                            setState(() {
-                              isLike = !isLike;
-                              icon = !isLike
-                                  ? Icon(FontAwesomeIcons.solidHeart)
-                                  : Icon(
-                                      FontAwesomeIcons.solidHeart,
-                                      color: Colors.red,
-                                    );
-                            });
-                          },
-                        ))
+                        child: Badge(
+                          //badgeColor: ColorsConsts.cartBadgeColor,
+                          animationType: BadgeAnimationType.slide,
+                          toAnimate: true,
+                          position: BadgePosition(top: 1, end: 1),
+                          badgeContent: Text(
+                            cart.getBookedItems.length.toString(),
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          child: IconButton(
+                            icon: Icon(
+                              FontAwesomeIcons.cartPlus,
+                              color: Colors.blue,
+                              //size: 30,
+                              //color: ColorsConsts.cartColor,
+                            ),
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .pushNamed(Calendar.routeName);
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                    // Positioned(
+                    //     bottom: 10,
+                    //     right: 10,
+                    //     child: FloatingActionButton(
+                    //       child: icon,
+                    //       onPressed: () {
+                    //         setState(() {
+                    //           isLike = !isLike;
+                    //           icon = !isLike
+                    //               ? Icon(FontAwesomeIcons.solidHeart)
+                    //               : Icon(
+                    //                   FontAwesomeIcons.solidHeart,
+                    //                   color: Colors.red,
+                    //                 );
+                    //         });
+                    //       },
+                    //     ))
                   ],
                 ),
               ),
@@ -112,7 +141,7 @@ class _DetailScreensState extends State<DetailScreens> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Row(
+                          Column(
                             children: [
                               Text(
                                 'Standard Price',
@@ -135,8 +164,10 @@ class _DetailScreensState extends State<DetailScreens> {
 
                           Text(
                             'Extra days Ksh 1000/day',
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(
-                              fontSize: 19.0,
+                              fontSize: 16.0,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -194,7 +225,7 @@ class _DetailScreensState extends State<DetailScreens> {
                             bookingAttr.title,
                             bookingAttr.imgUrl);
 
-                        Navigator.pushNamed(context, Calendar.routeName);
+                        //Navigator.pushNamed(context, Calendar.routeName);
                       },
                       style: ButtonStyle(
                         backgroundColor:
@@ -209,7 +240,10 @@ class _DetailScreensState extends State<DetailScreens> {
                             Container(
                               width: 120.0,
                               child: Text(
-                                "Booking Now",
+                                bookingProvider.getBookedItems
+                                        .containsKey(bookingId)
+                                    ? 'Already added'
+                                    : "Add Booking",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18.0,

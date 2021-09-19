@@ -8,6 +8,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "badges",
+      "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/badges-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
       "packageUri": "lib/",
@@ -284,7 +290,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-19T08:50:08.352394Z",
+  "generated": "2021-09-19T16:58:57.525830Z",
   "generator": "pub",
   "generatorVersion": "2.14.0"
 }

@@ -13,7 +13,6 @@ Referenced Strings:
   ALERT
   AccessibilityBridge
   AccessibilityChannel
-  AndroidKeyProcessor
   AppLifecycleState.detached
   AppLifecycleState.inactive
   AppLifecycleState.paused
@@ -55,6 +54,7 @@ Referenced Strings:
   DeviceOrientation.landscapeRight
   DeviceOrientation.portraitDown
   DeviceOrientation.portraitUp
+  EDGE_TO_EDGE
   EMAIL_ADDRESS
   FRAMEWORK_CLIENT
   FlutterActivity
@@ -69,11 +69,13 @@ Referenced Strings:
   FlutterSurfaceView
   FlutterTextureView
   FlutterView
+  GeneratedPluginRegistrant
   GeneratedPluginsRegister
   HAS_CHECKED_STATE
   HAS_ENABLED_STATE
   HAS_IMPLICIT_SCROLLING
   HAS_TOGGLED_STATE
+  HC_PLATFORM_VIEW
   HEAVY_IMPACT
   HapticFeedback.vibrate
   HapticFeedbackType.heavyImpact
@@ -81,6 +83,8 @@ Referenced Strings:
   HapticFeedbackType.mediumImpact
   HapticFeedbackType.selectionClick
   II
+  IMMERSIVE
+  IMMERSIVE_STICKY
   INCREASE
   INITIALIZED
   INVERT_COLORS
@@ -106,11 +110,14 @@ Referenced Strings:
   InlinedApi
   InputConnectionAdaptor
   KeyEventChannel
+  KeyboardManager
   LANDSCAPE_LEFT
   LANDSCAPE_RIGHT
+  LEAN_BACK
   LEFT
   LIGHT
   LIGHT_IMPACT
+  LOCALE
   LONG_PRESS
   LTR
   LifecycleChannel
@@ -143,7 +150,6 @@ Referenced Strings:
   PASTE
   PHONE
   PLAIN_TEXT
-  PLATFORM_VIEW
   PORTRAIT_DOWN
   PORTRAIT_UP
   POSTAL_ADDRESS
@@ -168,6 +174,7 @@ Referenced Strings:
   SET_SELECTION
   SET_TEXT
   SHOW_ON_SCREEN
+  SPELLOUT
   STANDARD
   STARTED
   SettingsChannel
@@ -175,13 +182,20 @@ Referenced Strings:
   SystemChannel
   SystemChrome.restoreSystemUIOverlays
   SystemChrome.setApplicationSwitcherDe...
+  SystemChrome.setEnabledSystemUIMode
   SystemChrome.setEnabledSystemUIOverlays
   SystemChrome.setPreferredOrientations
+  SystemChrome.setSystemUIChangeListener
   SystemChrome.setSystemUIOverlayStyle
+  SystemChrome.systemUIChange
   SystemNavigator.pop
   SystemSound.play
   SystemSoundType.alert
   SystemSoundType.click
+  SystemUiMode.edgeToEdge
+  SystemUiMode.immersive
+  SystemUiMode.immersiveSticky
+  SystemUiMode.leanBack
   SystemUiOverlay.bottom
   SystemUiOverlay.top
   TAP
@@ -223,6 +237,7 @@ Referenced Strings:
   TextInputType.emailAddress
   TextInputType.multiline
   TextInputType.name
+  TextInputType.none
   TextInputType.number
   TextInputType.phone
   TextInputType.text
@@ -233,6 +248,7 @@ Referenced Strings:
   URL
   UTF8
   V:
+  VD_PLATFORM_VIEW
   VGhpcyBpcyB0aGUgcHJlZml4IGZvciBCaWdJb...
   VGhpcyBpcyB0aGUgcHJlZml4IGZvciBEb3VibGUu
   VGhpcyBpcyB0aGUgcHJlZml4IGZvciBhIGxpc3Qu
@@ -254,6 +270,7 @@ Referenced Strings:
   alwaysUse24HourFormat
   android
   android.intent.action.RUN
+  android.type.verbatim
   android.util.LongArray
   android.view.View
   android.widget.Button
@@ -317,6 +334,7 @@ Referenced Strings:
   editingValue
   email
   emailAddress
+  enableIMEPersonalizedLearning
   enableSuggestions
   enable_state_restoration
   enabled
@@ -447,6 +465,7 @@ Referenced Strings:
   phoneNumberDevice
   plainCodePoint
   platformBrightness
+  platformViewId
   plugins
   plugins.flutter.io/shared_preferences
   popRoute
@@ -500,9 +519,12 @@ Referenced Strings:
   streetAddress
   string
   surface
+  synchronizeToNativeViewHierarchy
   systemNavigationBarColor
+  systemNavigationBarContrastEnforced
   systemNavigationBarDividerColor
   systemNavigationBarIconBrightness
+  systemStatusBarContrastEnforced
   tap
   telephoneNumber
   telephoneNumberCountryCode
@@ -523,6 +545,7 @@ Referenced Strings:
   uniqueIdentifier
   updateViewLayout
   username
+  usesVirtualDisplay
   value
   vendorId
   verticalText
