@@ -4,6 +4,7 @@ import 'package:studio_bookings/provider/booking_provider.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
 import 'package:studio_bookings/screens/booking_page.dart';
+import 'package:studio_bookings/screens/calendar.dart';
 import 'package:studio_bookings/screens/contract_form.dart';
 import 'package:studio_bookings/screens/details_screen.dart';
 import 'package:studio_bookings/screens/mybookings/booking.dart';
@@ -70,6 +71,7 @@ class _MyAppState extends State<MyApp> {
             BookingPage.routeName: (context) => BookingPage(),
             WelcomeScreen.routeName: (context) => WelcomeScreen(),
             ContractScreen.routeName: (context) => ContractScreen(),
+            Calendar.routeName: (context)=>Calendar(),
           },
         );
       }),

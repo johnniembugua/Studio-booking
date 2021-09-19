@@ -2,6 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:studio_bookings/models/booking_service.dart';
+import 'package:studio_bookings/screens/booking_page.dart';
+import 'package:studio_bookings/screens/calendar.dart';
+import 'package:studio_bookings/screens/mybookings/booking.dart';
 
 class ContractScreen extends StatefulWidget {
   static const routeName = '/ContractScreen';
@@ -101,31 +105,63 @@ class _ContractScreenState extends State<ContractScreen> {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.blue,
-                    ),
-                    child: InkWell(
-                      splashColor: Theme.of(context).splashColor,
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                            left: 10, right: 10, top: 8, bottom: 8),
-                        child: Text(
-                          'Choose a Date',
-                          style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w700),
+              !isChecked
+                  ? Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            color: Colors.grey,
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            splashColor: Theme.of(context).splashColor,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 10, right: 10, top: 8, bottom: 8),
+                              child: Text(
+                                'Checkout',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                          ),
                         ),
-                      ),
+                      ],
+                    )
+                  : Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            color: Colors.blue,
+                          ),
+                          child: InkWell(
+                            onTap: () => Navigator.pushNamed(
+                                context, BookingScreens.routeName),
+                            splashColor: Theme.of(context).splashColor,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 10, right: 10, top: 8, bottom: 8),
+                              child: Text(
+                                'Checkout',
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                ],
-              )
+              SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ),

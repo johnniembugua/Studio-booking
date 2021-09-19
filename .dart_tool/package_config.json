@@ -86,6 +86,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
@@ -194,6 +200,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "simple_gesture_detector",
+      "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/simple_gesture_detector-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -220,6 +232,12 @@
     {
       "name": "string_scanner",
       "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "table_calendar",
+      "rootUri": "file:///E:/@johnniembugua/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/table_calendar-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -266,7 +284,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-09-14T11:35:27.338057Z",
+  "generated": "2021-09-19T08:50:08.352394Z",
   "generator": "pub",
   "generatorVersion": "2.14.0"
 }

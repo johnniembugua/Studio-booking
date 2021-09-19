@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:studio_bookings/provider/booking_provider.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
+import 'package:studio_bookings/screens/calendar.dart';
 import 'package:studio_bookings/screens/contract_form.dart';
 
 import 'mybookings/booking.dart';
@@ -193,15 +194,15 @@ class _DetailScreensState extends State<DetailScreens> {
                             bookingAttr.title,
                             bookingAttr.imgUrl);
 
-                        Navigator.pushNamed(context, ContractScreen.routeName);
+                        Navigator.pushNamed(context, Calendar.routeName);
                       },
                       style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all(Colors.blue[800]),
                       ),
                       child: Container(
-                        width: MediaQuery.of(context).size.width * 0.4,
-                        height: 60.0,
+                        width: 180,
+                        height: 80.0,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
@@ -218,7 +219,7 @@ class _DetailScreensState extends State<DetailScreens> {
                             ),
                             Container(
                               width: 60.0,
-                              height: 50.0,
+                              height: 60.0,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(45.0),
