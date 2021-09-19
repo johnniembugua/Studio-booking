@@ -2,9 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
-import 'package:studio_bookings/models/booking_service.dart';
-import 'package:studio_bookings/screens/booking_page.dart';
-import 'package:studio_bookings/screens/calendar.dart';
+
 import 'package:studio_bookings/screens/mybookings/booking.dart';
 
 class ContractScreen extends StatefulWidget {

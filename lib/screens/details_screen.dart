@@ -7,9 +7,6 @@ import 'package:studio_bookings/provider/booking_provider.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
 import 'package:studio_bookings/screens/calendar.dart';
-import 'package:studio_bookings/screens/contract_form.dart';
-
-import 'mybookings/booking.dart';
 
 class DetailScreens extends StatefulWidget {
   static const routeName = '/DetailScreens';
@@ -55,12 +52,9 @@ class _DetailScreensState extends State<DetailScreens> {
                       top: 0,
                       right: 0,
                       left: 0,
-                      child: Hero(
-                        tag: '${bookingAttr.id}',
-                        child: Image(
-                          image: AssetImage('${bookingAttr.imgUrl}'),
-                          fit: BoxFit.cover,
-                        ),
+                      child: Image.network(
+                        '${bookingAttr.imgUrl}',
+                        fit: BoxFit.cover,
                       ),
                     ),
                     Consumer<BookingProvider>(

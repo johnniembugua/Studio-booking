@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:studio_bookings/models/event.dart';
 import 'package:studio_bookings/screens/home_screen.dart';
-import 'package:studio_bookings/screens/mybookings/booking.dart';
+
 import 'package:table_calendar/table_calendar.dart';
 
 import 'contract_form.dart';

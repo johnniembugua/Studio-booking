@@ -2,12 +2,8 @@ E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/icudtl.dat
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/flutter_windows.dll
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/bp_loading.gif
-E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/drone.jpg
-E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/drone2.jpg
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/login_image.png
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/Musique.jpg
-E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/videorecording.jpg
-E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/videorecording2.jpg
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/welcome_image.png
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/assets/images/woman.jpeg
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/FontManifest.json

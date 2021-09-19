@@ -48,25 +48,23 @@ class ServicesWidget extends StatelessWidget {
                   child: Stack(
                     children: <Widget>[
                       Container(
+                        color: Colors.white,
                         height: 260.0,
-                        child: Hero(
-                          tag: '${bookingAttr.id}',
-                          child: Image(
-                            image: AssetImage('${bookingAttr.imgUrl}'),
-                            fit: BoxFit.cover,
-                          ),
+                        child:
+                            // Hero(
+                            //   tag: '${bookingAttr.id}',
+                            //   child: Image.network(
+                            //     '${bookingAttr.imgUrl}',
+                            //     fit: BoxFit.cover,
+                            //   ),
 
-                          // FadeInImage.assetNetwork(
-                          //   placeholder: 'assest/images/bp_loading.gif',
-                          //   image: '${bookingAttr.imgUrl}',
-                          //'https://picsum.photos/250?image=9',
-                          //'${suit.imgUrl}',
-                          // AssetImage(
-                          //   '${suit.imgUrl}',
-                          // ),
-                          //fit: BoxFit.cover,
+                            FadeInImage.assetNetwork(
+                          placeholder: 'assets/images/bp_loading.gif',
+                          image: '${bookingAttr.imgUrl}',
+                          fit: BoxFit.cover,
                         ),
                       ),
+                      // ),
                       Positioned(
                           bottom: 0.0,
                           child: Container(

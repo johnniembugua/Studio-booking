@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _submitForm() async {
-    final isValid = _formKey.currentState!.validate();
+    //final isValid = _formKey.currentState!.validate();
 
     FocusScope.of(context).unfocus();
     Navigator.pushNamed(context, HomePage.routeName);
