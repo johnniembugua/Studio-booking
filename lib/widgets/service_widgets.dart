@@ -50,21 +50,20 @@ class ServicesWidget extends StatelessWidget {
                       Container(
                         color: Colors.white,
                         height: 260.0,
-                        child:
-                            // Hero(
-                            //   tag: '${bookingAttr.id}',
-                            //   child: Image.network(
-                            //     '${bookingAttr.imgUrl}',
-                            //     fit: BoxFit.cover,
-                            //   ),
+                        child: Hero(
+                          tag: '${bookingAttr.id}',
+                          child: Image.network(
+                            '${bookingAttr.imgUrl}',
+                            fit: BoxFit.cover,
+                          ),
 
-                            FadeInImage.assetNetwork(
-                          placeholder: 'assets/images/bp_loading.gif',
-                          image: '${bookingAttr.imgUrl}',
-                          fit: BoxFit.cover,
+                          //     FadeInImage.assetNetwork(
+                          //   placeholder: 'assets/images/bp_loading.gif',
+                          //   image: '${bookingAttr.imgUrl}',
+                          //   fit: BoxFit.cover,
+                          // ),
                         ),
                       ),
-                      // ),
                       Positioned(
                           bottom: 0.0,
                           child: Container(

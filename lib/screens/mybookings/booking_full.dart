@@ -37,9 +37,7 @@ class _BookingFullState extends State<BookingFull> {
                   children: [
                     Container(
                       height: 80,
-                      child: Image(
-                        image: AssetImage('${bookingsAttr.imageUrl}'),
-                      ),
+                      child: Image.network('${bookingsAttr.imageUrl}'),
                     ),
                     SizedBox(
                       width: 10,
@@ -57,7 +55,7 @@ class _BookingFullState extends State<BookingFull> {
                           height: 20.0,
                         ),
                         Text(
-                          '\Ksh ${bookingsAttr.price} / hour',
+                          '\Ksh ${bookingsAttr.price}',
                           style: TextStyle(
                               fontSize: 18.0, fontWeight: FontWeight.bold),
                         ),

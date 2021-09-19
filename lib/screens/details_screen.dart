@@ -52,9 +52,12 @@ class _DetailScreensState extends State<DetailScreens> {
                       top: 0,
                       right: 0,
                       left: 0,
-                      child: Image.network(
-                        '${bookingAttr.imgUrl}',
-                        fit: BoxFit.cover,
+                      child: Hero(
+                        tag: '${bookingAttr.id}',
+                        child: Image.network(
+                          '${bookingAttr.imgUrl}',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Consumer<BookingProvider>(
