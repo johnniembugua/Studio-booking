@@ -25,10 +25,13 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _submitForm() async {
-    //final isValid = _formKey.currentState!.validate();
+    final isValid = _formKey.currentState?.validate();
 
     FocusScope.of(context).unfocus();
-    Navigator.pushNamed(context, HomePage.routeName);
+    if (isValid == true) {
+      _formKey.currentState!.save();
+      Navigator.pushNamed(context, HomePage.routeName);
+    }
   }
 
   @override
@@ -66,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     TextFormField(
                       key: ValueKey('email'),
                       validator: (value) {
-                        if (value!.isEmpty || !value.contains('@')) {
+                        if (value!.isEmpty || !value.contains('@gmail.com')) {
                           return 'Please enter a valid email address';
                         }
                         return null;
@@ -76,42 +79,50 @@ class _LoginScreenState extends State<LoginScreen> {
                           .requestFocus(_passwordFocusNode),
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
-                          border: const UnderlineInputBorder(),
-                          filled: true,
+                          border: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          //filled: true,
                           prefixIcon: Icon(Icons.email),
                           labelText: 'Email Address',
-                          fillColor: Theme.of(context).backgroundColor),
+                          hintText: 'john@gmail.com'
+                          //fillColor: Theme.of(context).backgroundColor,
+                          ),
                       onSaved: (value) {
                         _emailAddress = value!;
                       },
                     ),
-                    const SizedBox(height: 8.0),
+                    const SizedBox(height: 12.0),
                     TextFormField(
                       key: ValueKey('Password'),
                       validator: (value) {
                         if (value!.isEmpty || value.length < 7) {
-                          return 'Please enter a valid Password';
+                          return 'Password must contain atleast 7 characters';
                         }
                         return null;
                       },
                       keyboardType: TextInputType.emailAddress,
                       focusNode: _passwordFocusNode,
                       decoration: InputDecoration(
-                          border: const UnderlineInputBorder(),
-                          filled: true,
-                          prefixIcon: Icon(Icons.lock),
-                          suffixIcon: GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _obscureText = !_obscureText;
-                              });
-                            },
-                            child: Icon(_obscureText
-                                ? Icons.visibility
-                                : Icons.visibility_off),
-                          ),
-                          labelText: 'Password',
-                          fillColor: Theme.of(context).backgroundColor),
+                        border: const OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.blue),
+                        ),
+                        //filled: true,
+                        prefixIcon: Icon(Icons.lock),
+                        suffixIcon: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _obscureText = !_obscureText;
+                            });
+                          },
+                          child: Icon(_obscureText
+                              ? Icons.visibility
+                              : Icons.visibility_off),
+                        ),
+                        labelText: 'Password',
+                        hintText: 'Enter password',
+                        //fillColor: Theme.of(context).backgroundColor
+                      ),
                       onSaved: (value) {
                         _password = value!;
                       },

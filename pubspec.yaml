@@ -27,6 +27,8 @@ dependencies:
   flutter:
     sdk: flutter
   font_awesome_flutter: null
+  image_picker: ^0.8.4+2
+  #images_picker: ^1.2.4
   provider: null
   shared_preferences: null
   table_calendar: ^3.0.2

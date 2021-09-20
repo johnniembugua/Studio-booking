@@ -44,20 +44,8 @@
         "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\layout\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
         "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\layout-v21_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\drawable_launch_background.xml.flat",
-        "source": "E:\\@johnniembugua\\studio_bookings\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
     },
     {
         "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -104,8 +92,8 @@
         "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\layout-v16_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\layout-v16\\notification_template_custom_big.xml"
+        "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\xml_flutter_image_picker_file_paths.xml.flat",
+        "source": "E:\\@johnniembugua\\studio_bookings\\build\\image_picker\\intermediates\\packaged_res\\release\\xml\\flutter_image_picker_file_paths.xml"
     },
     {
         "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -142,10 +130,6 @@
     {
         "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
-    },
-    {
-        "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\Whoppix\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\layout\\notification_action.xml"
     },
     {
         "merged": "E:\\@johnniembugua\\studio_bookings\\build\\app\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",

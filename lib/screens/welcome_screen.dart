@@ -15,17 +15,19 @@ class WelcomeScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // CircleAvatar(
-          //   radius: 200,
-          //   backgroundImage: AssetImage(
-          //     'assets/images/Musique.jpg',
-
-          //   ),
-          // ),
-          Expanded(
-            child: Hero(
-                tag: 'image', child: Image.asset('assets/images/Musique.jpg')),
+          SizedBox(
+            height: 20,
           ),
+          Container(
+            height: MediaQuery.of(context).size.height * 0.5,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/Musique.jpg'))),
+          ),
+          // Expanded(
+          //   child: Hero(
+          //       tag: 'image', child: Image.asset('assets/images/Musique.jpg')),
+          // ),
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

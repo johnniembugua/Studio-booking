@@ -1,4 +1,5 @@
 kotlin.jvm.functions.Function0
+io.flutter.plugins.imagepicker.R$drawable
 androidx.activity.R$attr
 kotlin.jvm.internal.PropertyReference1Impl
 kotlin.collections.EmptyIterator
@@ -14,8 +15,8 @@ kotlin.coroutines.experimental.ContinuationInterceptor$DefaultImpls
 androidx.annotation.ContentView
 kotlin.io.FileWalkDirection
 androidx.fragment.app.FragmentManagerImpl$5
-kotlin.coroutines.jvm.internal.CoroutineStackFrame
 androidx.core.view.accessibility.AccessibilityViewCommand$MoveHtmlArguments
+kotlin.coroutines.jvm.internal.CoroutineStackFrame
 androidx.core.provider.FontsContractCompat$4$2
 androidx.fragment.R$styleable
 kotlin.coroutines.jvm.internal.RestrictedContinuationImpl
@@ -61,9 +62,9 @@ kotlin.collections.ByteIterator
 kotlin.coroutines.experimental.SequenceBuilder
 kotlin.ranges.ClosedFloatRange
 kotlin.time.ExperimentalTime
-kotlin.text.StringsKt__IndentKt
-kotlin.io.TextStreamsKt
 androidx.core.view.accessibility.AccessibilityEventCompat
+kotlin.io.TextStreamsKt
+kotlin.text.StringsKt__IndentKt
 androidx.core.accessibilityservice.AccessibilityServiceInfoCompat
 androidx.core.provider.FontsContractCompat$TypefaceResult
 androidx.core.content.res.FontResourcesParserCompat
@@ -80,16 +81,16 @@ androidx.core.app.ComponentActivity:
     private androidx.collection.SimpleArrayMap mExtraDataMap
     private androidx.lifecycle.LifecycleRegistry mLifecycleRegistry
 kotlin.jvm.internal.ArrayIntIterator
-kotlin.coroutines.CombinedContext$Serialized
 androidx.fragment.app.FragmentActivity$HostCallbacks
 androidx.core.view.ScrollingView
+kotlin.coroutines.CombinedContext$Serialized
 kotlin.jvm.JvmMultifileClass
 androidx.core.hardware.display.DisplayManagerCompat
 androidx.core.widget.NestedScrollView$SavedState$1
 org.intellij.lang.annotations.Flow
 androidx.core.app.FrameMetricsAggregator$MetricType
-kotlin.internal.ProgressionUtilKt
 kotlin.UShortArray$Iterator
+kotlin.internal.ProgressionUtilKt
 androidx.core.widget.TextViewCompat
 androidx.lifecycle.MediatorLiveData$Source
 kotlin.io.FilesKt__UtilsKt$copyRecursively$2
@@ -117,11 +118,11 @@ io.flutter.embedding.engine.loader.FlutterLoader$2$1
 androidx.core.view.accessibility.AccessibilityManagerCompat
 kotlin.random.FallbackThreadLocalRandom
 androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplJellybeanMr2
+androidx.core.content.PermissionChecker
 io.flutter.embedding.engine.loader.ApplicationInfoLoader:
     public void <init>()
     public static final java.lang.String NETWORK_POLICY_METADATA_KEY
     public static final java.lang.String PUBLIC_AUTOMATICALLY_REGISTER_PLUGINS_METADATA_KEY
-androidx.core.content.PermissionChecker
 kotlin.io.FileTreeWalk$FileTreeWalkIterator$SingleFileState
 androidx.core.provider.SelfDestructiveThread$ReplyCallback
 kotlin.UShortArrayKt
@@ -132,9 +133,10 @@ io.flutter.embedding.android.FlutterSurfaceView:
     private static final java.lang.String TAG
 androidx.customview.R$color
 androidx.fragment.app.FragmentTabHost$TabInfo
-androidx.core.app.NotificationCompatSideChannelService
-androidx.core.view.DragStartHelper$OnDragStartListener
+io.flutter.plugins.flutter_plugin_android_lifecycle.BuildConfig
 androidx.core.view.NestedScrollingChild
+androidx.core.view.DragStartHelper$OnDragStartListener
+androidx.core.app.NotificationCompatSideChannelService
 kotlin.collections.AbstractCollection$toString$1
 androidx.activity.ComponentActivity$1
 androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager
@@ -142,15 +144,11 @@ kotlin.sequences.DropWhileSequence$iterator$1
 kotlin.UIntKt
 androidx.loader.content.ModernAsyncTask$InternalHandler
 androidx.core.view.animation.PathInterpolatorCompat
-androidx.lifecycle.CompositeGeneratedAdaptersObserver:
-    void <init>(androidx.lifecycle.GeneratedAdapter[])
 kotlin.jvm.internal.MutableLocalVariableReference
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
 androidx.core.view.accessibility.AccessibilityViewCommand$MoveWindowArguments
 androidx.core.app.ActivityCompat$SharedElementCallback21Impl
 kotlin.collections.ArraysKt___ArraysKt$withIndex$4
-androidx.lifecycle.Lifecycle:
-    public abstract void addObserver(androidx.lifecycle.LifecycleObserver)
 kotlin.jvm.functions.Function16
 androidx.savedstate.SavedStateRegistryController
 kotlin.Lazy
@@ -182,13 +180,13 @@ io.flutter.plugin.common.BinaryMessenger:
     public abstract void send(java.lang.String,java.nio.ByteBuffer)
 kotlin.sequences.IndexingSequence
 kotlin.collections.CharIterator
-kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$4
 androidx.collection.ArrayMap:
     public void <init>(int)
     public void <init>(androidx.collection.SimpleArrayMap)
     public boolean containsAll(java.util.Collection)
     public boolean removeAll(java.util.Collection)
     public boolean retainAll(java.util.Collection)
+kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$4
 kotlin.sequences.SequenceBuilderIterator
 io.flutter.embedding.android.FlutterFragment
 androidx.fragment.app.FragmentTransition$3
@@ -208,8 +206,8 @@ androidx.core.content.IntentCompat
 androidx.annotation.InspectableProperty$EnumEntry
 kotlin.sequences.GeneratorSequence$iterator$1
 kotlin.sequences.SequencesKt___SequencesKt$minus$4
-kotlin.coroutines.experimental.EmptyCoroutineContext
 androidx.fragment.app.FragmentController
+kotlin.coroutines.experimental.EmptyCoroutineContext
 kotlin.collections.AbstractMap$Companion
 androidx.fragment.R$style
 androidx.core.database.CursorWindowCompat
@@ -225,8 +223,9 @@ kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7
 kotlin.reflect.KClassifier
 androidx.fragment.app.FragmentManagerState
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
-kotlin.coroutines.experimental.SafeContinuation$Companion
 androidx.core.widget.TextViewCompat$OreoCallback
+kotlin.coroutines.experimental.SafeContinuation$Companion
+io.flutter.plugins.imagepicker.BuildConfig
 androidx.core.util.PatternsCompat
 androidx.core.net.DatagramSocketWrapper
 kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1
@@ -238,9 +237,9 @@ kotlin.ULongArray$Iterator
 androidx.core.app.NotificationCompat$Style
 androidx.fragment.app.BackStackState$1
 androidx.viewpager.widget.ViewPager$LayoutParams
+androidx.core.content.pm.ShortcutInfoCompatSaver
 io.flutter.embedding.android.KeyChannelResponder:
     private static final java.lang.String TAG
-androidx.core.content.pm.ShortcutInfoCompatSaver
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$1
 kotlin.sequences.SequencesKt___SequencesKt$minus$3$iterator$1
 androidx.fragment.app.FragmentTransitionCompat21
@@ -248,11 +247,9 @@ kotlin.jvm.JvmClassMappingKt
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
 androidx.core.R$layout
 androidx.lifecycle.Transformations$2
-androidx.lifecycle.ReflectiveGenericLifecycleObserver:
-    void <init>(java.lang.Object)
 androidx.core.app.ShareCompat$IntentReader
-kotlin.BuilderInference
 androidx.annotation.MainThread
+kotlin.BuilderInference
 kotlin.jdk7.AutoCloseableKt
 io.flutter.app.FlutterActivity
 kotlin.LazyKt__LazyKt
@@ -278,8 +275,8 @@ io.flutter.embedding.android.FlutterView:
     private static final java.lang.String TAG
 kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$1
 androidx.core.widget.TintableCompoundDrawablesView
-kotlin.jvm.functions.FunctionN
 androidx.core.text.BidiFormatter$Builder
+kotlin.jvm.functions.FunctionN
 io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView:
     public void <init>(android.content.Context)
 androidx.viewpager.widget.ViewPager$SavedState$1
@@ -293,8 +290,8 @@ io.flutter.plugin.common.BasicMessageChannel:
     public void resizeChannelBuffer(int)
     private static final java.lang.String TAG
     public static final java.lang.String CHANNEL_BUFFERS_CHANNEL
-kotlin.sequences.TakeWhileSequence
 androidx.core.telephony.mbms.MbmsHelper
+kotlin.sequences.TakeWhileSequence
 androidx.fragment.app.FragmentManagerImpl$FragmentLifecycleCallbacksHolder
 androidx.lifecycle.LiveData$ObserverWrapper:
     void <init>(androidx.lifecycle.LiveData,androidx.lifecycle.Observer)
@@ -306,30 +303,32 @@ kotlin.coroutines.experimental.jvm.internal.CoroutineImpl
 kotlin.sequences.SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1
 kotlin.SafePublicationLazyImpl$Companion
 kotlin.properties.ObservableProperty
-kotlin.jvm.internal.StringCompanionObject
 androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatApi25Impl
+kotlin.jvm.internal.StringCompanionObject
 com.example.studio_bookings.R$string
 androidx.loader.content.ModernAsyncTask$4
 kotlin.collections.MapsKt__MapsJVMKt
-kotlin.PreconditionsKt__PreconditionsKt
 androidx.annotation.NonNull
+kotlin.PreconditionsKt__PreconditionsKt
 androidx.viewpager.widget.ViewPager$PageTransformer
 kotlin.properties.Delegates$observable$1
 androidx.core.R$string
-kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction2Migration
 androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListener
+kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction2Migration
 androidx.arch.core.executor.DefaultTaskExecutor$1
-kotlin.collections.ArraysKt___ArraysKt$withIndex$8
 androidx.core.util.Pools$SimplePool
+kotlin.collections.ArraysKt___ArraysKt$withIndex$8
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl
 androidx.core.text.util.LinkifyCompat
 kotlin.jvm.internal.markers.KMutableCollection
 androidx.lifecycle.livedata.core.R
 kotlin.internal.InlineOnly
 androidx.savedstate.Recreator$SavedStateProvider
+io.flutter.plugins.imagepicker.R$dimen
 kotlin.coroutines.jvm.internal.DebugMetadataKt
 kotlin.jvm.internal.MutablePropertyReference0
 androidx.collection.SparseArrayCompat
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$integer
 kotlin.coroutines.CombinedContext$writeReplace$1
 kotlin.reflect.KTypeProjection
 kotlin.comparisons.ComparisonsKt
@@ -337,22 +336,23 @@ androidx.core.view.accessibility.AccessibilityViewCommand$SetProgressArguments
 kotlin.sequences.SequencesKt___SequencesKt$minus$1$iterator$1
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
 androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks
+androidx.core.content.pm.PermissionInfoCompat$Protection
 kotlin.Metadata
 kotlin.collections.UIntIterator
-androidx.core.content.pm.PermissionInfoCompat$Protection
 androidx.lifecycle.ComputableLiveData$2
 org.intellij.lang.annotations.JdkConstants$AdjustableOrientation
 kotlin.Experimental
 androidx.core.util.DebugUtils
 androidx.core.app.NotificationCompat
-kotlin.time.AbstractLongClock
 kotlin.io.ConsoleKt
+kotlin.time.AbstractLongClock
 kotlin.ranges.IntProgression
 kotlin.coroutines.experimental.CoroutineContext$plus$1
 io.flutter.embedding.engine.systemchannels.KeyEventChannel:
     private static final java.lang.String TAG
 androidx.core.util.Pools$Pool
 kotlin.ranges.LongProgressionIterator
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$dimen
 kotlin.io.FilesKt__FileReadWriteKt
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$4
 androidx.annotation.RequiresPermission
@@ -599,8 +599,8 @@ kotlin.coroutines.experimental.migration.ContinuationMigration
 io.flutter.embedding.android.FlutterActivityLaunchConfigs
 kotlin.jvm.functions.Function8
 kotlin.io.ByteStreamsKt$iterator$1
-kotlin.coroutines.jvm.internal.RunSuspend
 kotlin.jvm.internal.Ref$LongRef
+kotlin.coroutines.jvm.internal.RunSuspend
 androidx.collection.LongSparseArray
 androidx.core.graphics.drawable.WrappedDrawableState
 kotlin.KotlinNullPointerException
@@ -616,22 +616,29 @@ kotlin.collections.DoubleIterator
 kotlin.reflect.KMutableProperty2
 androidx.annotation.RestrictTo
 androidx.customview.R$attr
-androidx.lifecycle.FullLifecycleObserverAdapter:
-    void <init>(androidx.lifecycle.FullLifecycleObserver,androidx.lifecycle.LifecycleEventObserver)
 kotlin.jvm.Strictfp
 androidx.core.content.ContentResolverCompat
 androidx.lifecycle.viewmodel.R
 kotlin.time.DurationKt
 kotlin.text.UStringsKt
-kotlin.jvm.internal.DefaultConstructorMarker
 androidx.lifecycle.ReportFragment
+kotlin.jvm.internal.DefaultConstructorMarker
+io.flutter.plugins.imagepicker.ImagePickerDelegate:
+    io.flutter.plugins.imagepicker.CameraDevice getCameraDevice()
+    static final int REQUEST_CODE_CHOOSE_IMAGE_FROM_GALLERY
+    static final int REQUEST_CODE_TAKE_IMAGE_WITH_CAMERA
+    static final int REQUEST_CAMERA_IMAGE_PERMISSION
+    static final int REQUEST_CODE_CHOOSE_MULTI_IMAGE_FROM_GALLERY
+    static final int REQUEST_CODE_CHOOSE_VIDEO_FROM_GALLERY
+    static final int REQUEST_CODE_TAKE_VIDEO_WITH_CAMERA
+    static final int REQUEST_CAMERA_VIDEO_PERMISSION
 io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$2
 kotlin.jvm.internal.FloatSpreadBuilder
 kotlin.coroutines.experimental.CoroutineContext$Key
 androidx.loader.content.Loader$ForceLoadContentObserver
-kotlin.jvm.internal.PackageReference
 android.support.v4.os.IResultReceiver$Stub$Proxy
+kotlin.jvm.internal.PackageReference
 kotlin.TypeAliasesKt
 kotlin.LazyKt__LazyJVMKt
 kotlin.reflect.KProperty$Accessor
@@ -644,12 +651,12 @@ androidx.activity.R$drawable
 io.flutter.plugin.common.EventChannel
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenComparator$1
 kotlin.coroutines.AbstractCoroutineContextElement
-androidx.core.content.res.FontResourcesParserCompat$FontFileResourceEntry
 androidx.core.internal.view.SupportSubMenu
+androidx.core.content.res.FontResourcesParserCompat$FontFileResourceEntry
 androidx.core.view.NestedScrollingParent3
 io.flutter.embedding.engine.dart.DartExecutor$DartCallback
-kotlin.jvm.internal.markers.KMutableListIterator
 androidx.core.provider.SelfDestructiveThread$1
+kotlin.jvm.internal.markers.KMutableListIterator
 kotlin.coroutines.experimental.migration.CoroutinesMigrationKt
 androidx.core.graphics.PathParser$PathDataNode
 androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat
@@ -657,14 +664,15 @@ kotlin.ParameterName
 io.flutter.embedding.engine.FlutterEngineCache:
     public boolean contains(java.lang.String)
     public void clear()
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$string
 kotlin.collections.CollectionsKt__IteratorsJVMKt$iterator$1
-kotlin.contracts.ContractBuilder$DefaultImpls
 androidx.core.view.ViewParentCompat
+kotlin.contracts.ContractBuilder$DefaultImpls
 androidx.activity.R$styleable
 kotlin.collections.MapWithDefault
 androidx.customview.R
-kotlin.jvm.functions.Function4
 androidx.core.app.NotificationCompat$Action$SemanticAction
+kotlin.jvm.functions.Function4
 androidx.core.widget.PopupWindowCompat
 androidx.fragment.app.FragmentTransitionImpl$1
 androidx.annotation.RawRes
@@ -672,15 +680,20 @@ io.flutter.app.FlutterActivityDelegate
 kotlin.ranges.CharRange$Companion
 androidx.core.content.pm.PermissionInfoCompat
 androidx.fragment.R$dimen
-kotlin.io.SerializableKt
 androidx.annotation.VisibleForTesting
+kotlin.io.SerializableKt
 androidx.core.view.ViewCompat$ScrollIndicators
 io.flutter.embedding.android.SplashScreenProvider
 kotlin.Unit
 androidx.core.view.NestedScrollingParentHelper
 kotlin.jvm.internal.ByteSpreadBuilder
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$layout
 androidx.core.util.Consumer
-androidx.lifecycle.Lifecycling
+androidx.lifecycle.Lifecycling:
+    static androidx.lifecycle.GenericLifecycleObserver getCallback(java.lang.Object)
+    private void <init>()
+    private static final int REFLECTIVE_CALLBACK
+    private static final int GENERATED_CALLBACK
 androidx.core.view.accessibility.AccessibilityWindowInfoCompat
 androidx.core.location.LocationManagerCompat
 kotlin.text.Typography
@@ -701,12 +714,12 @@ kotlin.LazyThreadSafetyMode
 androidx.lifecycle.ViewModel
 androidx.annotation.RequiresApi
 androidx.core.app.NotificationCompat$BigTextStyle
+androidx.core.app.ActivityCompat$PermissionCompatDelegate:
+    public abstract boolean onActivityResult(android.app.Activity,int,int,android.content.Intent)
 kotlin.jvm.internal.CharSpreadBuilder
-androidx.core.app.ActivityCompat$PermissionCompatDelegate
 androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatBaseImpl
 kotlin.jvm.internal.LocalVariableReference
 androidx.annotation.AnyThread
-androidx.core.content.FileProvider$PathStrategy
 kotlin.jvm.Volatile
 kotlin.time.AdjustedClockMark
 androidx.core.app.NotificationCompat$DecoratedCustomViewStyle
@@ -716,14 +729,14 @@ kotlin.internal.AccessibleLateinitPropertyLiteral
 kotlin.jvm.internal.ShortSpreadBuilder
 androidx.annotation.RestrictTo$Scope
 androidx.core.widget.ContentLoadingProgressBar
-kotlin.coroutines.experimental.ContinuationInterceptor
 androidx.core.view.ViewCompat$2
+kotlin.coroutines.experimental.ContinuationInterceptor
 io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler$EventSinkImplementation
 androidx.core.app.NotificationCompatJellybean
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$FeatureInstallStateUpdatedListener
+androidx.loader.content.ModernAsyncTask$AsyncTaskResult
 kotlin.collections.AbstractMap$keys$1$iterator$1
 kotlin.sequences.SubSequence$iterator$1
-androidx.loader.content.ModernAsyncTask$AsyncTaskResult
 io.flutter.embedding.android.FlutterFragment$ActivityCallThrough
 kotlin.collections.RingBuffer
 kotlin.jvm.internal.BooleanCompanionObject
@@ -742,10 +755,10 @@ androidx.lifecycle.ViewModelProvider$KeyedFactory
 androidx.core.view.accessibility.AccessibilityViewCommand$SetTextArguments
 androidx.fragment.app.Fragment$2:
     void <init>(androidx.fragment.app.Fragment)
-kotlin.jvm.internal.CallableReference
 androidx.fragment.app.FragmentTransaction$Op
-kotlin.reflect.KType
+kotlin.jvm.internal.CallableReference
 androidx.core.view.ViewConfigurationCompat
+kotlin.reflect.KType
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$2
 androidx.core.os.HandlerCompat
 kotlin.UIntArrayKt
@@ -793,8 +806,8 @@ androidx.annotation.RequiresPermission$Read
 androidx.versionedparcelable.CustomVersionedParcelable:
     public void onPreParceling(boolean)
     public void onPostParceling()
-kotlin.collections.AbstractMutableCollection
 androidx.activity.OnBackPressedDispatcher$OnBackPressedCancellable
+kotlin.collections.AbstractMutableCollection
 kotlin.text.StringsKt__StringBuilderJVMKt
 kotlin.collections.SetsKt___SetsKt
 kotlin.time.FormatToDecimalsKt
@@ -803,13 +816,13 @@ io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView:
     public void <init>(android.content.Context,android.util.AttributeSet)
 kotlin.collections.AbstractList$SubList
 kotlin.SuccessOrFailureKt
-kotlin.jvm.JvmStatic
 androidx.collection.ContainerHelpers:
     public static int idealIntArraySize(int)
     public static int idealLongArraySize(int)
     public static int idealByteArraySize(int)
     static int binarySearch(long[],int,long)
     private void <init>()
+kotlin.jvm.JvmStatic
 io.flutter.embedding.engine.systemchannels.SettingsChannel:
     private static final java.lang.String TAG
     public static final java.lang.String CHANNEL_NAME
@@ -859,7 +872,6 @@ io.flutter.plugin.editing.FlutterTextUtils:
     public static final int CANCEL_TAG
     public static final int ZERO_WIDTH_JOINER
 androidx.core.provider.FontsContractCompat$4$3
-kotlin.StandardKt__SynchronizedKt
 androidx.core.app.RemoteActionCompat:
     public void <init>(androidx.core.graphics.drawable.IconCompat,java.lang.CharSequence,java.lang.CharSequence,android.app.PendingIntent)
     public void <init>(androidx.core.app.RemoteActionCompat)
@@ -873,6 +885,7 @@ androidx.core.app.RemoteActionCompat:
     public java.lang.CharSequence getContentDescription()
     public android.app.PendingIntent getActionIntent()
     public android.app.RemoteAction toRemoteAction()
+kotlin.StandardKt__SynchronizedKt
 kotlin.jvm.internal.markers.KMutableMap$Entry
 androidx.core.graphics.BitmapCompat
 androidx.collection.CircularArray
@@ -906,6 +919,8 @@ kotlin.comparisons.ReverseOrderComparator
 kotlin.coroutines.experimental.ContinuationInterceptor$Key
 kotlin.jvm.internal.markers.KMutableSet
 kotlin.jvm.internal.IntSpreadBuilder
+io.flutter.plugins.imagepicker.ImagePickerUtils:
+    void <init>()
 kotlin.sequences.SequencesKt___SequencesKt
 androidx.core.content.res.FontResourcesParserCompat$FamilyResourceEntry
 kotlin.sequences.SequencesKt___SequencesKt$groupingBy$1
@@ -928,6 +943,7 @@ androidx.annotation.InspectableProperty
 kotlin.io.OnErrorAction
 androidx.core.app.ShareCompat
 androidx.core.content.SharedPreferencesCompat$EditorCompat
+io.flutter.plugins.imagepicker.R$attr
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$9
 org.intellij.lang.annotations.Pattern
 androidx.customview.widget.ViewDragHelper$1
@@ -940,8 +956,8 @@ io.flutter.embedding.engine.systemchannels.DeferredComponentChannel:
     public void completeInstallError(java.lang.String,java.lang.String)
     private static final java.lang.String TAG
 kotlin.jvm.internal.LocalVariableReferencesKt
-kotlin.coroutines.CoroutineContext$DefaultImpls
 androidx.core.os.LocaleListInterface
+kotlin.coroutines.CoroutineContext$DefaultImpls
 kotlin.random.URandomKt
 kotlin.jvm.internal.LongSpreadBuilder
 androidx.core.widget.ContentLoadingProgressBar$2
@@ -949,21 +965,21 @@ kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$3
 androidx.annotation.TransitionRes
 androidx.fragment.app.FragmentTransition$2
 kotlin.jvm.internal.ArrayIteratorKt
-kotlin.sequences.Sequence
 androidx.core.app.ComponentActivity$ExtraData
+kotlin.sequences.Sequence
 androidx.annotation.BinderThread
 kotlin.text.StringsKt___StringsKt$groupingBy$1
 io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface
 io.flutter.app.FlutterActivityDelegate$ViewFactory
 kotlin.sequences.SequencesKt___SequencesKt$minus$3
 androidx.fragment.app.FragmentTabHost$SavedState
-io.flutter.embedding.android.FlutterFragment$1
 androidx.core.app.ActivityRecreator$1
+io.flutter.embedding.android.FlutterFragment$1
 kotlin.io.TerminateException
 kotlin.comparisons.UComparisonsKt___UComparisonsKt
 androidx.annotation.PluralsRes
-kotlin.reflect.KProperty2
 androidx.core.content.pm.ShortcutManagerCompat$1
+kotlin.reflect.KProperty2
 kotlin.text.StringsKt___StringsKt$windowedSequence$1
 androidx.core.app.JobIntentService$CompatWorkItem
 androidx.core.text.TextDirectionHeuristicsCompat
@@ -995,8 +1011,8 @@ io.flutter.embedding.engine.loader.ResourceExtractor:
     private static final java.lang.String TIMESTAMP_PREFIX
     private static final java.lang.String[] SUPPORTED_ABIS
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$1
-kotlin.coroutines.experimental.Continuation
 androidx.core.content.res.ResourcesCompat$FontCallback
+kotlin.coroutines.experimental.Continuation
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$ShimRegistrarAggregate
 kotlin.random.Random$Default
 kotlin.concurrent.LocksKt
@@ -1007,10 +1023,10 @@ kotlin.jvm.internal.LongCompanionObject
 kotlin.contracts.Effect
 org.intellij.lang.annotations.JdkConstants$TabPlacement
 androidx.fragment.app.FragmentManager$OnBackStackChangedListener
+androidx.fragment.app.DialogFragment
 io.flutter.embedding.engine.systemchannels.TextInputChannel:
     private static final java.lang.String TAG
 kotlin.jvm.internal.ClassReference
-androidx.fragment.app.DialogFragment
 androidx.core.internal.package-info
 io.flutter.embedding.android.AndroidTouchProcessor$PointerDeviceKind
 io.flutter.app.FlutterFragmentActivity
@@ -1020,8 +1036,8 @@ androidx.annotation.AttrRes
 androidx.core.content.pm.ActivityInfoCompat
 org.intellij.lang.annotations.MagicConstant
 androidx.core.view.GestureDetectorCompat
-kotlin.text.StringsKt___StringsJvmKt
 androidx.core.app.Person
+kotlin.text.StringsKt___StringsJvmKt
 androidx.fragment.app.FragmentManagerImpl$EndViewTransitionAnimation
 kotlin.coroutines.experimental.migration.ContinuationInterceptorMigration
 kotlin.internal.PlatformImplementationsKt
@@ -1041,12 +1057,12 @@ kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$2
 kotlin.collections.EmptyList
 kotlin.random.PlatformRandom
 org.intellij.lang.annotations.Subst
+androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask$PrecomputedTextCallback
 kotlin.collections.UArraySortingKt
 kotlin.Experimental$Level
-androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask$PrecomputedTextCallback
 kotlin.text.Regex$Companion
-kotlin.jvm.internal.PropertyReference0
 androidx.core.widget.TintableCompoundButton
+kotlin.jvm.internal.PropertyReference0
 io.flutter.util.Preconditions:
     private void <init>()
     public static java.lang.Object checkNotNull(java.lang.Object)
@@ -1083,18 +1099,18 @@ kotlin.collections.SetsKt__SetsKt
 kotlin.UInt
 kotlin.text.CharCategory
 kotlin.io.FilesKt__FilePathComponentsKt
-androidx.viewpager.widget.PagerTitleStrip
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$1
+androidx.viewpager.widget.PagerTitleStrip
 androidx.core.text.util.LinkifyCompat$LinkSpec
-kotlin.text.RegexKt
 androidx.core.graphics.PathUtils
+kotlin.text.RegexKt
 androidx.core.app.NotificationCompat$WearableExtender
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$5
 kotlin.jvm.functions.Function19
 androidx.annotation.BoolRes
 kotlin.NumbersKt__NumbersKt
-kotlin.Triple
 androidx.lifecycle.AndroidViewModel
+kotlin.Triple
 kotlin.collections.AbstractList
 io.flutter.embedding.android.FlutterFragment$NewEngineFragmentBuilder
 kotlin.coroutines.experimental.CombinedContext
@@ -1114,8 +1130,8 @@ androidx.core.widget.AutoScrollHelper$ClampedScroller
 kotlin.random.Random
 kotlin.UnsafeLazyImpl
 kotlin.jvm.internal.MutablePropertyReference1Impl
-kotlin.sequences.SequencesKt___SequencesKt$minus$2$iterator$1
 androidx.core.app.AppLaunchChecker
+kotlin.sequences.SequencesKt___SequencesKt$minus$2$iterator$1
 kotlin.comparisons.ReversedComparator
 kotlin.io.FilesKt__FileReadWriteKt$readLines$1
 androidx.core.view.ActionProvider
@@ -1132,11 +1148,6 @@ kotlin.native.concurrent.ThreadLocal
 androidx.versionedparcelable.R
 kotlin.text.Regex
 androidx.core.app.NotificationManagerCompat
-androidx.lifecycle.ClassesInfoCache$CallbackInfo:
-    void <init>(java.util.Map)
-    private static void invokeMethodsForEvent(java.util.List,androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event,java.lang.Object)
-    final java.util.Map mEventToHandlers
-    final java.util.Map mHandlerToEvent
 androidx.core.app.RemoteInput$Source
 kotlin.sequences.MergingSequence$iterator$1
 androidx.core.app.NotificationManagerCompat$CancelTask
@@ -1146,7 +1157,6 @@ androidx.core.text.util.LinkifyCompat$1
 androidx.core.util.Pools
 androidx.core.os.OperationCanceledException
 androidx.annotation.MenuRes
-androidx.fragment.app.FragmentManagerViewModel$1
 androidx.savedstate.SavedStateRegistry:
     void <init>()
     public void registerSavedStateProvider(java.lang.String,androidx.savedstate.SavedStateRegistry$SavedStateProvider)
@@ -1160,11 +1170,439 @@ androidx.savedstate.SavedStateRegistry:
     private boolean mRestored
     private androidx.savedstate.Recreator$SavedStateProvider mRecreatorProvider
     private static final java.lang.String SAVED_COMPONENTS_KEY
+androidx.fragment.app.FragmentManagerViewModel$1
 io.flutter.plugin.platform.PlatformViewRegistry:
     public abstract boolean registerViewFactory(java.lang.String,io.flutter.plugin.platform.PlatformViewFactory)
 kotlin.UByteArrayKt
 kotlin.collections.MapsKt__MapWithDefaultKt
 kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$2
+androidx.exifinterface.media.ExifInterface:
+    public void <init>(java.io.File)
+    public void <init>(java.io.FileDescriptor)
+    public void <init>(java.io.InputStream)
+    public void <init>(java.io.InputStream,int)
+    public static boolean isSupportedMimeType(java.lang.String)
+    private static java.lang.Long parseDateTime(java.lang.String,java.lang.String,java.lang.String)
+    private static double convertRationalLatLonToDouble(java.lang.String,java.lang.String)
+    private java.lang.String convertDecimalDegree(double)
+    private static boolean isExifDataOnly(java.io.BufferedInputStream)
+    public int getAttributeInt(java.lang.String,int)
+    public double getAttributeDouble(java.lang.String,double)
+    public void resetOrientation()
+    public void rotate(int)
+    public void flipVertically()
+    public void flipHorizontally()
+    public boolean isFlipped()
+    public int getRotationDegrees()
+    public boolean hasThumbnail()
+    public boolean hasAttribute(java.lang.String)
+    public android.graphics.Bitmap getThumbnailBitmap()
+    public boolean isThumbnailCompressed()
+    public long[] getThumbnailRange()
+    public long[] getAttributeRange(java.lang.String)
+    public byte[] getAttributeBytes(java.lang.String)
+    public boolean getLatLong(float[])
+    public double[] getLatLong()
+    public void setGpsInfo(android.location.Location)
+    public void setLatLong(double,double)
+    public double getAltitude(double)
+    public void setAltitude(double)
+    public void setDateTime(java.lang.Long)
+    public java.lang.Long getDateTime()
+    public java.lang.Long getDateTimeDigitized()
+    public java.lang.Long getDateTimeOriginal()
+    public java.lang.Long getGpsDateTime()
+    private static final java.lang.String TAG
+    public static final java.lang.String TAG_IMAGE_WIDTH
+    public static final java.lang.String TAG_IMAGE_LENGTH
+    public static final java.lang.String TAG_BITS_PER_SAMPLE
+    public static final java.lang.String TAG_COMPRESSION
+    public static final java.lang.String TAG_PHOTOMETRIC_INTERPRETATION
+    public static final java.lang.String TAG_ORIENTATION
+    public static final java.lang.String TAG_SAMPLES_PER_PIXEL
+    public static final java.lang.String TAG_PLANAR_CONFIGURATION
+    public static final java.lang.String TAG_Y_CB_CR_SUB_SAMPLING
+    public static final java.lang.String TAG_Y_CB_CR_POSITIONING
+    public static final java.lang.String TAG_X_RESOLUTION
+    public static final java.lang.String TAG_Y_RESOLUTION
+    public static final java.lang.String TAG_RESOLUTION_UNIT
+    public static final java.lang.String TAG_STRIP_OFFSETS
+    public static final java.lang.String TAG_ROWS_PER_STRIP
+    public static final java.lang.String TAG_STRIP_BYTE_COUNTS
+    public static final java.lang.String TAG_JPEG_INTERCHANGE_FORMAT
+    public static final java.lang.String TAG_JPEG_INTERCHANGE_FORMAT_LENGTH
+    public static final java.lang.String TAG_TRANSFER_FUNCTION
+    public static final java.lang.String TAG_WHITE_POINT
+    public static final java.lang.String TAG_PRIMARY_CHROMATICITIES
+    public static final java.lang.String TAG_Y_CB_CR_COEFFICIENTS
+    public static final java.lang.String TAG_REFERENCE_BLACK_WHITE
+    public static final java.lang.String TAG_DATETIME
+    public static final java.lang.String TAG_IMAGE_DESCRIPTION
+    public static final java.lang.String TAG_MAKE
+    public static final java.lang.String TAG_MODEL
+    public static final java.lang.String TAG_SOFTWARE
+    public static final java.lang.String TAG_ARTIST
+    public static final java.lang.String TAG_COPYRIGHT
+    public static final java.lang.String TAG_EXIF_VERSION
+    public static final java.lang.String TAG_FLASHPIX_VERSION
+    public static final java.lang.String TAG_COLOR_SPACE
+    public static final java.lang.String TAG_GAMMA
+    public static final java.lang.String TAG_PIXEL_X_DIMENSION
+    public static final java.lang.String TAG_PIXEL_Y_DIMENSION
+    public static final java.lang.String TAG_COMPONENTS_CONFIGURATION
+    public static final java.lang.String TAG_COMPRESSED_BITS_PER_PIXEL
+    public static final java.lang.String TAG_MAKER_NOTE
+    public static final java.lang.String TAG_USER_COMMENT
+    public static final java.lang.String TAG_RELATED_SOUND_FILE
+    public static final java.lang.String TAG_DATETIME_ORIGINAL
+    public static final java.lang.String TAG_DATETIME_DIGITIZED
+    public static final java.lang.String TAG_OFFSET_TIME
+    public static final java.lang.String TAG_OFFSET_TIME_ORIGINAL
+    public static final java.lang.String TAG_OFFSET_TIME_DIGITIZED
+    public static final java.lang.String TAG_SUBSEC_TIME
+    public static final java.lang.String TAG_SUBSEC_TIME_ORIGINAL
+    public static final java.lang.String TAG_SUBSEC_TIME_DIGITIZED
+    public static final java.lang.String TAG_EXPOSURE_TIME
+    public static final java.lang.String TAG_F_NUMBER
+    public static final java.lang.String TAG_EXPOSURE_PROGRAM
+    public static final java.lang.String TAG_SPECTRAL_SENSITIVITY
+    public static final java.lang.String TAG_ISO_SPEED_RATINGS
+    public static final java.lang.String TAG_PHOTOGRAPHIC_SENSITIVITY
+    public static final java.lang.String TAG_OECF
+    public static final java.lang.String TAG_SENSITIVITY_TYPE
+    public static final java.lang.String TAG_STANDARD_OUTPUT_SENSITIVITY
+    public static final java.lang.String TAG_RECOMMENDED_EXPOSURE_INDEX
+    public static final java.lang.String TAG_ISO_SPEED
+    public static final java.lang.String TAG_ISO_SPEED_LATITUDE_YYY
+    public static final java.lang.String TAG_ISO_SPEED_LATITUDE_ZZZ
+    public static final java.lang.String TAG_SHUTTER_SPEED_VALUE
+    public static final java.lang.String TAG_APERTURE_VALUE
+    public static final java.lang.String TAG_BRIGHTNESS_VALUE
+    public static final java.lang.String TAG_EXPOSURE_BIAS_VALUE
+    public static final java.lang.String TAG_MAX_APERTURE_VALUE
+    public static final java.lang.String TAG_SUBJECT_DISTANCE
+    public static final java.lang.String TAG_METERING_MODE
+    public static final java.lang.String TAG_LIGHT_SOURCE
+    public static final java.lang.String TAG_FLASH
+    public static final java.lang.String TAG_SUBJECT_AREA
+    public static final java.lang.String TAG_FOCAL_LENGTH
+    public static final java.lang.String TAG_FLASH_ENERGY
+    public static final java.lang.String TAG_SPATIAL_FREQUENCY_RESPONSE
+    public static final java.lang.String TAG_FOCAL_PLANE_X_RESOLUTION
+    public static final java.lang.String TAG_FOCAL_PLANE_Y_RESOLUTION
+    public static final java.lang.String TAG_FOCAL_PLANE_RESOLUTION_UNIT
+    public static final java.lang.String TAG_SUBJECT_LOCATION
+    public static final java.lang.String TAG_EXPOSURE_INDEX
+    public static final java.lang.String TAG_SENSING_METHOD
+    public static final java.lang.String TAG_FILE_SOURCE
+    public static final java.lang.String TAG_SCENE_TYPE
+    public static final java.lang.String TAG_CFA_PATTERN
+    public static final java.lang.String TAG_CUSTOM_RENDERED
+    public static final java.lang.String TAG_EXPOSURE_MODE
+    public static final java.lang.String TAG_WHITE_BALANCE
+    public static final java.lang.String TAG_DIGITAL_ZOOM_RATIO
+    public static final java.lang.String TAG_FOCAL_LENGTH_IN_35MM_FILM
+    public static final java.lang.String TAG_SCENE_CAPTURE_TYPE
+    public static final java.lang.String TAG_GAIN_CONTROL
+    public static final java.lang.String TAG_CONTRAST
+    public static final java.lang.String TAG_SATURATION
+    public static final java.lang.String TAG_SHARPNESS
+    public static final java.lang.String TAG_DEVICE_SETTING_DESCRIPTION
+    public static final java.lang.String TAG_SUBJECT_DISTANCE_RANGE
+    public static final java.lang.String TAG_IMAGE_UNIQUE_ID
+    public static final java.lang.String TAG_CAMARA_OWNER_NAME
+    public static final java.lang.String TAG_CAMERA_OWNER_NAME
+    public static final java.lang.String TAG_BODY_SERIAL_NUMBER
+    public static final java.lang.String TAG_LENS_SPECIFICATION
+    public static final java.lang.String TAG_LENS_MAKE
+    public static final java.lang.String TAG_LENS_MODEL
+    public static final java.lang.String TAG_LENS_SERIAL_NUMBER
+    public static final java.lang.String TAG_GPS_VERSION_ID
+    public static final java.lang.String TAG_GPS_LATITUDE_REF
+    public static final java.lang.String TAG_GPS_LATITUDE
+    public static final java.lang.String TAG_GPS_LONGITUDE_REF
+    public static final java.lang.String TAG_GPS_LONGITUDE
+    public static final java.lang.String TAG_GPS_ALTITUDE_REF
+    public static final java.lang.String TAG_GPS_ALTITUDE
+    public static final java.lang.String TAG_GPS_TIMESTAMP
+    public static final java.lang.String TAG_GPS_SATELLITES
+    public static final java.lang.String TAG_GPS_STATUS
+    public static final java.lang.String TAG_GPS_MEASURE_MODE
+    public static final java.lang.String TAG_GPS_DOP
+    public static final java.lang.String TAG_GPS_SPEED_REF
+    public static final java.lang.String TAG_GPS_SPEED
+    public static final java.lang.String TAG_GPS_TRACK_REF
+    public static final java.lang.String TAG_GPS_TRACK
+    public static final java.lang.String TAG_GPS_IMG_DIRECTION_REF
+    public static final java.lang.String TAG_GPS_IMG_DIRECTION
+    public static final java.lang.String TAG_GPS_MAP_DATUM
+    public static final java.lang.String TAG_GPS_DEST_LATITUDE_REF
+    public static final java.lang.String TAG_GPS_DEST_LATITUDE
+    public static final java.lang.String TAG_GPS_DEST_LONGITUDE_REF
+    public static final java.lang.String TAG_GPS_DEST_LONGITUDE
+    public static final java.lang.String TAG_GPS_DEST_BEARING_REF
+    public static final java.lang.String TAG_GPS_DEST_BEARING
+    public static final java.lang.String TAG_GPS_DEST_DISTANCE_REF
+    public static final java.lang.String TAG_GPS_DEST_DISTANCE
+    public static final java.lang.String TAG_GPS_PROCESSING_METHOD
+    public static final java.lang.String TAG_GPS_AREA_INFORMATION
+    public static final java.lang.String TAG_GPS_DATESTAMP
+    public static final java.lang.String TAG_GPS_DIFFERENTIAL
+    public static final java.lang.String TAG_GPS_H_POSITIONING_ERROR
+    public static final java.lang.String TAG_INTEROPERABILITY_INDEX
+    public static final java.lang.String TAG_THUMBNAIL_IMAGE_LENGTH
+    public static final java.lang.String TAG_THUMBNAIL_IMAGE_WIDTH
+    public static final java.lang.String TAG_THUMBNAIL_ORIENTATION
+    public static final java.lang.String TAG_DNG_VERSION
+    public static final java.lang.String TAG_DEFAULT_CROP_SIZE
+    public static final java.lang.String TAG_ORF_THUMBNAIL_IMAGE
+    public static final java.lang.String TAG_ORF_PREVIEW_IMAGE_START
+    public static final java.lang.String TAG_ORF_PREVIEW_IMAGE_LENGTH
+    public static final java.lang.String TAG_ORF_ASPECT_FRAME
+    public static final java.lang.String TAG_RW2_SENSOR_BOTTOM_BORDER
+    public static final java.lang.String TAG_RW2_SENSOR_LEFT_BORDER
+    public static final java.lang.String TAG_RW2_SENSOR_RIGHT_BORDER
+    public static final java.lang.String TAG_RW2_SENSOR_TOP_BORDER
+    public static final java.lang.String TAG_RW2_ISO
+    public static final java.lang.String TAG_RW2_JPG_FROM_RAW
+    public static final java.lang.String TAG_XMP
+    public static final java.lang.String TAG_NEW_SUBFILE_TYPE
+    public static final java.lang.String TAG_SUBFILE_TYPE
+    private static final java.lang.String TAG_EXIF_IFD_POINTER
+    private static final java.lang.String TAG_GPS_INFO_IFD_POINTER
+    private static final java.lang.String TAG_INTEROPERABILITY_IFD_POINTER
+    private static final java.lang.String TAG_SUB_IFD_POINTER
+    private static final java.lang.String TAG_ORF_CAMERA_SETTINGS_IFD_POINTER
+    private static final java.lang.String TAG_ORF_IMAGE_PROCESSING_IFD_POINTER
+    private static final int MAX_THUMBNAIL_SIZE
+    public static final int ORIENTATION_UNDEFINED
+    public static final int ORIENTATION_NORMAL
+    public static final int ORIENTATION_FLIP_HORIZONTAL
+    public static final int ORIENTATION_ROTATE_180
+    public static final int ORIENTATION_FLIP_VERTICAL
+    public static final int ORIENTATION_TRANSPOSE
+    public static final int ORIENTATION_ROTATE_90
+    public static final int ORIENTATION_TRANSVERSE
+    public static final int ORIENTATION_ROTATE_270
+    public static final short FORMAT_CHUNKY
+    public static final short FORMAT_PLANAR
+    public static final short Y_CB_CR_POSITIONING_CENTERED
+    public static final short Y_CB_CR_POSITIONING_CO_SITED
+    public static final short RESOLUTION_UNIT_INCHES
+    public static final short RESOLUTION_UNIT_CENTIMETERS
+    public static final int COLOR_SPACE_S_RGB
+    public static final int COLOR_SPACE_UNCALIBRATED
+    public static final short EXPOSURE_PROGRAM_NOT_DEFINED
+    public static final short EXPOSURE_PROGRAM_MANUAL
+    public static final short EXPOSURE_PROGRAM_NORMAL
+    public static final short EXPOSURE_PROGRAM_APERTURE_PRIORITY
+    public static final short EXPOSURE_PROGRAM_SHUTTER_PRIORITY
+    public static final short EXPOSURE_PROGRAM_CREATIVE
+    public static final short EXPOSURE_PROGRAM_ACTION
+    public static final short EXPOSURE_PROGRAM_PORTRAIT_MODE
+    public static final short EXPOSURE_PROGRAM_LANDSCAPE_MODE
+    public static final short SENSITIVITY_TYPE_UNKNOWN
+    public static final short SENSITIVITY_TYPE_SOS
+    public static final short SENSITIVITY_TYPE_REI
+    public static final short SENSITIVITY_TYPE_ISO_SPEED
+    public static final short SENSITIVITY_TYPE_SOS_AND_REI
+    public static final short SENSITIVITY_TYPE_SOS_AND_ISO
+    public static final short SENSITIVITY_TYPE_REI_AND_ISO
+    public static final short SENSITIVITY_TYPE_SOS_AND_REI_AND_ISO
+    public static final short METERING_MODE_UNKNOWN
+    public static final short METERING_MODE_AVERAGE
+    public static final short METERING_MODE_CENTER_WEIGHT_AVERAGE
+    public static final short METERING_MODE_SPOT
+    public static final short METERING_MODE_MULTI_SPOT
+    public static final short METERING_MODE_PATTERN
+    public static final short METERING_MODE_PARTIAL
+    public static final short METERING_MODE_OTHER
+    public static final short LIGHT_SOURCE_UNKNOWN
+    public static final short LIGHT_SOURCE_DAYLIGHT
+    public static final short LIGHT_SOURCE_FLUORESCENT
+    public static final short LIGHT_SOURCE_TUNGSTEN
+    public static final short LIGHT_SOURCE_FLASH
+    public static final short LIGHT_SOURCE_FINE_WEATHER
+    public static final short LIGHT_SOURCE_CLOUDY_WEATHER
+    public static final short LIGHT_SOURCE_SHADE
+    public static final short LIGHT_SOURCE_DAYLIGHT_FLUORESCENT
+    public static final short LIGHT_SOURCE_DAY_WHITE_FLUORESCENT
+    public static final short LIGHT_SOURCE_COOL_WHITE_FLUORESCENT
+    public static final short LIGHT_SOURCE_WHITE_FLUORESCENT
+    public static final short LIGHT_SOURCE_WARM_WHITE_FLUORESCENT
+    public static final short LIGHT_SOURCE_STANDARD_LIGHT_A
+    public static final short LIGHT_SOURCE_STANDARD_LIGHT_B
+    public static final short LIGHT_SOURCE_STANDARD_LIGHT_C
+    public static final short LIGHT_SOURCE_D55
+    public static final short LIGHT_SOURCE_D65
+    public static final short LIGHT_SOURCE_D75
+    public static final short LIGHT_SOURCE_D50
+    public static final short LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN
+    public static final short LIGHT_SOURCE_OTHER
+    public static final short FLAG_FLASH_FIRED
+    public static final short FLAG_FLASH_RETURN_LIGHT_NOT_DETECTED
+    public static final short FLAG_FLASH_RETURN_LIGHT_DETECTED
+    public static final short FLAG_FLASH_MODE_COMPULSORY_FIRING
+    public static final short FLAG_FLASH_MODE_COMPULSORY_SUPPRESSION
+    public static final short FLAG_FLASH_MODE_AUTO
+    public static final short FLAG_FLASH_NO_FLASH_FUNCTION
+    public static final short FLAG_FLASH_RED_EYE_SUPPORTED
+    public static final short SENSOR_TYPE_NOT_DEFINED
+    public static final short SENSOR_TYPE_ONE_CHIP
+    public static final short SENSOR_TYPE_TWO_CHIP
+    public static final short SENSOR_TYPE_THREE_CHIP
+    public static final short SENSOR_TYPE_COLOR_SEQUENTIAL
+    public static final short SENSOR_TYPE_TRILINEAR
+    public static final short SENSOR_TYPE_COLOR_SEQUENTIAL_LINEAR
+    public static final short FILE_SOURCE_OTHER
+    public static final short FILE_SOURCE_TRANSPARENT_SCANNER
+    public static final short FILE_SOURCE_REFLEX_SCANNER
+    public static final short FILE_SOURCE_DSC
+    public static final short SCENE_TYPE_DIRECTLY_PHOTOGRAPHED
+    public static final short RENDERED_PROCESS_NORMAL
+    public static final short RENDERED_PROCESS_CUSTOM
+    public static final short EXPOSURE_MODE_AUTO
+    public static final short EXPOSURE_MODE_MANUAL
+    public static final short EXPOSURE_MODE_AUTO_BRACKET
+    public static final int WHITEBALANCE_AUTO
+    public static final int WHITEBALANCE_MANUAL
+    public static final short WHITE_BALANCE_AUTO
+    public static final short WHITE_BALANCE_MANUAL
+    public static final short SCENE_CAPTURE_TYPE_STANDARD
+    public static final short SCENE_CAPTURE_TYPE_LANDSCAPE
+    public static final short SCENE_CAPTURE_TYPE_PORTRAIT
+    public static final short SCENE_CAPTURE_TYPE_NIGHT
+    public static final short GAIN_CONTROL_NONE
+    public static final short GAIN_CONTROL_LOW_GAIN_UP
+    public static final short GAIN_CONTROL_HIGH_GAIN_UP
+    public static final short GAIN_CONTROL_LOW_GAIN_DOWN
+    public static final short GAIN_CONTROL_HIGH_GAIN_DOWN
+    public static final short CONTRAST_NORMAL
+    public static final short CONTRAST_SOFT
+    public static final short CONTRAST_HARD
+    public static final short SATURATION_NORMAL
+    public static final short SATURATION_LOW
+    public static final short SATURATION_HIGH
+    public static final short SHARPNESS_NORMAL
+    public static final short SHARPNESS_SOFT
+    public static final short SHARPNESS_HARD
+    public static final short SUBJECT_DISTANCE_RANGE_UNKNOWN
+    public static final short SUBJECT_DISTANCE_RANGE_MACRO
+    public static final short SUBJECT_DISTANCE_RANGE_CLOSE_VIEW
+    public static final short SUBJECT_DISTANCE_RANGE_DISTANT_VIEW
+    public static final java.lang.String LATITUDE_NORTH
+    public static final java.lang.String LATITUDE_SOUTH
+    public static final java.lang.String LONGITUDE_EAST
+    public static final java.lang.String LONGITUDE_WEST
+    public static final short ALTITUDE_ABOVE_SEA_LEVEL
+    public static final short ALTITUDE_BELOW_SEA_LEVEL
+    public static final java.lang.String GPS_MEASUREMENT_IN_PROGRESS
+    public static final java.lang.String GPS_MEASUREMENT_INTERRUPTED
+    public static final java.lang.String GPS_MEASUREMENT_2D
+    public static final java.lang.String GPS_MEASUREMENT_3D
+    public static final java.lang.String GPS_SPEED_KILOMETERS_PER_HOUR
+    public static final java.lang.String GPS_SPEED_MILES_PER_HOUR
+    public static final java.lang.String GPS_SPEED_KNOTS
+    public static final java.lang.String GPS_DIRECTION_TRUE
+    public static final java.lang.String GPS_DIRECTION_MAGNETIC
+    public static final java.lang.String GPS_DISTANCE_KILOMETERS
+    public static final java.lang.String GPS_DISTANCE_MILES
+    public static final java.lang.String GPS_DISTANCE_NAUTICAL_MILES
+    public static final short GPS_MEASUREMENT_NO_DIFFERENTIAL
+    public static final short GPS_MEASUREMENT_DIFFERENTIAL_CORRECTED
+    public static final int DATA_UNCOMPRESSED
+    public static final int DATA_HUFFMAN_COMPRESSED
+    public static final int DATA_JPEG
+    public static final int DATA_JPEG_COMPRESSED
+    public static final int DATA_DEFLATE_ZIP
+    public static final int DATA_PACK_BITS_COMPRESSED
+    public static final int DATA_LOSSY_JPEG
+    public static final int PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO
+    public static final int PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO
+    public static final int PHOTOMETRIC_INTERPRETATION_RGB
+    public static final int PHOTOMETRIC_INTERPRETATION_YCBCR
+    public static final int ORIGINAL_RESOLUTION_IMAGE
+    public static final int REDUCED_RESOLUTION_IMAGE
+    public static final int STREAM_TYPE_FULL_IMAGE_DATA
+    public static final int STREAM_TYPE_EXIF_DATA_ONLY
+    private static final int SIGNATURE_CHECK_SIZE
+    private static final java.lang.String RAF_SIGNATURE
+    private static final int RAF_OFFSET_TO_JPEG_IMAGE_OFFSET
+    private static final short ORF_SIGNATURE_1
+    private static final short ORF_SIGNATURE_2
+    private static final int ORF_MAKER_NOTE_HEADER_1_SIZE
+    private static final int ORF_MAKER_NOTE_HEADER_2_SIZE
+    private static final short RW2_SIGNATURE
+    private static final java.lang.String PEF_SIGNATURE
+    private static final int PEF_MAKER_NOTE_SKIP_SIZE
+    private static final int PNG_CHUNK_TYPE_BYTE_LENGTH
+    private static final int PNG_CHUNK_CRC_BYTE_LENGTH
+    private static final int WEBP_FILE_SIZE_BYTE_LENGTH
+    private static final byte WEBP_VP8L_SIGNATURE
+    private static final int WEBP_CHUNK_TYPE_VP8X_DEFAULT_LENGTH
+    private static final int WEBP_CHUNK_TYPE_BYTE_LENGTH
+    private static final int WEBP_CHUNK_SIZE_BYTE_LENGTH
+    static final short BYTE_ALIGN_II
+    static final short BYTE_ALIGN_MM
+    static final byte START_CODE
+    private static final int IFD_OFFSET
+    private static final int IFD_FORMAT_BYTE
+    private static final int IFD_FORMAT_STRING
+    private static final int IFD_FORMAT_USHORT
+    private static final int IFD_FORMAT_ULONG
+    private static final int IFD_FORMAT_URATIONAL
+    private static final int IFD_FORMAT_SBYTE
+    private static final int IFD_FORMAT_UNDEFINED
+    private static final int IFD_FORMAT_SSHORT
+    private static final int IFD_FORMAT_SLONG
+    private static final int IFD_FORMAT_SRATIONAL
+    private static final int IFD_FORMAT_SINGLE
+    private static final int IFD_FORMAT_DOUBLE
+    private static final int IFD_FORMAT_IFD
+    static final int IFD_TYPE_PRIMARY
+    private static final int IFD_TYPE_EXIF
+    private static final int IFD_TYPE_GPS
+    private static final int IFD_TYPE_INTEROPERABILITY
+    static final int IFD_TYPE_THUMBNAIL
+    static final int IFD_TYPE_PREVIEW
+    private static final int IFD_TYPE_ORF_MAKER_NOTE
+    private static final int IFD_TYPE_ORF_CAMERA_SETTINGS
+    private static final int IFD_TYPE_ORF_IMAGE_PROCESSING
+    private static final int IFD_TYPE_PEF
+    static final byte MARKER
+    private static final byte MARKER_SOI
+    private static final byte MARKER_SOF0
+    private static final byte MARKER_SOF1
+    private static final byte MARKER_SOF2
+    private static final byte MARKER_SOF3
+    private static final byte MARKER_SOF5
+    private static final byte MARKER_SOF6
+    private static final byte MARKER_SOF7
+    private static final byte MARKER_SOF9
+    private static final byte MARKER_SOF10
+    private static final byte MARKER_SOF11
+    private static final byte MARKER_SOF13
+    private static final byte MARKER_SOF14
+    private static final byte MARKER_SOF15
+    private static final byte MARKER_SOS
+    static final byte MARKER_APP1
+    private static final byte MARKER_COM
+    static final byte MARKER_EOI
+    private static final int IMAGE_TYPE_UNKNOWN
+    private static final int IMAGE_TYPE_ARW
+    private static final int IMAGE_TYPE_CR2
+    private static final int IMAGE_TYPE_DNG
+    private static final int IMAGE_TYPE_JPEG
+    private static final int IMAGE_TYPE_NEF
+    private static final int IMAGE_TYPE_NRW
+    private static final int IMAGE_TYPE_ORF
+    private static final int IMAGE_TYPE_PEF
+    private static final int IMAGE_TYPE_RAF
+    private static final int IMAGE_TYPE_RW2
+    private static final int IMAGE_TYPE_SRW
+    private static final int IMAGE_TYPE_HEIF
+    private static final int IMAGE_TYPE_PNG
+    private static final int IMAGE_TYPE_WEBP
 kotlin.ranges.CharProgression$Companion
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$3
 kotlin.internal.RequireKotlinVersionKind
@@ -1173,8 +1611,8 @@ androidx.core.text.PrecomputedTextCompat$Params
 kotlin.jvm.internal.markers.KMutableIterator
 kotlin.collections.SlidingWindowKt$windowedIterator$1
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$1
-kotlin.text.StringsKt__StringsKt$iterator$1
 androidx.lifecycle.ComputableLiveData
+kotlin.text.StringsKt__StringsKt$iterator$1
 kotlin.coroutines.jvm.internal.DebugMetadata
 kotlin.StandardKt
 androidx.core.text.TextDirectionHeuristicsCompat$FirstStrong
@@ -1185,30 +1623,31 @@ kotlin.ranges.ULongProgression$Companion
 kotlin.InitializedLazyImpl
 androidx.activity.R$style
 kotlin.jvm.JvmSynthetic
+androidx.exifinterface.media.ExifInterface$IfdType
 kotlin.reflect.KMutableProperty1
 kotlin.properties.Delegates
 androidx.core.app.JobIntentService$CommandProcessor
 kotlin.io.ConstantsKt
-io.flutter.view.FlutterView$ViewportMetrics
-androidx.core.provider.FontsContractCompat$5
 androidx.core.view.ViewCompat$1
+androidx.core.provider.FontsContractCompat$5
+io.flutter.view.FlutterView$ViewportMetrics
 androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatImpl
 androidx.core.view.accessibility.AccessibilityNodeProviderCompat
 androidx.annotation.AnimatorRes
-kotlin.LazyKt
-androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
 androidx.versionedparcelable.ParcelField
+androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
+kotlin.LazyKt
 androidx.core.content.res.ColorStateListInflaterCompat
 androidx.fragment.app.Fragment$OnStartEnterTransitionListener
 kotlin.time.Duration$Companion
 kotlin.time.AbstractDoubleClock$DoubleClockMark
-kotlin.collections.ShortIterator
 androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
+kotlin.collections.ShortIterator
 org.intellij.lang.annotations.JdkConstants$TreeSelectionMode
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$buildContinuationByInvokeCall$continuation$1
 kotlin.internal.DynamicExtension
-kotlin.PreconditionsKt
 androidx.collection.ArraySet$1
+kotlin.PreconditionsKt
 androidx.core.provider.FontsContractCompat$FontRequestCallback
 kotlin.jvm.internal.FunctionReferenceImpl
 kotlin.UByteArray
@@ -1218,17 +1657,15 @@ io.flutter.plugin.editing.TextInputPlugin:
     public android.view.inputmethod.InputConnection getLastInputConnection()
     private static final java.lang.String TAG
 androidx.core.app.NotificationManagerCompat$SideChannelManager$ListenerRecord
+androidx.core.graphics.TypefaceCompatBaseImpl$StyleExtractor
 kotlin.coroutines.CombinedContext
 kotlin._Assertions
-androidx.core.graphics.TypefaceCompatBaseImpl$StyleExtractor
 androidx.core.database.DatabaseUtilsCompat
 androidx.fragment.app.FragmentTransitionCompat21$1
 androidx.core.view.MenuItemCompat$OnActionExpandListener
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$1
 kotlin.coroutines.ContinuationKt$Continuation$1
 androidx.loader.app.LoaderManagerImpl$LoaderObserver
-androidx.lifecycle.LifecycleRegistry$ObserverWithState:
-    void <init>(androidx.lifecycle.LifecycleObserver,androidx.lifecycle.Lifecycle$State)
 kotlin.SynchronizedLazyImpl
 androidx.core.graphics.drawable.TintAwareDrawable
 kotlin.sequences.SequencesKt___SequencesKt$filterIsInstance$1
@@ -1243,9 +1680,9 @@ androidx.lifecycle.ViewModelStore:
     final androidx.lifecycle.ViewModel get(java.lang.String)
     java.util.Set keys()
     private final java.util.HashMap mMap
+androidx.core.graphics.TypefaceCompatBaseImpl
 kotlin.coroutines.jvm.internal.ContinuationImpl
 kotlin.text.Regex$Serialized$Companion
-androidx.core.graphics.TypefaceCompatBaseImpl
 androidx.core.view.ViewCompat$NestedScrollType
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets:
     public abstract java.lang.String getAssetFilePathByName(java.lang.String)
@@ -1260,36 +1697,34 @@ androidx.activity.OnBackPressedDispatcher:
     public boolean hasEnabledCallbacks()
     private final java.lang.Runnable mFallbackOnBackPressed
     final java.util.ArrayDeque mOnBackPressedCallbacks
-kotlin.ranges.URangesKt
 androidx.annotation.IntDef
+kotlin.ranges.URangesKt
 androidx.core.os.CancellationSignal$OnCancelListener
 kotlin.ranges.LongRange
-kotlin.annotation.AnnotationRetention
 androidx.fragment.app.FragmentManagerImpl$1
+kotlin.annotation.AnnotationRetention
 androidx.loader.R$styleable
 kotlin.sequences.SubSequence
 androidx.core.view.KeyEventDispatcher
 kotlin.collections.MapsKt
 androidx.core.view.NestedScrollingChild3
-io.flutter.BuildConfig
 androidx.core.content.res.TypedArrayUtils
-kotlin.NumbersKt__BigDecimalsKt
+io.flutter.BuildConfig
 kotlin.collections.ArraysKt___ArraysKt
+kotlin.NumbersKt__BigDecimalsKt
 kotlin.UInt$Companion
 kotlin.jvm.functions.Function3
 androidx.fragment.app.FragmentContainer
 androidx.fragment.app.FragmentTransitionImpl$2
-android.support.v4.os.ResultReceiver
 androidx.core.app.JobIntentService$JobWorkEnqueuer
+android.support.v4.os.ResultReceiver
 androidx.arch.core.R
-kotlin.coroutines.experimental.jvm.internal.CoroutineIntrinsics
 androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
+kotlin.coroutines.experimental.jvm.internal.CoroutineIntrinsics
 androidx.core.content.pm.ShortcutManagerCompat
 androidx.lifecycle.LifecycleRegistry:
-    private androidx.lifecycle.Lifecycle$State calculateTargetState(androidx.lifecycle.LifecycleObserver)
     public void markState(androidx.lifecycle.Lifecycle$State)
     public void setCurrentState(androidx.lifecycle.Lifecycle$State)
-    public void addObserver(androidx.lifecycle.LifecycleObserver)
     public int getObserverCount()
 io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent:
     public void <init>(android.view.KeyEvent)
@@ -1298,29 +1733,23 @@ io.flutter.plugins.sharedpreferences.R$id
 kotlin.reflect.KMutableProperty1$Setter
 androidx.core.widget.ScrollerCompat
 kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction0Migration
-androidx.fragment.app.FragmentHostCallback
 androidx.core.provider.FontsContractCompat$4$7
+androidx.fragment.app.FragmentHostCallback
 kotlin.text.MatchResult$Destructured
 androidx.fragment.app.FragmentTransaction
 androidx.core.app.AppComponentFactory
 androidx.core.view.TintableBackgroundView
-kotlin.sequences.FilteringSequence
 androidx.core.app.NotificationCompatExtras
+kotlin.sequences.FilteringSequence
 kotlin.collections.CollectionsKt__IterablesKt$Iterable$1
-androidx.core.app.ActivityCompat$RequestPermissionsRequestCodeValidator
 androidx.lifecycle.ViewModelProvider$Factory
 androidx.core.R$attr
 androidx.annotation.ColorRes
 androidx.core.content.res.GrowingArrayUtils
 kotlin.contracts.InvocationKind
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$id
 kotlin.jvm.internal.ArrayIterator
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivityPluginBinding:
-    public android.app.Activity getActivity()
-    public java.lang.Object getLifecycle()
-    public void addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-    public void removeRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-    public void addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
-    public void removeActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
     public void addOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public void removeOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public void addOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
@@ -1346,9 +1775,10 @@ kotlin.collections.ArrayAsCollection
 androidx.core.text.ICUCompat
 androidx.fragment.app.FragmentManagerImpl$3$1
 androidx.core.os.ParcelableCompatCreatorCallbacks
-kotlin.properties.Delegates$vetoable$1
 androidx.core.provider.FontsContractCompat$1
+kotlin.properties.Delegates$vetoable$1
 androidx.core.util.Pair
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$styleable
 io.flutter.view.FlutterView$ZeroSides
 androidx.collection.CircularIntArray
 kotlin.collections.AbstractSet$Companion
@@ -1359,38 +1789,54 @@ io.flutter.embedding.engine.loader.FlutterApplicationInfo:
     private static final java.lang.String DEFAULT_VM_SNAPSHOT_DATA
     private static final java.lang.String DEFAULT_ISOLATE_SNAPSHOT_DATA
     private static final java.lang.String DEFAULT_FLUTTER_ASSETS_DIR
-kotlin.coroutines.intrinsics.IntrinsicsKt
 androidx.core.content.res.FontResourcesParserCompat$FontFamilyFilesResourceEntry
+kotlin.coroutines.intrinsics.IntrinsicsKt
+io.flutter.plugins.flutter_plugin_android_lifecycle.R
 androidx.versionedparcelable.VersionedParcelStream$1
 io.flutter.plugins.sharedpreferences.R$styleable
 androidx.loader.content.AsyncTaskLoader$LoadTask
-kotlin.collections.TypeAliasesKt
 androidx.core.os.LocaleListCompatWrapper
+kotlin.collections.TypeAliasesKt
 androidx.fragment.app.Fragment$1
 androidx.core.content.pm.ShortcutInfoCompat$Builder
 kotlin.io.FileTreeWalk
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$1
+androidx.core.provider.FontsContractCompat$Columns
+androidx.fragment.app.FragmentManager
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt
 kotlin.collections.ULongIterator
-androidx.fragment.app.FragmentManager
-androidx.core.provider.FontsContractCompat$Columns
 io.flutter.embedding.engine.FlutterEngineGroup
 androidx.core.widget.ListPopupWindowCompat
-androidx.loader.content.Loader
 androidx.core.app.AlarmManagerCompat
+androidx.loader.content.Loader
 androidx.core.graphics.drawable.WrappedDrawableApi14
 kotlin.collections.AbstractList$Companion
 androidx.lifecycle.ComputableLiveData$3
-kotlin.collections.CollectionsKt__MutableCollectionsKt
 androidx.core.graphics.drawable.WrappedDrawable
+kotlin.collections.CollectionsKt__MutableCollectionsKt
 kotlin.ranges.RangesKt__RangesKt
 androidx.core.graphics.drawable.RoundedBitmapDrawable21
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$2
 io.flutter.view.FlutterNativeView$EngineLifecycleListenerImpl
 kotlin.reflect.KFunction
 kotlin.collections.SetsKt
-androidx.lifecycle.ClassesInfoCache
+androidx.lifecycle.ClassesInfoCache:
+    private static final int CALL_TYPE_NO_ARG
+    private static final int CALL_TYPE_PROVIDER
+    private static final int CALL_TYPE_PROVIDER_WITH_EVENT
 kotlin.reflect.KMutableProperty2$Setter
+io.flutter.plugins.imagepicker.ImagePickerPlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    void <init>(io.flutter.plugins.imagepicker.ImagePickerDelegate,android.app.Activity)
+    static final java.lang.String METHOD_CALL_IMAGE
+    static final java.lang.String METHOD_CALL_MULTI_IMAGE
+    static final java.lang.String METHOD_CALL_VIDEO
+    private static final java.lang.String METHOD_CALL_RETRIEVE
+    private static final int CAMERA_DEVICE_FRONT
+    private static final int CAMERA_DEVICE_REAR
+    private static final java.lang.String CHANNEL
+    private static final int SOURCE_CAMERA
+    private static final int SOURCE_GALLERY
 kotlin.Function
 androidx.fragment.app.FragmentTransition
 kotlin.ranges.IntRange$Companion
@@ -1412,9 +1858,9 @@ kotlin.sequences.DistinctSequence
 kotlin.collections.AbstractIterator$WhenMappings
 kotlin.reflect.KProperty$Getter
 org.intellij.lang.annotations.JdkConstants$CalendarMonth
+io.flutter.plugins.imagepicker.R$layout
 androidx.core.view.MarginLayoutParamsCompat
 kotlin.collections.AbstractCollection
-androidx.core.app.ActivityCompat$OnRequestPermissionsResultCallback
 androidx.viewpager.R
 kotlin.jvm.internal.ArrayShortIterator
 kotlin.collections.CollectionsKt___CollectionsKt$groupingBy$1
@@ -1432,6 +1878,7 @@ androidx.core.content.res.FontResourcesParserCompat$ProviderResourceEntry
 androidx.customview.R$string
 kotlin.sequences.TransformingIndexedSequence$iterator$1
 kotlin.LazyKt$WhenMappings
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$drawable
 androidx.annotation.IntRange
 kotlin.reflect.KClass
 androidx.core.text.BidiFormatter$DirectionalityEstimator
@@ -1467,20 +1914,38 @@ kotlin.io.TextStreamsKt$readLines$1
 androidx.core.widget.ListViewCompat
 kotlin.time.TestClock
 androidx.core.R$dimen
-kotlin.coroutines.experimental.migration.ContextMigration$Key
 androidx.core.view.ViewCompat$FocusRealDirection
+kotlin.coroutines.experimental.migration.ContextMigration$Key
 io.flutter.embedding.engine.FlutterEngineGroup$1
 kotlin.io.LinesSequence$iterator$1
 io.flutter.embedding.android.FlutterEngineProvider
 androidx.core.math.MathUtils
 androidx.core.os.TraceCompat
-kotlin.sequences.SequencesKt___SequencesJvmKt$filterIsInstance$1
 androidx.core.app.JobIntentService$GenericWorkItem
+kotlin.sequences.SequencesKt___SequencesJvmKt$filterIsInstance$1
 kotlin.ExperimentalStdlibApi
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry
-androidx.core.app.ActivityCompat
+androidx.core.app.ActivityCompat:
+    protected void <init>()
+    public static void setPermissionCompatDelegate(androidx.core.app.ActivityCompat$PermissionCompatDelegate)
+    public static androidx.core.app.ActivityCompat$PermissionCompatDelegate getPermissionCompatDelegate()
+    public static boolean invalidateOptionsMenu(android.app.Activity)
+    public static void startActivityForResult(android.app.Activity,android.content.Intent,int,android.os.Bundle)
+    public static void startIntentSenderForResult(android.app.Activity,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)
+    public static void finishAffinity(android.app.Activity)
+    public static void finishAfterTransition(android.app.Activity)
+    public static android.net.Uri getReferrer(android.app.Activity)
+    public static android.view.View requireViewById(android.app.Activity,int)
+    public static void setEnterSharedElementCallback(android.app.Activity,androidx.core.app.SharedElementCallback)
+    public static void setExitSharedElementCallback(android.app.Activity,androidx.core.app.SharedElementCallback)
+    public static void postponeEnterTransition(android.app.Activity)
+    public static void startPostponedEnterTransition(android.app.Activity)
+    public static boolean shouldShowRequestPermissionRationale(android.app.Activity,java.lang.String)
+    public static androidx.core.view.DragAndDropPermissionsCompat requestDragAndDropPermissions(android.app.Activity,android.view.DragEvent)
+    public static void recreate(android.app.Activity)
 kotlin.coroutines.CoroutineContext
 androidx.core.provider.SelfDestructiveThread$2$1
+androidx.exifinterface.media.ExifInterface$ExifStreamType
 androidx.viewpager.widget.PagerTitleStrip$SingleLineAllCapsTransform
 kotlin.comparisons.ComparisonsKt___ComparisonsKt
 org.intellij.lang.annotations.JdkConstants$TitledBorderTitlePosition
@@ -1496,15 +1961,28 @@ androidx.annotation.WorkerThread
 org.jetbrains.annotations.Nullable
 kotlin.text.StringsKt__StringsKt$splitToSequence$1
 kotlin.coroutines.jvm.internal.CompletedContinuation
-io.flutter.plugin.common.PluginRegistry$Registrar
+io.flutter.plugin.common.PluginRegistry$Registrar:
+    public abstract android.app.Activity activity()
+    public abstract android.content.Context context()
+    public abstract android.content.Context activeContext()
+    public abstract io.flutter.plugin.common.BinaryMessenger messenger()
+    public abstract io.flutter.view.TextureRegistry textures()
+    public abstract io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry()
+    public abstract io.flutter.view.FlutterView view()
+    public abstract java.lang.String lookupKeyForAsset(java.lang.String)
+    public abstract java.lang.String lookupKeyForAsset(java.lang.String,java.lang.String)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar publish(java.lang.Object)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addViewDestroyListener(io.flutter.plugin.common.PluginRegistry$ViewDestroyListener)
 androidx.lifecycle.ViewModelProvider$AndroidViewModelFactory
 kotlin.internal.NoInfer
 kotlin.ExceptionsKt__ExceptionsKt
 kotlin.ranges.RangesKt___RangesKt
 androidx.fragment.app.FragmentTabHost$SavedState$1
 kotlin.WasExperimental
-kotlin.jvm.internal.DoubleCompanionObject
 androidx.core.text.PrecomputedTextCompat$Params$Builder
+kotlin.jvm.internal.DoubleCompanionObject
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$5
 kotlin.collections.GroupingKt__GroupingKt
 androidx.annotation.DrawableRes
@@ -1518,8 +1996,8 @@ io.flutter.util.ViewUtils:
     public void <init>()
 androidx.core.net.ConnectivityManagerCompat
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$1
-kotlin.text.MatcherMatchResult$groupValues$1
 androidx.core.content.res.ResourcesCompat$FontCallback$2
+kotlin.text.MatcherMatchResult$groupValues$1
 androidx.customview.R$styleable
 kotlin.js.JsName
 kotlin.reflect.TypeOfKt
@@ -1539,46 +2017,50 @@ kotlin.coroutines.CoroutineContext$Key
 androidx.core.app.JobIntentService$JobServiceEngineImpl$WrapperWorkItem
 kotlin.reflect.KAnnotatedElement
 androidx.core.view.ViewPropertyAnimatorCompat$ViewPropertyAnimatorListenerApi14
-kotlin.sequences.USequencesKt
 androidx.core.app.NotificationCompatSideChannelService$NotificationSideChannelStub
+kotlin.sequences.USequencesKt
 androidx.activity.R$integer
 org.intellij.lang.annotations.PrintFormatPattern
 io.flutter.plugins.sharedpreferences.R$string
 kotlin.ranges.URangesKt___URangesKt
+io.flutter.plugins.imagepicker.R
+io.flutter.plugins.imagepicker.R$string
 kotlin.coroutines.experimental.SafeContinuation$Fail
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4
 kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$1
 kotlin.reflect.KProperty1$Getter
 kotlin.reflect.KDeclarationContainer
 kotlin.coroutines.jvm.internal.DebugProbesKt
-kotlin.collections.AbstractMap$values$1
 androidx.lifecycle.ViewModelStoreOwner
+kotlin.collections.AbstractMap$values$1
 androidx.core.content.SharedPreferencesCompat
 androidx.lifecycle.MutableLiveData
 io.flutter.view.FlutterRunArguments
 kotlin.jvm.JvmWildcard
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$color
 androidx.core.content.res.FontResourcesParserCompat$FetchStrategy
 kotlin.coroutines.experimental.SequenceBuilderIterator
 io.flutter.embedding.android.FlutterFragmentActivity$NewEngineIntentBuilder
 kotlin.collections.AbstractList$IteratorImpl
 androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImpl
-kotlin.comparisons.NaturalOrderComparator
 androidx.core.hardware.fingerprint.FingerprintManagerCompat
 androidx.annotation.LongDef
+kotlin.comparisons.NaturalOrderComparator
 kotlin.collections.AbstractMutableList
 androidx.core.app.ActivityRecreator$2
 androidx.lifecycle.livedata.R
 kotlin.reflect.KMutableProperty0
 kotlin.text.StringsKt__IndentKt$getIndentFunction$1
-kotlin.sequences.FlatteningSequence
 androidx.viewpager.widget.PagerTabStrip$2
+kotlin.sequences.FlatteningSequence
 kotlin.concurrent.TimersKt
 kotlin.coroutines.intrinsics.CoroutineSingletons
 kotlin.PreconditionsKt__AssertionsJVMKt
+androidx.exifinterface.R
 io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger:
     public void send(java.lang.String,java.nio.ByteBuffer)
-kotlin.text.StringsKt___StringsKt$windowedSequence$2
 androidx.core.app.ServiceCompat
+kotlin.text.StringsKt___StringsKt$windowedSequence$2
 kotlin.jvm.internal.ReflectionFactory
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$2
 androidx.activity.ComponentActivity$3:
@@ -1589,37 +2071,67 @@ io.flutter.view.FlutterView$FirstFrameListener
 kotlin.ranges.UIntProgressionIterator
 kotlin.coroutines.experimental.migration.ExperimentalContinuationMigration
 com.example.studio_bookings.R$color
-kotlin.io.FileTreeWalk$FileTreeWalkIterator$TopDownDirectoryState
 androidx.fragment.app.BackStackRecord
 androidx.loader.content.ModernAsyncTask$WorkerRunnable
+kotlin.io.FileTreeWalk$FileTreeWalkIterator$TopDownDirectoryState
 kotlin.collections.ArraysKt___ArraysKt$withIndex$6
-androidx.core.content.FileProvider
+androidx.core.content.FileProvider:
+    private static final java.lang.String META_DATA_FILE_PROVIDER_PATHS
+    private static final java.lang.String TAG_ROOT_PATH
+    private static final java.lang.String TAG_FILES_PATH
+    private static final java.lang.String TAG_CACHE_PATH
+    private static final java.lang.String TAG_EXTERNAL
+    private static final java.lang.String TAG_EXTERNAL_FILES
+    private static final java.lang.String TAG_EXTERNAL_CACHE
+    private static final java.lang.String TAG_EXTERNAL_MEDIA
+    private static final java.lang.String ATTR_NAME
+    private static final java.lang.String ATTR_PATH
 kotlin.text.CharDirectionality$Companion
 kotlin.ranges.CharProgressionIterator
 kotlin.jvm.internal.Ref$IntRef
 androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1
-kotlin.TypeCastException
 io.flutter.plugin.common.JSONUtil:
     private void <init>()
     public static java.lang.Object unwrap(java.lang.Object)
+kotlin.TypeCastException
 androidx.core.widget.NestedScrollView$AccessibilityDelegate
 io.flutter.plugins.sharedpreferences.R$layout
 kotlin.jvm.internal.TypeReference$WhenMappings
-androidx.core.content.ContextCompat
+androidx.core.content.ContextCompat:
+    protected void <init>()
+    public static boolean startActivities(android.content.Context,android.content.Intent[])
+    public static boolean startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
+    public static void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
+    public static java.io.File getDataDir(android.content.Context)
+    public static java.io.File[] getObbDirs(android.content.Context)
+    public static android.graphics.drawable.Drawable getDrawable(android.content.Context,int)
+    public static android.content.res.ColorStateList getColorStateList(android.content.Context,int)
+    public static int getColor(android.content.Context,int)
+    public static java.io.File getNoBackupFilesDir(android.content.Context)
+    public static java.io.File getCodeCacheDir(android.content.Context)
+    private static synchronized java.io.File createFilesDir(java.io.File)
+    public static android.content.Context createDeviceProtectedStorageContext(android.content.Context)
+    public static boolean isDeviceProtectedStorage(android.content.Context)
+    public static java.util.concurrent.Executor getMainExecutor(android.content.Context)
+    public static void startForegroundService(android.content.Context,android.content.Intent)
+    public static java.lang.Object getSystemService(android.content.Context,java.lang.Class)
+    public static java.lang.String getSystemServiceName(android.content.Context,java.lang.Class)
+    private static final java.lang.String TAG
+    private static android.util.TypedValue sTempValue
 androidx.annotation.Dimension
 androidx.core.widget.EdgeEffectCompat
 androidx.core.view.accessibility.AccessibilityViewCommand$SetSelectionArguments
 kotlin.jvm.functions.Function18
 kotlin.io.LinesSequence
-kotlin.text.CharsKt__CharKt
 androidx.versionedparcelable.VersionedParcel$ParcelException
+kotlin.text.CharsKt__CharKt
 kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$2
+io.flutter.plugins.imagepicker.R$color
 kotlin.jvm.internal.ArrayBooleanIterator
 kotlin.sequences.SequenceScope
 androidx.fragment.app.FragmentTransition$1
 kotlin.contracts.CallsInPlace
 androidx.lifecycle.ReportFragment$ActivityInitializationListener
-androidx.core.app.ActivityCompat$1
 androidx.core.app.NotificationCompat$Action$Builder
 kotlin.ranges.UIntRange$Companion
 io.flutter.view.FlutterMain$Settings
@@ -1661,8 +2173,8 @@ io.flutter.embedding.engine.loader.ResourceExtractor$1
 kotlin.jvm.internal.ArrayByteIterator
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$9
 kotlin.reflect.KProperty1
-kotlin.sequences.SequencesKt___SequencesKt$elementAt$1
 androidx.fragment.app.FragmentTransition$FragmentContainerTransition
+kotlin.sequences.SequencesKt___SequencesKt$elementAt$1
 kotlin.collections.MapsKt___MapsKt
 kotlin.jvm.internal.PropertyReference2Impl
 androidx.customview.widget.ExploreByTouchHelper$MyNodeProvider
@@ -1676,8 +2188,8 @@ io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBin
 kotlin.sequences.IndexingSequence$iterator$1
 androidx.core.app.SharedElementCallback$OnSharedElementsReadyListener
 androidx.core.view.MenuCompat
-kotlin.reflect.KParameter
 androidx.core.view.MenuItemCompat
+kotlin.reflect.KParameter
 kotlin.ULong$Companion
 kotlin.ranges.IntRange
 io.flutter.plugin.common.ActivityLifecycleListener
@@ -1713,8 +2225,8 @@ kotlin.time.Clock
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$2
 androidx.loader.R$dimen
 androidx.core.provider.SelfDestructiveThread$3
-kotlin.ranges.ClosedFloatingPointRange
 androidx.lifecycle.Transformations$2$1
+kotlin.ranges.ClosedFloatingPointRange
 androidx.viewpager.widget.PagerTitleStrip$PageListener
 androidx.core.view.KeyEventDispatcher$Component
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$then$1
@@ -1732,12 +2244,12 @@ io.flutter.plugin.common.EventChannel$StreamHandler
 kotlin.jvm.internal.Ref$DoubleRef
 org.intellij.lang.annotations.JdkConstants$InputEventMask
 kotlin.annotation.AnnotationTarget
-androidx.fragment.app.FragmentTransitionImpl$3
 androidx.core.provider.FontsContractCompat$FontInfo
+androidx.fragment.app.FragmentTransitionImpl$3
 org.intellij.lang.annotations.JdkConstants$HorizontalAlignment
 androidx.core.widget.NestedScrollView$SavedState
-kotlin.ResultKt
 androidx.annotation.RequiresFeature
+kotlin.ResultKt
 androidx.core.os.ParcelCompat
 androidx.core.view.ViewPropertyAnimatorUpdateListener
 androidx.annotation.Px
@@ -1750,8 +2262,8 @@ androidx.viewpager.widget.PagerTabStrip$1
 androidx.core.provider.FontsContractCompat$4$8
 androidx.core.content.PermissionChecker$PermissionResult
 kotlin.collections.EmptyMap
-kotlin.sequences.SequencesKt___SequencesKt$minus$4$iterator$1
 androidx.core.app.ActivityCompat$SharedElementCallback21Impl$1
+kotlin.sequences.SequencesKt___SequencesKt$minus$4$iterator$1
 androidx.customview.R$drawable
 androidx.core.app.NotificationManagerCompat$Task
 androidx.core.os.ConfigurationCompat
@@ -1764,7 +2276,6 @@ kotlin.jvm.internal.Reflection
 androidx.fragment.R
 androidx.annotation.StringRes
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$2
-androidx.lifecycle.OnLifecycleEvent
 kotlin.collections.ArraysKt__ArraysKt
 kotlin.reflect.KVisibility
 io.flutter.embedding.engine.systemchannels.LifecycleChannel:
@@ -1778,9 +2289,9 @@ org.jetbrains.annotations.NonNls
 kotlin.text.FlagEnum
 androidx.core.content.SharedPreferencesCompat$EditorCompat$Helper
 androidx.core.view.inputmethod.InputConnectionCompat$2
-kotlin.coroutines.SafeContinuation
 androidx.core.view.DragStartHelper$1
 androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerWrapper
+kotlin.coroutines.SafeContinuation
 io.flutter.embedding.engine.systemchannels.LocalizationChannel:
     private static final java.lang.String TAG
 androidx.core.app.JobIntentService$WorkEnqueuer
@@ -1790,16 +2301,16 @@ io.flutter.embedding.engine.systemchannels.AccessibilityChannel:
 kotlin.io.FileSystemException
 io.flutter.embedding.android.AndroidTouchProcessor$PointerChange
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationResult
+androidx.lifecycle.LifecycleRegistryOwner
 kotlin.jvm.internal.ByteCompanionObject
 kotlin.time.AbstractLongClock$LongClockMark
-androidx.lifecycle.LifecycleRegistryOwner
 kotlin.reflect.KParameter$Kind
 androidx.fragment.app.Fragment$SavedState
 kotlin.random.PlatformRandomKt
 kotlin.text.TypeAliasesKt
 kotlin.text.RegexKt$fromInt$$inlined$apply$lambda$1
-androidx.core.app.NotificationCompat$InboxStyle
 androidx.core.widget.TintableImageSourceView
+androidx.core.app.NotificationCompat$InboxStyle
 kotlin.time.MonoClock
 kotlin.io.FileTreeWalk$FileTreeWalkIterator$BottomUpDirectoryState
 kotlin.DslMarker
@@ -1857,8 +2368,8 @@ io.flutter.FlutterInjector:
     public static void reset()
 kotlin.jvm.internal.ArrayIteratorsKt
 io.flutter.plugins.sharedpreferences.R$drawable
-kotlin.ExperimentalUnsignedTypes
 androidx.core.view.ViewCompat$FocusDirection
+kotlin.ExperimentalUnsignedTypes
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$2
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal
 androidx.activity.ComponentActivity:
@@ -1900,6 +2411,11 @@ kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1
 androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
 androidx.core.view.animation.PathInterpolatorApi14
 kotlin.jvm.JvmPackageName
+androidx.exifinterface.media.ExifInterface$ExifAttribute:
+    public static androidx.exifinterface.media.ExifInterface$ExifAttribute createSLong(int,java.nio.ByteOrder)
+    public static androidx.exifinterface.media.ExifInterface$ExifAttribute createSRational(androidx.exifinterface.media.ExifInterface$Rational,java.nio.ByteOrder)
+    public static androidx.exifinterface.media.ExifInterface$ExifAttribute createDouble(double,java.nio.ByteOrder)
+    public static final long BYTES_OFFSET_UNKNOWN
 kotlin.coroutines.jvm.internal.RunSuspendKt
 io.flutter.embedding.engine.plugins.activity.ActivityControlSurface:
     public abstract void attachToActivity(android.app.Activity,androidx.lifecycle.Lifecycle)
@@ -1942,15 +2458,12 @@ io.flutter.embedding.engine.renderer.FlutterRenderer:
     public void dispatchSemanticsAction(int,int,java.nio.ByteBuffer,int)
     private static final java.lang.String TAG
 androidx.core.view.ViewCompat$4
-androidx.arch.core.internal.FastSafeIterableMap:
-    public java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object)
-    public java.util.Map$Entry ceil(java.lang.Object)
 androidx.fragment.app.FragmentManagerImpl$2
 kotlin.text.MatchResult
 androidx.viewpager.widget.ViewPager$ViewPositionComparator
 kotlin.jvm.internal.ShortCompanionObject
-kotlin.ranges.ULongRange$Companion
 androidx.core.content.pm.PackageInfoCompat
+kotlin.ranges.ULongRange$Companion
 kotlin.sequences.GeneratorSequence
 kotlin.sequences.SequencesKt__SequenceBuilderKt$sequence$$inlined$Sequence$1
 androidx.fragment.app.FragmentManagerViewModel
@@ -1961,15 +2474,16 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
 io.flutter.embedding.engine.systemchannels.PlatformChannel:
     private static final java.lang.String TAG
 kotlin.Suppress
-kotlin.collections.GroupingKt
 androidx.core.graphics.drawable.WrappedDrawableApi21
+kotlin.collections.GroupingKt
 androidx.lifecycle.LiveData$AlwaysActiveObserver
-kotlin.internal.RequireKotlin
 androidx.core.app.ActivityManagerCompat
+kotlin.internal.RequireKotlin
 androidx.core.app.NotificationCompat$Action
 androidx.core.graphics.TypefaceCompatBaseImpl$1
 io.flutter.embedding.android.FlutterEngineConfigurator
 kotlin.coroutines.experimental.CoroutineContext$Element
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$style
 io.flutter.plugin.common.MethodCall:
     public boolean hasArgument(java.lang.String)
 kotlin.internal.PlatformImplementations$ReflectAddSuppressedMethod
@@ -1979,7 +2493,6 @@ kotlin.collections.GroupingKt__GroupingJVMKt
 androidx.fragment.app.FragmentManagerState$1
 androidx.arch.core.internal.SafeIterableMap:
     public java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object)
-    protected androidx.arch.core.internal.SafeIterableMap$Entry put(java.lang.Object,java.lang.Object)
 androidx.core.content.res.ConfigurationHelper
 kotlin.internal.OnlyInputTypes
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$4
@@ -1990,16 +2503,34 @@ kotlin.jvm.internal.EnumCompanionObject
 androidx.core.app.TaskStackBuilder$SupportParentable
 androidx.viewpager.widget.ViewPager
 org.intellij.lang.annotations.Identifier
+io.flutter.plugins.imagepicker.ImagePickerCache:
+    static final java.lang.String MAP_KEY_PATH
+    static final java.lang.String MAP_KEY_PATH_LIST
+    static final java.lang.String MAP_KEY_MAX_WIDTH
+    static final java.lang.String MAP_KEY_MAX_HEIGHT
+    static final java.lang.String MAP_KEY_IMAGE_QUALITY
+    private static final java.lang.String MAP_KEY_TYPE
+    private static final java.lang.String MAP_KEY_ERROR_CODE
+    private static final java.lang.String MAP_KEY_ERROR_MESSAGE
+    private static final java.lang.String FLUTTER_IMAGE_PICKER_IMAGE_PATH_KEY
+    private static final java.lang.String SHARED_PREFERENCE_ERROR_CODE_KEY
+    private static final java.lang.String SHARED_PREFERENCE_ERROR_MESSAGE_KEY
+    private static final java.lang.String SHARED_PREFERENCE_MAX_WIDTH_KEY
+    private static final java.lang.String SHARED_PREFERENCE_MAX_HEIGHT_KEY
+    private static final java.lang.String SHARED_PREFERENCE_IMAGE_QUALITY_KEY
+    private static final java.lang.String SHARED_PREFERENCE_TYPE_KEY
+    private static final java.lang.String SHARED_PREFERENCE_PENDING_IMAGE_URI_PATH_KEY
+    static final java.lang.String SHARED_PREFERENCES_NAME
 kotlin.internal.jdk7.JDK7PlatformImplementations
 androidx.core.app.NotificationCompat$CarExtender$UnreadConversation
 kotlin.ranges.ULongProgression
 androidx.customview.R$id
 io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
     public static final int unsetValue
-kotlin.reflect.KProperty$DefaultImpls
 androidx.core.view.ViewCompat$FocusRelativeDirection
-kotlin.collections.RingBuffer$iterator$1
+kotlin.reflect.KProperty$DefaultImpls
 androidx.core.app.FrameMetricsAggregator
+kotlin.collections.RingBuffer$iterator$1
 kotlin.collections.ArraysKt___ArraysKt$withIndex$1
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding:
     void <init>(android.content.ContentProvider)
@@ -2028,9 +2559,9 @@ kotlin.jvm.Throws
 kotlin.system.ProcessKt
 kotlin.jvm.internal.PropertyReference
 androidx.versionedparcelable.VersionedParcel$1
-kotlin.io.FilesKt__UtilsKt$copyRecursively$1
 androidx.fragment.app.FragmentFactory
 androidx.customview.widget.ExploreByTouchHelper$2
+kotlin.io.FilesKt__UtilsKt$copyRecursively$1
 kotlin.jvm.internal.DoubleSpreadBuilder
 kotlin.jvm.internal.MutablePropertyReference
 kotlin.reflect.KProperty2$Getter
@@ -2052,12 +2583,12 @@ kotlin.ranges.LongProgression$Companion
 kotlin.reflect.KMutableProperty$Setter
 kotlin.sequences.SequencesKt___SequencesKt$zip$1
 androidx.annotation.InspectableProperty$ValueType
-kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$3
 androidx.arch.core.executor.DefaultTaskExecutor
+kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$3
 androidx.core.R
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat
 kotlin.jvm.functions.Function1
 kotlin.reflect.KClass$DefaultImpls
-androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat
 kotlin.coroutines.experimental.CoroutineContext$Element$DefaultImpls
 kotlin.random.Random$Companion
 kotlin.jvm.internal.FloatCompanionObject
@@ -2085,8 +2616,8 @@ kotlin.experimental.ExperimentalTypeInference
 kotlin.ranges.ComparableRange
 kotlin.collections.UShortIterator
 androidx.core.app.NotificationManagerCompat$NotifyTask
-androidx.fragment.app.FragmentManagerImpl
 androidx.core.content.pm.ShortcutInfoCompat
+androidx.fragment.app.FragmentManagerImpl
 kotlin.jvm.internal.Ref$BooleanRef
 io.flutter.embedding.android.FlutterSplashView:
     public void <init>(android.content.Context,android.util.AttributeSet)
@@ -2104,9 +2635,12 @@ androidx.lifecycle.Observer:
     public abstract void onChanged(java.lang.Object)
 kotlin.io.NoSuchFileException
 kotlin.sequences.SequencesKt___SequencesKt$sorted$1
+io.flutter.embedding.engine.plugins.lifecycle.FlutterLifecycleAdapter:
+    public void <init>()
+    private static final java.lang.String TAG
 androidx.viewpager.R$dimen
-io.flutter.app.FlutterApplication
 androidx.core.view.LayoutInflaterCompat$Factory2Wrapper
+io.flutter.app.FlutterApplication
 com.example.studio_bookings.R$dimen
 kotlin.collections.unsigned.UArraysKt___UArraysKt
 kotlin.sequences.DropWhileSequence
@@ -2142,8 +2676,6 @@ kotlin.UnsafeVariance
 androidx.core.content.res.GradientColorInflaterCompat$ColorStops
 kotlin.jvm.internal.PropertyReference2
 kotlin.time.Duration
-androidx.arch.core.internal.SafeIterableMap$Entry:
-    void <init>(java.lang.Object,java.lang.Object)
 kotlin.contracts.ExperimentalContracts
 kotlin.StandardKt__StandardKt
 androidx.fragment.R$integer
@@ -2178,10 +2710,9 @@ androidx.viewpager.R$attr
 kotlin.collections.CollectionsKt__ReversedViewsKt
 androidx.core.provider.FontsContractCompat
 kotlin.collections.MapAccessorsKt
-androidx.core.content.FileProvider$SimplePathStrategy
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$3
-kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$2
 androidx.lifecycle.Transformations$1
+kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$2
 androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable:
     void <init>(androidx.activity.OnBackPressedDispatcher,androidx.lifecycle.Lifecycle,androidx.activity.OnBackPressedCallback)
 kotlin.UByteKt
@@ -2197,11 +2728,12 @@ kotlin.time.AbstractDoubleClock
 kotlin.sequences.SequencesKt__SequencesKt$asSequence$$inlined$Sequence$1
 kotlin.io.FilesKt__UtilsKt
 androidx.core.text.util.FindAddress$ZipRange
-kotlin.reflect.KVariance
 io.flutter.view.FlutterMain
+kotlin.reflect.KVariance
 kotlin.ranges.RangesKt__RangesJVMKt
 kotlin.io.FileTreeWalk$FileTreeWalkIterator
 kotlin.sequences.SequencesKt__SequencesKt$Sequence$1
+io.flutter.plugins.imagepicker.R$integer
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt
 kotlin.sequences.SequencesKt___SequencesKt$minus$1
 kotlin.experimental.BitwiseOperationsKt
@@ -2219,12 +2751,6 @@ kotlin.UninitializedPropertyAccessException
 kotlin.text.StringsKt__IndentKt$getIndentFunction$2
 kotlin.reflect.KProperty0
 io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
-    public abstract android.app.Activity getActivity()
-    public abstract java.lang.Object getLifecycle()
-    public abstract void addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-    public abstract void removeRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-    public abstract void addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
-    public abstract void removeActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
     public abstract void addOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public abstract void removeOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public abstract void addOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
@@ -2237,9 +2763,9 @@ androidx.fragment.app.FragmentTransitionCompat21$4
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$1
 androidx.core.app.NotificationCompat$MessagingStyle$Message
 kotlin.comparisons.ComparisonsKt__ComparisonsKt
-kotlin.PublishedApi
 androidx.loader.content.ModernAsyncTask$1
 androidx.core.widget.TextViewCompat$AutoSizeTextType
+kotlin.PublishedApi
 androidx.annotation.NavigationRes
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 androidx.savedstate.SavedStateRegistry$1:
@@ -2256,9 +2782,9 @@ io.flutter.plugin.editing.InputConnectionAdaptor:
     private static final java.lang.String TAG
 kotlin.io.ConsoleKt$decoder$2
 androidx.core.view.WindowInsetsCompat
+androidx.core.view.LayoutInflaterFactory
 kotlin.ExtensionFunctionType
 kotlin.Pair
-androidx.core.view.LayoutInflaterFactory
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionAlgorithm
 io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setFlutterLoader(io.flutter.embedding.engine.loader.FlutterLoader)
@@ -2266,9 +2792,9 @@ io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setFlutterJNIFactory(io.flutter.embedding.engine.FlutterJNI$Factory)
 androidx.fragment.app.Fragment$InstantiationException
 kotlin.sequences.FlatteningSequence$iterator$1
-kotlin.collections.ArraysKt___ArraysJvmKt$asList$3
 io.flutter.plugin.platform.PlatformViewsController:
     private static final java.lang.String TAG
+kotlin.collections.ArraysKt___ArraysJvmKt$asList$3
 kotlin.sequences.TransformingSequence$iterator$1
 kotlin.text.StringsKt__IndentKt$prependIndent$1
 kotlin.NumbersKt__BigIntegersKt
@@ -2288,29 +2814,28 @@ androidx.core.provider.FontRequest
 androidx.fragment.app.FragmentTabHost$DummyTabFactory
 kotlin.collections.ArraysKt___ArraysKt$withIndex$9
 androidx.fragment.R$id
-kotlin.coroutines.CombinedContext$toString$1
 androidx.core.graphics.TypefaceCompatApi28Impl
+kotlin.coroutines.CombinedContext$toString$1
 kotlin.coroutines.Continuation
 androidx.activity.R$string
 kotlin.system.TimingKt
 io.flutter.plugins.sharedpreferences.R
-androidx.lifecycle.SingleGeneratedAdapterObserver:
-    void <init>(androidx.lifecycle.GeneratedAdapter)
+io.flutter.plugins.imagepicker.R$styleable
 kotlin.math.MathKt
 androidx.core.view.OnApplyWindowInsetsListener
 androidx.core.content.pm.PermissionInfoCompat$ProtectionFlags
 kotlin.jvm.internal.ArrayCharIterator
 androidx.loader.app.LoaderManagerImpl$LoaderInfo
 androidx.core.provider.FontsContractCompat$FontRequestCallback$FontRequestFailReason
-kotlin.sequences.SequencesKt__SequencesKt$generateSequence$1
 androidx.lifecycle.ComputableLiveData$1
+kotlin.sequences.SequencesKt__SequencesKt$generateSequence$1
 androidx.core.util.LogWriter
 kotlin.text.SystemProperties
 kotlin.internal.LowPriorityInOverloadResolution
 kotlin.ExceptionsKt
-kotlin.coroutines.CoroutineContext$plus$1
 androidx.fragment.app.FragmentManagerImpl$StartEnterTransitionListener
 androidx.core.app.NotificationCompat$Builder
+kotlin.coroutines.CoroutineContext$plus$1
 androidx.core.net.ConnectivityManagerCompat$RestrictBackgroundStatus
 io.flutter.plugin.platform.PlatformPlugin:
     public void <init>(android.app.Activity,io.flutter.embedding.engine.systemchannels.PlatformChannel)
@@ -2318,42 +2843,42 @@ io.flutter.plugin.platform.PlatformPlugin:
     private static final java.lang.String TAG
 kotlin.collections.AbstractList$ListIteratorImpl
 kotlin.time.DurationUnitKt
-kotlin.text.MatchResult$DefaultImpls
 androidx.core.graphics.TypefaceCompatApi21Impl
+kotlin.text.MatchResult$DefaultImpls
 androidx.lifecycle.LiveData$1
 androidx.versionedparcelable.VersionedParcelize
 androidx.fragment.app.FragmentTransitionCompat21$3
 kotlin.ranges.ClosedRange
-androidx.lifecycle.DefaultLifecycleObserver
 kotlin.sequences.TransformingSequence
 io.flutter.embedding.engine.loader.ResourceExtractor$ExtractTask
 io.flutter.embedding.android.FlutterTextureView:
     private static final java.lang.String TAG
 kotlin.properties.ReadWriteProperty
 androidx.loader.content.ModernAsyncTask$Status
+com.example.studio_bookings.R$xml
 androidx.core.view.ViewCompat
 androidx.lifecycle.ViewModelProvider$NewInstanceFactory
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$1
 androidx.fragment.app.FragmentManagerImpl$FragmentTag
-kotlin.jvm.internal.markers.KMutableIterable
 androidx.lifecycle.ViewModelProvider
+kotlin.jvm.internal.markers.KMutableIterable
 androidx.core.os.CancellationSignal
 com.example.studio_bookings.R$id
 androidx.core.app.NotificationCompat$BadgeIconType
 org.jetbrains.annotations.NotNull
 androidx.loader.app.LoaderManagerImpl
-kotlin.text.CharDirectionality$Companion$directionalityMap$2
 androidx.loader.app.LoaderManager
-kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$1
+kotlin.text.CharDirectionality$Companion$directionalityMap$2
 androidx.fragment.app.FragmentTransition$4
 androidx.core.provider.SelfDestructiveThread$2
+kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$1
 androidx.fragment.app.FragmentState
 androidx.loader.R$integer
 androidx.core.graphics.TypefaceCompatApi26Impl
 androidx.core.view.DragStartHelper$2
 android.support.v4.os.IResultReceiver$Stub
-kotlin.collections.CollectionsKt__IteratorsKt
 androidx.arch.core.util.Function
+kotlin.collections.CollectionsKt__IteratorsKt
 kotlin.text.RegexOption
 android.support.v4.app.INotificationSideChannel$Stub$Proxy
 io.flutter.view.FlutterNativeView$1
@@ -2362,8 +2887,8 @@ kotlin.sequences.SequencesKt___SequencesKt$requireNoNulls$1
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsFirst$1
 androidx.lifecycle.MediatorLiveData
 org.intellij.lang.annotations.JdkConstants$CursorType
-kotlin.ULongKt
 androidx.annotation.RequiresPermission$Write
+kotlin.ULongKt
 androidx.core.graphics.drawable.IconCompat:
     public static androidx.core.graphics.drawable.IconCompat createWithResource(android.content.Context,int)
     public static androidx.core.graphics.drawable.IconCompat createWithResource(android.content.res.Resources,java.lang.String,int)
@@ -2434,9 +2959,8 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineService
     private final io.flutter.embedding.engine.plugins.lifecycle.HiddenLifecycleReference hiddenLifecycleReference
     private final java.util.Set onModeChangeListeners
 kotlin.io.FilesKt__FileTreeWalkKt
-kotlin.sequences.DropSequence$iterator$1
 androidx.core.os.LocaleListCompat
-androidx.lifecycle.ClassesInfoCache$MethodReference
+kotlin.sequences.DropSequence$iterator$1
 io.flutter.embedding.android.FlutterActivity:
     public static android.content.Intent createDefaultIntent(android.content.Context)
     public static io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder withNewEngine()
@@ -2454,10 +2978,11 @@ kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsKt
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$4
 kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$4
 kotlin.text.ScreenFloatValueRegEx
+io.flutter.plugins.imagepicker.R$id
 androidx.customview.R$layout
-kotlin.jvm.internal.Ref$ByteRef
 android.support.v4.app.INotificationSideChannel$Stub
 androidx.core.app.JobIntentService$JobServiceEngineImpl
+kotlin.jvm.internal.Ref$ByteRef
 kotlin.coroutines.CombinedContext$Serialized$Companion
 androidx.core.app.BundleCompat
 kotlin.text.StringsKt__StringBuilderKt
@@ -2465,8 +2990,8 @@ com.example.studio_bookings.R$drawable
 kotlin.coroutines.RestrictsSuspension
 io.flutter.plugins.sharedpreferences.R$integer
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnchecked$$inlined$buildContinuationByInvokeCall$IntrinsicsKt__IntrinsicsJvmKt$2
-androidx.loader.content.CursorLoader
 androidx.core.app.NavUtils
+androidx.loader.content.CursorLoader
 androidx.core.graphics.ColorUtils
 androidx.fragment.app.FragmentManager$BackStackEntry
 androidx.core.view.DragStartHelper
@@ -2622,29 +3147,33 @@ androidx.versionedparcelable.VersionedParcel:
 androidx.core.provider.FontsContractCompat$3
 androidx.core.view.ViewCompat$3
 androidx.arch.core.executor.TaskExecutor
-androidx.core.net.DatagramSocketWrapper$DatagramSocketImplWrapper
 androidx.core.text.TextDirectionHeuristicCompat
-androidx.customview.widget.ExploreByTouchHelper$1
+androidx.core.net.DatagramSocketWrapper$DatagramSocketImplWrapper
 androidx.core.graphics.PathSegment
+androidx.customview.widget.ExploreByTouchHelper$1
 androidx.core.app.SharedElementCallback
 androidx.core.graphics.drawable.IconCompat$IconType
 kotlin.io.AccessDeniedException
 kotlin.UnsignedKt
 android.support.v4.os.IResultReceiver
+io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
 androidx.core.graphics.drawable.RoundedBitmapDrawable
 kotlin.SafePublicationLazyImpl
 kotlin.time.DurationUnitKt__DurationUnitJvmKt
+io.flutter.plugins.imagepicker.R$xml
 io.flutter.embedding.android.FlutterFragmentActivity
 kotlin.coroutines.jvm.internal.RestrictedSuspendLambda
 kotlin.collections.EmptySet
 kotlin.text.StringsKt__RegexExtensionsJVMKt
+io.flutter.plugins.flutter_plugin_android_lifecycle.R$attr
 kotlin.jvm.internal.ArrayLongIterator
-kotlin.UByte$Companion
 androidx.fragment.app.Fragment$3
+kotlin.UByte$Companion
 kotlin.sequences.TransformingIndexedSequence
 androidx.core.database.sqlite.SQLiteCursorCompat
-kotlin.coroutines.experimental.CoroutineContext
 androidx.core.view.PointerIconCompat
+kotlin.coroutines.experimental.CoroutineContext
 androidx.fragment.app.ListFragment$2
 kotlin.collections.CollectionsKt
 kotlin.reflect.KParameter$DefaultImpls
@@ -2677,12 +3206,13 @@ androidx.activity.ImmLeaksCleaner:
     private static final int NOT_INITIALIAZED
     private static final int INIT_SUCCESS
     private static final int INIT_FAILED
-kotlin.annotation.MustBeDocumented
 androidx.core.app.NotificationCompat$Action$Extender
+kotlin.annotation.MustBeDocumented
 kotlin.sequences.FilteringSequence$iterator$1
 kotlin.reflect.KFunction$DefaultImpls
-kotlin.io.FilePathComponents
+io.flutter.plugins.imagepicker.R$style
 kotlin.ranges.ULongRange
+kotlin.io.FilePathComponents
 io.flutter.embedding.engine.plugins.util.GeneratedPluginRegister:
     public void <init>()
     private static final java.lang.String TAG
@@ -2750,16 +3280,24 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1$1:
     final synthetic io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1 this$1
 io.flutter.plugin.mouse.MouseCursorPlugin$2:
     final synthetic io.flutter.plugin.mouse.MouseCursorPlugin this$0
+androidx.exifinterface.media.ExifInterface:
+    private boolean mHasThumbnailStrips
+    private boolean mModified
+    private static final java.util.List ROTATION_ORDER
+    private static final java.util.List FLIPPED_ROTATION_ORDER
+    public static final int[] BITS_PER_SAMPLE_GREYSCALE_1
+    private static final java.util.regex.Pattern sNonZeroTimePattern
 io.flutter.plugin.editing.TextInputPlugin$2:
     final synthetic io.flutter.plugin.editing.TextInputPlugin this$0
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivityPluginBinding:
-    private final android.app.Activity activity
-    private final io.flutter.embedding.engine.plugins.lifecycle.HiddenLifecycleReference hiddenLifecycleReference
 io.flutter.embedding.engine.loader.FlutterApplicationInfo:
     public final java.lang.String vmSnapshotData
     public final java.lang.String isolateSnapshotData
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets:
     final io.flutter.embedding.engine.loader.FlutterLoader flutterLoader
+androidx.exifinterface.media.ExifInterface$1:
+    final synthetic androidx.exifinterface.media.ExifInterface this$0
+androidx.core.content.ContextCompat:
+    private static final java.lang.Object sLock
 io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView$1:
     final synthetic io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView this$0
 io.flutter.plugin.platform.VirtualDisplayController$1:
@@ -2770,8 +3308,17 @@ io.flutter.view.AccessibilityBridge$SemanticsNode:
     private io.flutter.view.AccessibilityBridge$TextDirection textDirection
     private float previousScrollExtentMax
     private float previousScrollExtentMin
+io.flutter.plugins.imagepicker.ImagePickerDelegate$2$1:
+    final synthetic io.flutter.plugins.imagepicker.ImagePickerDelegate$2 this$1
 io.flutter.embedding.engine.loader.FlutterLoader$InitResult:
     final java.lang.String dataDirPath
+androidx.lifecycle.DefaultLifecycleObserver:
+    public abstract void onCreate(androidx.lifecycle.LifecycleOwner)
+    public abstract void onStart(androidx.lifecycle.LifecycleOwner)
+    public abstract void onResume(androidx.lifecycle.LifecycleOwner)
+    public abstract void onPause(androidx.lifecycle.LifecycleOwner)
+    public abstract void onStop(androidx.lifecycle.LifecycleOwner)
+    public abstract void onDestroy(androidx.lifecycle.LifecycleOwner)
 io.flutter.Log:
     private static int logLevel
     public static int ASSERT
@@ -2780,4 +3327,5 @@ io.flutter.Log:
     public static int INFO
     public static int VERBOSE
     public static int WARN
+androidx.lifecycle.DefaultLifecycleObserver$-CC
 io.flutter.plugin.platform.PlatformView$-CC

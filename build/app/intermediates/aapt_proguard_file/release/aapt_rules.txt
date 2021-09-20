@@ -1,2 +1,3 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class com.example.studio_bookings.MainActivity { <init>(); }
+-keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }

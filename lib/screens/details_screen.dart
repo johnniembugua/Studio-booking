@@ -37,6 +37,7 @@ class _DetailScreensState extends State<DetailScreens> {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
+            backgroundColor: Colors.white,
             expandedHeight: MediaQuery.of(context).size.height * 0.4,
             //was 300 0riginally
             pinned: true,
