@@ -83,7 +83,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             borderSide: BorderSide(color: Colors.blue),
                           ),
                           //filled: true,
-                          prefixIcon: Icon(Icons.email),
+                          prefixIcon: Icon(
+                            Icons.email,
+                            color: Colors.blue,
+                          ),
                           labelText: 'Email Address',
                           hintText: 'john@gmail.com'
                           //fillColor: Theme.of(context).backgroundColor,
@@ -108,16 +111,19 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderSide: BorderSide(color: Colors.blue),
                         ),
                         //filled: true,
-                        prefixIcon: Icon(Icons.lock),
+                        prefixIcon: Icon(Icons.lock,color: Colors.blue,),
                         suffixIcon: GestureDetector(
                           onTap: () {
                             setState(() {
                               _obscureText = !_obscureText;
                             });
                           },
-                          child: Icon(_obscureText
-                              ? Icons.visibility
-                              : Icons.visibility_off),
+                          child: Icon(
+                            _obscureText
+                                ? Icons.visibility
+                                : Icons.visibility_off,
+                            color: Colors.blue,
+                          ),
                         ),
                         labelText: 'Password',
                         hintText: 'Enter password',

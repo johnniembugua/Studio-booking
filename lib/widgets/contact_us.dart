@@ -22,10 +22,19 @@ class Contact extends StatelessWidget {
               height: 30,
             ),
             Center(
-              child: Image.network(
-                'https://github.com/devrajgaur/contact_us/blob/master/images/contact.jpg?raw=true',
+              child: Container(
                 height: 200,
+                child: FadeInImage.assetNetwork(
+                  placeholder: 'assets/images/bp_loading.gif',
+                  image:
+                      'https://github.com/devrajgaur/contact_us/blob/master/images/contact.jpg?raw=true',
+                  fit: BoxFit.cover,
+                ),
               ),
+              // child: Image.network(
+              //   'https://github.com/devrajgaur/contact_us/blob/master/images/contact.jpg?raw=true',
+              //   height: 200,
+              // ),
             ),
             Text(
               'If you need help, \n Feel free to contact us',

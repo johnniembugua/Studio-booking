@@ -2469,9 +2469,9 @@ kotlin.sequences.SequencesKt__SequenceBuilderKt$sequence$$inlined$Sequence$1
 androidx.fragment.app.FragmentManagerViewModel
 androidx.customview.widget.ExploreByTouchHelper
 androidx.annotation.CheckResult
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
-    private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.PlatformChannel:
+    private static final java.lang.String TAG
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
     private static final java.lang.String TAG
 kotlin.Suppress
 androidx.core.graphics.drawable.WrappedDrawableApi21
@@ -3327,5 +3327,5 @@ io.flutter.Log:
     public static int INFO
     public static int VERBOSE
     public static int WARN
-androidx.lifecycle.DefaultLifecycleObserver$-CC
 io.flutter.plugin.platform.PlatformView$-CC
+androidx.lifecycle.DefaultLifecycleObserver$-CC

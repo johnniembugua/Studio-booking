@@ -42,208 +42,226 @@ class _SignUpScreenState extends State<SignUpScreen> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
-        body: Padding(
-          padding: const EdgeInsets.all(32.0),
-          child: Column(
-            children: [
-              Material(
-                type: MaterialType.transparency,
-                child: Text(
-                  'Sign Up!',
-                  style: TextStyle(
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold,
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(32.0),
+            child: Column(
+              children: [
+                Material(
+                  type: MaterialType.transparency,
+                  child: Text(
+                    'Sign Up!',
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Hero(
-                    tag: 'image',
-                    child: Image.asset('assets/images/login_image.png')),
-              ),
-              Form(
-                key: _formKey,
-                child: Column(
-                  children: [
-                    TextFormField(
-                      key: ValueKey('firstName'),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Please your first name';
-                        }
-                        return null;
-                      },
-                      textInputAction: TextInputAction.next,
-                      onEditingComplete: () => FocusScope.of(context)
-                          .requestFocus(_passwordFocusNode),
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                          border: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue),
-                          ),
-                          //filled: true,
-                          prefixIcon: Icon(Icons.email),
-                          labelText: 'firstName',
-                          hintText: 'john'
-                          //fillColor: Theme.of(context).backgroundColor,
-                          ),
-                      onSaved: (value) {
-                        _firstName = value!;
-                      },
-                    ),
-                    TextFormField(
-                      key: ValueKey('lastName'),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'This field cant be empty';
-                        }
-                        return null;
-                      },
-                      textInputAction: TextInputAction.next,
-                      onEditingComplete: () => FocusScope.of(context)
-                          .requestFocus(_passwordFocusNode),
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                          border: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue),
-                          ),
-                          //filled: true,
-                          prefixIcon: Icon(Icons.email),
-                          labelText: 'lastName',
-                          hintText: 'Doe'
-                          //fillColor: Theme.of(context).backgroundColor,
-                          ),
-                      onSaved: (value) {
-                        _lastName = value!;
-                      },
-                    ),
-
-                    TextFormField(
-                      key: ValueKey('email'),
-                      validator: (value) {
-                        if (value!.isEmpty ||
-                            !value.contains(
-                              '@gmail.com',
-                            )) {
-                          return 'Please enter a valid email address';
-                        }
-                        return null;
-                      },
-                      textInputAction: TextInputAction.next,
-                      onEditingComplete: () => FocusScope.of(context)
-                          .requestFocus(_passwordFocusNode),
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                          border: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue),
-                          ),
-                          //filled: true,
-                          prefixIcon: Icon(Icons.email),
-                          labelText: 'Email Address',
-                          hintText: 'john@gmail.com'
-                          //fillColor: Theme.of(context).backgroundColor,
-                          ),
-                      onSaved: (value) {
-                        _emailAddress = value!;
-                      },
-                    ),
-                    const SizedBox(height: 12.0),
-                    TextFormField(
-                      key: ValueKey('Password'),
-                      validator: (value) {
-                        if (value!.isEmpty || value.length < 7) {
-                          return 'Please enter a valid Password';
-                        }
-                        return null;
-                      },
-                      keyboardType: TextInputType.emailAddress,
-                      focusNode: _passwordFocusNode,
-                      decoration: InputDecoration(
-                        border: const OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.blue),
-                        ),
-                        //filled: true,
-                        prefixIcon: Icon(Icons.lock),
-                        suffixIcon: GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _obscureText = !_obscureText;
-                            });
-                          },
-                          child: Icon(_obscureText
-                              ? Icons.visibility
-                              : Icons.visibility_off),
-                        ),
-                        labelText: 'Password',
-                        hintText: 'Enter password',
-                        //fillColor: Theme.of(context).backgroundColor
-                      ),
-                      onSaved: (value) {
-                        _password = value!;
-                      },
-                      obscureText: _obscureText,
-                      onEditingComplete: _submitForm,
-                    ),
-                    //const SizedBox(height: 8.0),
-                    // Row(
-                    //   children: [
-                    //     const Spacer(),
-                    //     TextButton(
-                    //       onPressed: () {},
-                    //       child: const Text('Forgot Password'),
-                    //     ),
-                    //   ],
-                    // ),
-                    const SizedBox(height: 16.0),
-                    Hero(
-                      tag: 'signup_button',
-                      child: TextButton(
-                        onPressed: _submitForm,
-                        child: const Text('Signup'),
-                        style: TextButton.styleFrom(
-                          backgroundColor: Colors.blue,
-                          primary: Colors.white,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 40.0,
-                            vertical: 18.0,
-                          ),
-                          shape: const StadiumBorder(),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 16.0),
-                    TextButton(
-                      onPressed: () {},
-                      child: const Text('Signup Via OTP'),
-                    ),
-                    const SizedBox(height: 16.0),
-                    Hero(
-                      tag: 'social_buttons',
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          SocialButton(
-                            backgroundColor: Colors.blue,
-                            icon: FontAwesomeIcons.facebookF,
-                            onPressed: () {},
-                          ),
-                          SocialButton(
-                            backgroundColor: Colors.red,
-                            icon: FontAwesomeIcons.google,
-                            onPressed: () {},
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 16.0),
-                    GestureDetector(
-                      onTap: () => Navigator.of(context).pop(),
-                      child: const Text('Already have an account? Sign in'),
-                    ),
-                  ],
+                Expanded(
+                  child: Hero(
+                      tag: 'image',
+                      child: Image.asset('assets/images/login_image.png')),
                 ),
-              )
-            ],
+                Form(
+                  key: _formKey,
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        key: ValueKey('firstName'),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return 'Please your first name';
+                          }
+                          return null;
+                        },
+                        textInputAction: TextInputAction.next,
+                        onEditingComplete: () => FocusScope.of(context)
+                            .requestFocus(_passwordFocusNode),
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                            border: const OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.blue),
+                            ),
+                            //filled: true,
+                            prefixIcon: Icon(
+                              Icons.person,
+                              color: Colors.blue,
+                            ),
+                            labelText: 'firstName',
+                            hintText: 'john'
+                            //fillColor: Theme.of(context).backgroundColor,
+                            ),
+                        onSaved: (value) {
+                          _firstName = value!;
+                        },
+                      ),
+                      const SizedBox(height: 12.0),
+                      TextFormField(
+                        key: ValueKey('lastName'),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return 'This field cant be empty';
+                          }
+                          return null;
+                        },
+                        textInputAction: TextInputAction.next,
+                        onEditingComplete: () => FocusScope.of(context)
+                            .requestFocus(_passwordFocusNode),
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                            border: const OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.blue),
+                            ),
+                            //filled: true,
+                            prefixIcon: Icon(
+                              Icons.person,
+                              color: Colors.blue,
+                            ),
+                            labelText: 'lastName',
+                            hintText: 'Doe'
+                            //fillColor: Theme.of(context).backgroundColor,
+                            ),
+                        onSaved: (value) {
+                          _lastName = value!;
+                        },
+                      ),
+                      const SizedBox(height: 12.0),
+                      TextFormField(
+                        key: ValueKey('email'),
+                        validator: (value) {
+                          if (value!.isEmpty ||
+                              !value.contains(
+                                '@gmail.com',
+                              )) {
+                            return 'Please enter a valid email address';
+                          }
+                          return null;
+                        },
+                        textInputAction: TextInputAction.next,
+                        onEditingComplete: () => FocusScope.of(context)
+                            .requestFocus(_passwordFocusNode),
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                            border: const OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.blue),
+                            ),
+                            //filled: true,
+                            prefixIcon: Icon(
+                              Icons.email,
+                              color: Colors.blue,
+                            ),
+                            labelText: 'Email Address',
+                            hintText: 'john@gmail.com'
+                            //fillColor: Theme.of(context).backgroundColor,
+                            ),
+                        onSaved: (value) {
+                          _emailAddress = value!;
+                        },
+                      ),
+                      const SizedBox(height: 12.0),
+                      TextFormField(
+                        key: ValueKey('Password'),
+                        validator: (value) {
+                          if (value!.isEmpty || value.length < 7) {
+                            return 'Please enter a valid Password';
+                          }
+                          return null;
+                        },
+                        keyboardType: TextInputType.emailAddress,
+                        focusNode: _passwordFocusNode,
+                        decoration: InputDecoration(
+                          border: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue),
+                          ),
+                          //filled: true,
+                          prefixIcon: Icon(
+                            Icons.lock,
+                            color: Colors.blue,
+                          ),
+                          suffixIcon: GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _obscureText = !_obscureText;
+                              });
+                            },
+                            child: Icon(
+                              _obscureText
+                                  ? Icons.visibility
+                                  : Icons.visibility_off,
+                              color: Colors.blue,
+                            ),
+                          ),
+                          labelText: 'Password',
+                          hintText: 'Enter password',
+                          //fillColor: Theme.of(context).backgroundColor
+                        ),
+                        onSaved: (value) {
+                          _password = value!;
+                        },
+                        obscureText: _obscureText,
+                        onEditingComplete: _submitForm,
+                      ),
+                      //const SizedBox(height: 8.0),
+                      // Row(
+                      //   children: [
+                      //     const Spacer(),
+                      //     TextButton(
+                      //       onPressed: () {},
+                      //       child: const Text('Forgot Password'),
+                      //     ),
+                      //   ],
+                      // ),
+                      const SizedBox(height: 16.0),
+                      Hero(
+                        tag: 'signup_button',
+                        child: TextButton(
+                          onPressed: _submitForm,
+                          child: const Text('Signup'),
+                          style: TextButton.styleFrom(
+                            backgroundColor: Colors.blue,
+                            primary: Colors.white,
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 40.0,
+                              vertical: 18.0,
+                            ),
+                            shape: const StadiumBorder(),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 16.0),
+                      TextButton(
+                        onPressed: () {},
+                        child: const Text('Signup Via OTP'),
+                      ),
+                      const SizedBox(height: 16.0),
+                      Hero(
+                        tag: 'social_buttons',
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            SocialButton(
+                              backgroundColor: Colors.blue,
+                              icon: FontAwesomeIcons.facebookF,
+                              onPressed: () {},
+                            ),
+                            SocialButton(
+                              backgroundColor: Colors.red,
+                              icon: FontAwesomeIcons.google,
+                              onPressed: () {},
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 16.0),
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).pop(),
+                        child: const Text('Already have an account? Sign in'),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
