@@ -230,17 +230,17 @@ class _DetailScreensState extends State<DetailScreens> {
                       ),
                       child: Container(
                         width: 180,
-                        height: 80.0,
+                        height: 60.0,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Container(
-                              width: 120.0,
+                              width: 180.0,
                               child: Text(
                                 bookingProvider.getBookedItems
                                         .containsKey(bookingId)
                                     ? 'Already added'
-                                    : "Add Booking",
+                                    : "Add to Booking",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18.0,
@@ -248,19 +248,19 @@ class _DetailScreensState extends State<DetailScreens> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            Container(
-                              width: 60.0,
-                              height: 60.0,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(45.0),
-                              ),
-                              child: Icon(
-                                Icons.arrow_forward_ios,
-                                color: Colors.blue[800],
-                                size: 21.0,
-                              ),
-                            )
+                            // Container(
+                            //   width: 60.0,
+                            //   height: 60.0,
+                            //   decoration: BoxDecoration(
+                            //     color: Colors.white,
+                            //     borderRadius: BorderRadius.circular(45.0),
+                            //   ),
+                            //   child: Icon(
+                            //     Icons.arrow_forward_ios,
+                            //     color: Colors.blue[800],
+                            //     size: 21.0,
+                            //   ),
+                            // )
                           ],
                         ),
                       ),

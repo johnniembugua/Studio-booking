@@ -9,6 +9,7 @@ import 'package:studio_bookings/screens/contract_form.dart';
 import 'package:studio_bookings/screens/details_screen.dart';
 import 'package:studio_bookings/screens/mybookings/booking.dart';
 import 'package:studio_bookings/screens/welcome_screen.dart';
+import 'package:studio_bookings/widgets/contact_us.dart';
 
 import 'Screens/home_screen.dart';
 import 'consts/theme_data.dart';
@@ -22,7 +23,6 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -71,7 +71,8 @@ class _MyAppState extends State<MyApp> {
             BookingPage.routeName: (context) => BookingPage(),
             WelcomeScreen.routeName: (context) => WelcomeScreen(),
             ContractScreen.routeName: (context) => ContractScreen(),
-            Calendar.routeName: (context)=>Calendar(),
+            Calendar.routeName: (context) => Calendar(),
+            Contact.routeName: (context) => Contact(),
           },
         );
       }),

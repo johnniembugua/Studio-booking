@@ -7,6 +7,7 @@ import 'package:studio_bookings/models/booking_service.dart';
 
 import 'package:studio_bookings/provider/booking_services.dart';
 import 'package:studio_bookings/provider/theme_provider.dart';
+import 'package:studio_bookings/widgets/contact_us.dart';
 
 import 'package:studio_bookings/widgets/drawer.dart';
 import 'package:studio_bookings/widgets/service_widgets.dart';
@@ -93,10 +94,11 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(10.0)),
                   child: IconButton(
-                    icon: Icon(FontAwesomeIcons.filter),
+                    icon: Icon(FontAwesomeIcons.phone),
                     color: Colors.black45,
                     onPressed: () {
                       isDark = !isDark;
+                      Navigator.pushNamed(context, Contact.routeName);
                     },
                   ),
                 ),
@@ -115,19 +117,20 @@ class _HomePageState extends State<HomePage> {
             height: 30.0,
           ),
           Expanded(
-              child: ListView.builder(
-            itemCount: listBooking.length,
-            itemBuilder: (BuildContext context, int index) {
-              //Booking suit = listBooking[index];
-              return ChangeNotifierProvider.value(
-                  value: listBooking[index],
-                  builder: (context, snapshot) {
-                    return ServicesWidget(
-                        // widget.index:index,
-                        );
-                  });
-            },
-          ))
+            child: ListView.builder(
+              itemCount: listBooking.length,
+              itemBuilder: (BuildContext context, int index) {
+                //Booking suit = listBooking[index];
+                return ChangeNotifierProvider.value(
+                    value: listBooking[index],
+                    builder: (context, snapshot) {
+                      return ServicesWidget(
+                          // widget.index:index,
+                          );
+                    });
+              },
+            ),
+          ),
         ],
       ),
     );

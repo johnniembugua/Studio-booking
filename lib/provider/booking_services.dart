@@ -7,7 +7,7 @@ class Bookings with ChangeNotifier {
       id: "1",
       imgUrl:
           "https://cdn.pixabay.com/photo/2016/09/10/11/42/quadrocopter-1658967_960_720.png",
-      price: 1000,
+      price: 5000,
       description:
           'Drone services are the best services we offer in our market',
       categorie: "Drone services",
@@ -19,7 +19,7 @@ class Bookings with ChangeNotifier {
       id: "2",
       imgUrl:
           "https://cdn.pixabay.com/photo/2016/11/29/03/53/camera-1867184_960_720.jpg",
-      price: 1500,
+      price: 4500,
       categorie: "Video Shooting",
       description:
           'Video shooting are the best services we offer in our market',
@@ -31,7 +31,7 @@ class Bookings with ChangeNotifier {
       id: "3",
       imgUrl:
           "https://cdn.pixabay.com/photo/2020/04/15/14/45/microphone-5046876_960_720.jpg",
-      price: 1020,
+      price: 3000,
       categorie: "Audio Recording",
       rating: 3.5,
       description:
@@ -43,7 +43,7 @@ class Bookings with ChangeNotifier {
       id: "4",
       imgUrl:
           "https://cdn.pixabay.com/photo/2013/07/12/15/33/cutting-150066_960_720.png",
-      price: 985,
+      price: 4000,
       categorie: "Video Editing",
       description: 'Video editing are the best services we offer in our market',
       rating: 2.5,

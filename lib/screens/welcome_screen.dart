@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -10,13 +11,20 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //backgroundColor: Color(0XFF4A3341),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          // CircleAvatar(
+          //   radius: 200,
+          //   backgroundImage: AssetImage(
+          //     'assets/images/Musique.jpg',
+
+          //   ),
+          // ),
           Expanded(
             child: Hero(
-                tag: 'image',
-                child: Image.asset('assets/images/welcome_image.png')),
+                tag: 'image', child: Image.asset('assets/images/Musique.jpg')),
           ),
           Expanded(
             child: Column(
@@ -27,7 +35,7 @@ class WelcomeScreen extends StatelessWidget {
                   child: Material(
                     type: MaterialType.transparency,
                     child: Text(
-                      'Welcome',
+                      'Welcome to',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -38,9 +46,11 @@ class WelcomeScreen extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
                   child: Text(
-                    'App allows to take pictures of your'
-                    ' receipts and save the receipt information',
-                    style: TextStyle(color: Colors.grey),
+                    'Musique Fountain Studios',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26),
                     textAlign: TextAlign.center,
                   ),
                 ),
