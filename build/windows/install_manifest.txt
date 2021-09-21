@@ -9,6 +9,7 @@ E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/NOTICES
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 E:/@johnniembugua/studio_bookings/build/windows/runner/Debug/data/flutter_assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf

@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           return 'Password must contain atleast 7 characters';
                         }
                         return null;
-                      },
+                      }, 
                       keyboardType: TextInputType.emailAddress,
                       focusNode: _passwordFocusNode,
                       decoration: InputDecoration(
