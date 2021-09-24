@@ -18,7 +18,6 @@ class _ContractScreenState extends State<ContractScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Container(
         margin: EdgeInsets.all(8),
         child: SingleChildScrollView(

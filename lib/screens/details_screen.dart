@@ -83,7 +83,7 @@ class _DetailScreensState extends State<DetailScreens> {
                             ),
                             onPressed: () {
                               Navigator.of(context)
-                                  .pushNamed(Calendar.routeName);
+                                  .pushReplacementNamed(Calendar.routeName);
                             },
                           ),
                         ),

@@ -49,7 +49,7 @@ class _CalendarState extends State<Calendar> {
         children: [
           TableCalendar(
             focusedDay: selectedDay,
-            firstDay: DateTime(2021),
+            firstDay: DateTime.now(),
             lastDay: DateTime(2050),
             calendarFormat: format,
             onFormatChanged: (CalendarFormat _format) {
