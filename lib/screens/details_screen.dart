@@ -10,9 +10,6 @@ import 'package:studio_bookings/screens/calendar.dart';
 
 class DetailScreens extends StatefulWidget {
   static const routeName = '/DetailScreens';
-  // final Booking suitable;
-
-  // DetailScreens(this.suitable);
 
   @override
   _DetailScreensState createState() => _DetailScreensState();

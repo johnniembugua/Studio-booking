@@ -92,10 +92,10 @@ class _BookingFullState extends State<BookingFull> {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
           padding: EdgeInsets.all(0.0),
-          color: Colors.blue,
+          color: Colors.white,
           child: Icon(
             Icons.clear,
-            color: Colors.white,
+            color: Colors.red,
           ),
         ),
       ),

@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
           //   height: 20.0,
           // ),
           Container(
-            margin: EdgeInsets.only(right: 20.0, left: 40.0),
+            margin: EdgeInsets.only(right: 10.0, left: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -95,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                       borderRadius: BorderRadius.circular(10.0)),
                   child: IconButton(
                     icon: Icon(FontAwesomeIcons.phone),
-                    color: Colors.black45,
+                    color: Colors.blue,
                     onPressed: () {
                       isDark = !isDark;
                       Navigator.pushNamed(context, Contact.routeName);
