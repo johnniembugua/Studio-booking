@@ -58,9 +58,9 @@ class BookingEmpty extends StatelessWidget {
             //     Navigator.of(context).pushNamed(FeedsScreen.routeName),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
-              side: BorderSide(color: Colors.green),
+              side: BorderSide(color: Colors.blue),
             ),
-            color: Colors.blue[800],
+            color: Colors.blueAccent,
             child: Text(
               'Book Now'.toUpperCase(),
               textAlign: TextAlign.center,

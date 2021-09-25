@@ -56,7 +56,7 @@ class BookingScreens extends StatelessWidget {
   }
 
   Widget checkoutSection(BuildContext ctx, double subTotal) {
-    final bookingProvider = Provider.of<BookingProvider>(ctx);
+    //final bookingProvider = Provider.of<BookingProvider>(ctx);
     // var uuid = Uuid();
     // final FirebaseAuth _auth = FirebaseAuth.instance;
     return Container(

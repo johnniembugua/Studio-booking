@@ -1,10 +1,57 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:studio_bookings/screens/mybookings/booking.dart';
+
+import 'package:studio_bookings/screens/orders/order.dart';
 import 'package:studio_bookings/screens/welcome_screen.dart';
 
-class MyDrawer extends StatelessWidget {
-  const MyDrawer({Key? key}) : super(key: key);
+class MyDrawer extends StatefulWidget {
+  @override
+  State<MyDrawer> createState() => _MyDrawerState();
+}
+
+class _MyDrawerState extends State<MyDrawer> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  String? _uid;
+
+  String? _firstName;
+
+  String? _emailAddress;
+
+  String? _joinedAt;
+
+  String? _lastName;
+
+  String? _userImageUrl;
+
+  @override
+  void initState() {
+    super.initState();
+    getData();
+  }
+
+  void getData() async {
+    User? user = _auth.currentUser;
+    _uid = user!.uid;
+    user.email;
+    final DocumentSnapshot userDoc =
+        await FirebaseFirestore.instance.collection('users').doc(_uid).get();
+    if (userDoc == null) {
+      return;
+    } else {
+      setState(() {
+        _firstName = userDoc.get('firstName');
+        _lastName = userDoc.get('lastName');
+        _emailAddress = user.email;
+        _joinedAt = userDoc.get('createdAt');
+
+        _userImageUrl = userDoc.get('imageUrl');
+        //print('name $_name');
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +67,8 @@ class MyDrawer extends StatelessWidget {
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundImage:
-                          AssetImage('assets/images/welcome_image.png'),
+                      backgroundImage: NetworkImage(
+                          _userImageUrl ?? 'assets/images/welcome_image.png'),
                       radius: 50,
                     ),
                     SizedBox(width: 5),
@@ -29,7 +76,7 @@ class MyDrawer extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Faith Nanjala',
+                            '$_firstName $_lastName ',
                             style: TextStyle(
                                 fontSize: 22, fontWeight: FontWeight.bold),
                           ),
@@ -37,7 +84,7 @@ class MyDrawer extends StatelessWidget {
                             height: 5,
                           ),
                           Text(
-                            '@nanjala',
+                            '@$_lastName',
                             style: TextStyle(
                               fontSize: 14,
                             ),
@@ -53,7 +100,7 @@ class MyDrawer extends StatelessWidget {
                     splashColor: Theme.of(context).splashColor,
                     child: ListTile(
                       onTap: () {
-                        Navigator.pushNamed(context, BookingScreens.routeName);
+                        Navigator.pushNamed(context, OrderScreen.routeName);
                       },
                       title: Text(
                         'My Bookings',
@@ -72,11 +119,13 @@ class MyDrawer extends StatelessWidget {
                 ),
 
                 _listTileContent(
-                    'Name', 'Nanjala', Icons.email_outlined, context),
+                    'Name', '$_firstName ', Icons.email_outlined, context),
                 _listTileContent(
-                    'UserName', '@nanjala', Icons.near_me_outlined, context),
+                    'Email', '$_emailAddress', Icons.near_me_outlined, context),
                 _listTileContent('Phone ', '0797819981',
                     Icons.phone_android_outlined, context),
+                _listTileContent('Joined ', '$_joinedAt',
+                    Icons.create_new_folder_outlined, context),
 
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 4),
@@ -112,24 +161,47 @@ class MyDrawer extends StatelessWidget {
                   color: Colors.transparent,
                   child: InkWell(
                     splashColor: Theme.of(context).splashColor,
-                    onTap: () {
-                      Navigator.canPop(context)
-                          ? Navigator.pushNamed(
-                              context, WelcomeScreen.routeName)
-                          : null;
-                    },
                     child: ListTile(
-                      leading: Icon(
-                        Icons.logout,
-                        color: Colors.black,
-                      ),
-                      title: Text(
-                        'Logout',
-                        style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black),
-                      ),
+                      onTap: () async {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return AlertDialog(
+                                title: Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(6.0),
+                                      child: Image.network(
+                                        'https://image.flaticon.com/icons/png/128/1828/1828304.png',
+                                        height: 20.0,
+                                        width: 20,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(6.0),
+                                      child: Text('Sign Out'),
+                                    ),
+                                  ],
+                                ),
+                                content: Text("Do you want to sign out?"),
+                                actions: [
+                                  TextButton(
+                                      onPressed: () async {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Text('Cancel')),
+                                  TextButton(
+                                      onPressed: () async {
+                                        await _auth.signOut().then(
+                                            (value) => Navigator.pop(context));
+                                      },
+                                      child: Text('Ok')),
+                                ],
+                              );
+                            });
+                      },
+                      title: Text('Logout'),
+                      leading: Icon(Icons.exit_to_app_rounded),
                     ),
                   ),
                 ),
