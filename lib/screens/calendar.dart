@@ -223,8 +223,8 @@ class _CalendarState extends State<Calendar> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () =>
-                        Navigator.pushNamed(context, ContractScreen.routeName),
+                    onPressed: () => Navigator.pushReplacementNamed(
+                        context, ContractScreen.routeName),
                     style: ElevatedButton.styleFrom(
                         primary: Colors.blue,
                         shape: RoundedRectangleBorder(
